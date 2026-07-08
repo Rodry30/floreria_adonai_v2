@@ -16,6 +16,12 @@ export class LineaBaseCronogramaComponent implements AfterViewInit {
       mermaidInstance.initialize({
         startOnLoad: false,
         theme: 'base',
+        gantt: {
+          barHeight: 35,
+          barGap: 8,
+          fontSize: 14,
+          sectionFontSize: 16
+        },
         themeVariables: {
           primaryColor: '#E1F5EE',
           primaryTextColor: '#04342C',

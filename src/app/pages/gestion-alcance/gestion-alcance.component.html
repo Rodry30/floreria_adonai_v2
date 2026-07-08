@@ -11,7 +11,7 @@
         </div>
         <div>
           <h2 class="text-3xl font-black text-teal-950 tracking-tight">Gestión del Alcance del Proyecto</h2>
-          <p class="text-teal-650 font-bold text-lg">Transformación Digital Básica — Florería Adonai</p>
+          <p class="text-teal-650 font-bold text-lg">Transformación Digital — Florería Adonai</p>
         </div>
       </div>
       <div class="bg-teal-900 text-white py-2 px-4 rounded-full text-xs font-bold uppercase tracking-wider self-start md:self-center">
@@ -20,7 +20,7 @@
     </div>
     
     <p class="intro-text mb-8">
-      La <strong>Florería Adonai</strong> es una microempresa local que opera principalmente de forma presencial y por WhatsApp. Su gestión operativa y comercial presenta oportunidades de mejora: el inventario se controla visualmente, las ventas se registran en un cuaderno físico, los clientes frecuentes no están organizados y la presencia digital del negocio es limitada. Este documento desarrolla la <strong>Gestión del Alcance del Proyecto</strong> que busca transformar digitalmente esa operación mediante herramientas básicas, gratuitas o de bajo costo.
+      La <strong>Florería Adonai</strong> es una microempresa local que opera principalmente de forma presencial y por WhatsApp. Su gestión operativa y comercial presenta oportunidades de mejora: el inventario se controla visualmente, las ventas se registran en un cuaderno físico, los clientes frecuentes no están organizados y la presencia digital del negocio es limitada. Este documento desarrolla la <strong>Gestión del Alcance del Proyecto</strong> que busca transformar digitalmente esa operación mediante un sistema web propio en Django.
     </p>
 
     <!-- Ficha Técnica Premium -->
@@ -34,7 +34,7 @@
         <tbody>
           <tr>
             <td class="w-1/3"><strong>Proyecto</strong></td>
-            <td>Transformación Digital Básica para la Florería Adonai</td>
+            <td>Transformación Digital para la Florería Adonai</td>
           </tr>
           <tr>
             <td><strong>Ubicación</strong></td>
@@ -163,15 +163,15 @@
                   </tr>
                   <tr>
                     <td><strong>Objetivo del proyecto</strong></td>
-                    <td>Mejorar el control de inventario, registro de ventas, gestión de clientes y atención comercial mediante herramientas digitales básicas, gratuitas o de bajo costo.</td>
+                    <td>Mejorar el control de inventario, registro de ventas, gestión de clientes y atención comercial mediante el desarrollo de un sistema web propio.</td>
                   </tr>
                   <tr>
                     <td><strong>Alcance preliminar</strong></td>
-                    <td>Diseño de seis herramientas digitales: inventario, registro de ventas, base de clientes, catálogo digital, WhatsApp Business y guía de uso.</td>
+                    <td>Desarrollo de un sistema web con módulos de inventario, ventas, clientes, catálogo público, panel administrativo, integración WhatsApp/Yape y guía de uso.</td>
                   </tr>
                   <tr>
                     <td><strong>Restricciones</strong></td>
-                    <td>Herramientas gratuitas o de bajo costo; uso desde celular; sin conocimientos técnicos avanzados requeridos.</td>
+                    <td>El sistema no genera costo de licenciamiento (desarrollo propio); uso desde celular; el panel interno requiere una capacitación breve.</td>
                   </tr>
                   <tr>
                     <td><strong>Supuestos</strong></td>
@@ -270,7 +270,7 @@
                 <tbody>
                   <tr>
                     <td><strong>Microempresa local</strong></td>
-                    <td>Sin presupuesto para software de cobro o desarrollo técnico complejo a la medida.</td>
+                    <td>Sin presupuesto para licenciar software comercial de terceros, pero el desarrollo propio no representa costo para el negocio.</td>
                   </tr>
                   <tr>
                     <td><strong>Sin personal técnico</strong></td>
@@ -278,7 +278,7 @@
                   </tr>
                   <tr>
                     <td><strong>Uso cotidiano de celulares</strong></td>
-                    <td>La solución debe estar optimizada para funcionar desde pantallas móviles (e.g. Google Sheets app, WhatsApp).</td>
+                    <td>La solución debe estar optimizada para funcionar desde pantallas móviles (catálogo web responsivo, panel interno accesible desde navegador móvil, WhatsApp).</td>
                   </tr>
                   <tr>
                     <td><strong>Atención mixta (presencial + WhatsApp)</strong></td>
@@ -361,8 +361,8 @@
                 <div class="text-teal-600 font-extrabold text-xs uppercase mb-1">Técnica 1</div>
                 <h4 class="font-extrabold text-slate-800 text-sm mb-3">Juicio de Expertos</h4>
                 <ul class="text-xs text-slate-600 space-y-2">
-                  <li><strong>Propietaria:</strong> Validó la factibilidad operativa diaria de las ideas de Sheets y WhatsApp.</li>
-                  <li><strong>Equipo Técnico:</strong> Evaluó el costo, simplicidad técnica y estabilidad de las herramientas libres.</li>
+                  <li><strong>Propietaria:</strong> Validó la factibilidad operativa diaria de las ideas del sistema web y WhatsApp.</li>
+                  <li><strong>Equipo Técnico:</strong> Evaluó el costo, simplicidad técnica, viabilidad técnica y sostenibilidad del sistema desarrollado.</li>
                   <li><strong>Docente Asesor:</strong> Validó la rigurosidad y el correcto alineamiento metodológico del proyecto.</li>
                 </ul>
               </div>
@@ -494,7 +494,7 @@
                   </tr>
                   <tr>
                     <td><strong>Equipo del proyecto</strong></td>
-                    <td>Identificar requisitos, estructurar plantillas de Sheets, redactar guías y guiar el control de cambios.</td>
+                    <td>Identificar requisitos, diseñar y desarrollar los módulos del sistema web, redactar guías y guiar el control de cambios.</td>
                   </tr>
                   <tr>
                     <td><strong>Docente asesor</strong></td>
@@ -739,31 +739,31 @@
                   <tr>
                     <td><span class="pill pill-id">RF-01</span></td>
                     <td><strong>Inventario</strong></td>
-                    <td>La plantilla de inventario debe permitir registrar productos clasificados por categoría (flores frescas, flores secas, complementos, temporada).</td>
+                    <td>El módulo de inventario del sistema debe permitir registrar productos clasificados por categoría (flores frescas, flores secas, complementos, temporada).</td>
                     <td>Control informal del inventario.</td>
                   </tr>
                   <tr>
                     <td><span class="pill pill-id">RF-02</span></td>
                     <td><strong>Inventario</strong></td>
-                    <td>La plantilla de inventario debe permitir registrar entradas y salidas de productos, y mostrar alertas de stock mínimo.</td>
+                    <td>El módulo de inventario del sistema debe permitir registrar entradas y salidas de productos, y mostrar alertas automáticas de stock mínimo.</td>
                     <td>Control informal del inventario.</td>
                   </tr>
                   <tr>
                     <td><span class="pill pill-id">RF-03</span></td>
                     <td><strong>Ventas</strong></td>
-                    <td>La plantilla de ventas debe permitir registrar cada venta con: fecha, producto, cantidad, precio unitario y canal de venta (presencial o WhatsApp).</td>
+                    <td>El módulo de ventas del sistema debe permitir registrar cada venta con: fecha, producto, cantidad, precio unitario y canal de venta (presencial o WhatsApp).</td>
                     <td>Registro manual e incompleto de ventas.</td>
                   </tr>
                   <tr>
                     <td><span class="pill pill-id">RF-04</span></td>
                     <td><strong>Clientes</strong></td>
-                    <td>La base de clientes debe permitir registrar nombre, número de contacto, preferencias de compra e historial básico de pedidos.</td>
+                    <td>El módulo de clientes del sistema debe permitir registrar nombre, número de contacto, preferencias de compra e historial básico de pedidos.</td>
                     <td>Gestión desordenada de clientes.</td>
                   </tr>
                   <tr>
                     <td><span class="pill pill-id">RF-05</span></td>
                     <td><strong>Presencia Digital</strong></td>
-                    <td>El catálogo digital debe mostrar los productos disponibles con fotografía real y precio referencial de cada uno.</td>
+                    <td>El catálogo digital integrado debe mostrar los productos con fotos reales, precios y permitir un flujo de compra simulada (envío de pedido por WhatsApp o Yape).</td>
                     <td>Baja presencia digital de la florería.</td>
                   </tr>
                   <tr>
@@ -771,6 +771,12 @@
                     <td><strong>Atención Comercial</strong></td>
                     <td>El canal de WhatsApp Business debe centralizar la atención de pedidos de forma separada de la comunicación personal de la propietaria.</td>
                     <td>Atención comercial poco organizada y dependiente.</td>
+                  </tr>
+                  <tr>
+                    <td><span class="pill pill-id">RF-07</span></td>
+                    <td><strong>Panel Administrativo</strong></td>
+                    <td>El panel interno del sistema debe contar con control de acceso por roles (staff/superuser) para proteger la información del negocio.</td>
+                    <td>Falta de un sistema seguro y centralizado para la administración.</td>
                   </tr>
                 </tbody>
               </table>
@@ -789,8 +795,8 @@
                 <tbody>
                   <tr>
                     <td><span class="pill pill-id">RNF-01</span></td>
-                    <td>Las herramientas digitales deben ser gratuitas o de bajo costo.</td>
-                    <td>La Florería Adonai es una microempresa sin presupuesto para software especializado de cobro.</td>
+                    <td>El sistema web no debe generar costo de licenciamiento para el negocio (desarrollo propio).</td>
+                    <td>La Florería Adonai es una microempresa sin presupuesto para licenciar software comercial de terceros.</td>
                   </tr>
                   <tr>
                     <td><span class="pill pill-id">RNF-02</span></td>
@@ -799,13 +805,23 @@
                   </tr>
                   <tr>
                     <td><span class="pill pill-id">RNF-03</span></td>
-                    <td>Las herramientas deben ser comprensibles sin conocimientos técnicos previos.</td>
+                    <td>El panel interno debe requerir solo una capacitación breve y no conocimientos de programación.</td>
                     <td>Ninguna de las usuarias operativas del negocio posee formación técnica en sistemas de computación.</td>
                   </tr>
                   <tr>
                     <td><span class="pill pill-id">RNF-04</span></td>
                     <td>La atención comercial digital debe mantenerse separada del WhatsApp personal.</td>
                     <td>Evita la desorganización de pedidos y permite establecer un horario comercial claro.</td>
+                  </tr>
+                  <tr>
+                    <td><span class="pill pill-id">RNF-05</span></td>
+                    <td>El sistema debe contar con rutas internas protegidas (seguridad).</td>
+                    <td>Garantiza que usuarios no autorizados no accedan a los datos financieros de la tienda.</td>
+                  </tr>
+                  <tr>
+                    <td><span class="pill pill-id">RNF-06</span></td>
+                    <td>El código del sistema debe ser mantenible y sostenible a futuro.</td>
+                    <td>Permite agregar nuevas características o escalar el proyecto posteriormente sin reconstruirlo desde cero.</td>
                   </tr>
                 </tbody>
               </table>
@@ -828,30 +844,30 @@
                   <tr>
                     <td>Conocer el stock sin conteos manuales.</td>
                     <td>RF-01, RF-02</td>
-                    <td>Diseñar plantilla de inventario digital.</td>
+                    <td>Desarrollar el módulo de inventario.</td>
                     <td><strong>Inventario Digital</strong></td>
-                    <td>Plantilla Sheets con al menos 4 categorías, campos de entrada/salida y alertas de stock mínimo.</td>
+                    <td>Módulo de inventario del sistema con al menos 4 categorías, registro de movimientos y alertas de stock mínimo.</td>
                   </tr>
                   <tr>
                     <td>Centralizar el registro de ventas disperso.</td>
                     <td>RF-03</td>
-                    <td>Diseñar plantilla de registro de ventas.</td>
+                    <td>Desarrollar el módulo de ventas.</td>
                     <td><strong>Registro de Ventas</strong></td>
-                    <td>Plantilla con los 5 campos mínimos y diferenciación por canal.</td>
+                    <td>Módulo de ventas del sistema con registro de campos clave y diferenciación por canal.</td>
                   </tr>
                   <tr>
                     <td>Recordar la información de clientes frecuentes.</td>
                     <td>RF-04</td>
-                    <td>Diseñar base de datos básica de clientes.</td>
+                    <td>Desarrollar el módulo de clientes.</td>
                     <td><strong>Base de Clientes</strong></td>
-                    <td>Estructura en Sheets con nombre, contacto, preferencias e historial básico.</td>
+                    <td>Módulo de clientes del sistema con nombre, contacto, preferencias e historial.</td>
                   </tr>
                   <tr>
                     <td>Aumentar la presencia digital del negocio.</td>
                     <td>RF-05</td>
-                    <td>Diseñar catálogo digital de productos.</td>
+                    <td>Desarrollar catálogo digital con compra simulada.</td>
                     <td><strong>Catálogo Digital</strong></td>
-                    <td>Catálogo PDF/Canva con al menos 10 productos, foto real y precio referencial.</td>
+                    <td>Módulo de catálogo web con fotos reales, precios y simulación de compra conectada a WhatsApp.</td>
                   </tr>
                   <tr>
                     <td>Uniformar la atención comercial.</td>
@@ -900,31 +916,35 @@
             
             <h4 class="subsection-title">Análisis del Producto (Descomposición de la Solución)</h4>
             <div class="product-breakdown my-6">
-              <div class="breakdown-root">SOLUCIÓN DE TRANSFORMACIÓN DIGITAL ADONAI</div>
+              <div class="breakdown-root">SISTEMA WEB EN DJANGO FLORERÍA ADONAI</div>
               <div class="breakdown-leaves">
                 <div class="breakdown-card">
                   <span class="card-header-title">1. Inventario</span>
-                  <span class="card-desc">Plantilla Google Sheets con 4 categorías y stock mínimo visual.</span>
+                  <span class="card-desc">Módulo del sistema con categorías, entradas/salidas y alertas de stock.</span>
                 </div>
                 <div class="breakdown-card">
                   <span class="card-header-title">2. Ventas</span>
-                  <span class="card-desc">Plantilla en la nube con 5 campos de venta e identificación de canal.</span>
+                  <span class="card-desc">Módulo web con campos de venta e identificación de canal.</span>
                 </div>
                 <div class="breakdown-card">
                   <span class="card-header-title">3. Clientes</span>
-                  <span class="card-desc">Base de clientes con datos de contacto, gustos y compras básicas.</span>
+                  <span class="card-desc">Módulo con datos de contacto, gustos y compras.</span>
                 </div>
                 <div class="breakdown-card">
-                  <span class="card-header-title">4. Catálogo</span>
-                  <span class="card-desc">Catálogo en Canva/PDF con imágenes reales y precios sugeridos.</span>
+                  <span class="card-header-title">4. Catálogo Público</span>
+                  <span class="card-desc">Catálogo integrado con flujo de compra simulada.</span>
                 </div>
                 <div class="breakdown-card">
-                  <span class="card-header-title">5. WhatsApp</span>
-                  <span class="card-desc">WhatsApp comercial con etiquetas de estado y mensajes automáticos.</span>
+                  <span class="card-header-title">5. Panel Administrativo</span>
+                  <span class="card-desc">Control de acceso (staff/superuser) y dashboard interno.</span>
                 </div>
                 <div class="breakdown-card">
-                  <span class="card-header-title">6. Guía Uso</span>
-                  <span class="card-desc">Manual ilustrado práctico paso a paso para la tienda.</span>
+                  <span class="card-header-title">6. WhatsApp</span>
+                  <span class="card-desc">WhatsApp comercial integrado al flujo de compra del catálogo.</span>
+                </div>
+                <div class="breakdown-card">
+                  <span class="card-header-title">7. Guía Uso</span>
+                  <span class="card-desc">Manual ilustrado para operar el panel web y catálogos.</span>
                 </div>
               </div>
             </div>
@@ -942,34 +962,39 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><strong>Plantilla digital de inventario (Google Sheets)</strong></td>
+                    <td><strong>Módulo de inventario del sistema web</strong></td>
                     <td class="text-center"><span class="pill pill-inc">Incluido</span></td>
-                    <td>Resuelve el control informal de stock de forma gratuita y móvil.</td>
+                    <td>Resuelve el control informal de stock con alertas automáticas.</td>
                   </tr>
                   <tr>
-                    <td><strong>Plantilla digital de ventas (Google Sheets)</strong></td>
+                    <td><strong>Módulo de registro de ventas</strong></td>
                     <td class="text-center"><span class="pill pill-inc">Incluido</span></td>
-                    <td>Sustituye de forma básica el registro manual en cuadernos.</td>
+                    <td>Sustituye el registro manual en cuadernos con campos estructurados.</td>
                   </tr>
                   <tr>
-                    <td><strong>Base de datos de clientes frecuentes (Sheets)</strong></td>
+                    <td><strong>Módulo de gestión de clientes</strong></td>
                     <td class="text-center"><span class="pill pill-inc">Incluido</span></td>
-                    <td>Permite estructurar nombres y contactos para ofertas directas.</td>
+                    <td>Permite centralizar contactos e historial de compras.</td>
                   </tr>
                   <tr>
-                    <td><strong>Catálogo digital de productos (Canva/PDF)</strong></td>
+                    <td><strong>Catálogo público con compra simulada</strong></td>
                     <td class="text-center"><span class="pill pill-inc">Incluido</span></td>
-                    <td>Aumenta la visibilidad digital y facilita el envío de fotos de flores.</td>
+                    <td>Facilita a los clientes visualizar fotos reales, precios y armar un pedido web.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Panel administrativo interno con control de acceso (staff/superuser)</strong></td>
+                    <td class="text-center"><span class="pill pill-inc">Incluido</span></td>
+                    <td>Protege la información confidencial del negocio (ventas, clientes).</td>
                   </tr>
                   <tr>
                     <td><strong>WhatsApp Business comercial</strong></td>
                     <td class="text-center"><span class="pill pill-inc">Incluido</span></td>
-                    <td>Separa el canal de atención y automatiza respuestas iniciales.</td>
+                    <td>Recibe los pedidos generados en el catálogo y separa el canal de atención.</td>
                   </tr>
                   <tr>
                     <td><strong>Guía básica de uso</strong></td>
                     <td class="text-center"><span class="pill pill-inc">Incluido</span></td>
-                    <td>Asegura que la dueña y vendedora adopten correctamente las herramientas.</td>
+                    <td>Asegura la rápida adopción del panel administrativo.</td>
                   </tr>
                   <tr>
                     <td><strong>Sistema ERP empresarial (ej. SAP, Odoo)</strong></td>
@@ -982,14 +1007,14 @@
                     <td>Fuera del presupuesto de desarrollo; no requerida en la iteración.</td>
                   </tr>
                   <tr>
-                    <td><strong>Sitio web de e-commerce personalizado</strong></td>
+                    <td><strong>Pasarela de pago electrónica real (tarjetas / API de Yape)</strong></td>
                     <td class="text-center"><span class="pill pill-exc">Excluido</span></td>
-                    <td>No priorizado por las usuarias; requiere mantenimiento y hosting.</td>
+                    <td>La integración actual con Yape/WhatsApp es simulada. Una pasarela real excede el alcance.</td>
                   </tr>
                   <tr>
                     <td><strong>Módulo de facturación electrónica Sunat</strong></td>
                     <td class="text-center"><span class="pill pill-exc">Excluido</span></td>
-                    <td>Excede los límites del proyecto básico; la florería entrega boleta simple.</td>
+                    <td>Excede los límites del proyecto; la florería entrega boleta simple.</td>
                   </tr>
                 </tbody>
               </table>
@@ -1011,25 +1036,25 @@
                   <tr>
                     <td><strong>Inventario Digital</strong></td>
                     <td>Elimina pérdidas por quiebres de stock o flores marchitas sin vender.</td>
-                    <td>Gratuito (Google Sheets)</td>
+                    <td>Sin costo de licenciamiento (desarrollo propio del equipo)</td>
                     <td class="text-center"><span class="pill pill-high">Alta</span></td>
                   </tr>
                   <tr>
                     <td><strong>Registro de Ventas</strong></td>
                     <td>Aporta información verídica e inmediata de las ventas por canal.</td>
-                    <td>Gratuito (Google Sheets)</td>
+                    <td>Sin costo de licenciamiento (desarrollo propio del equipo)</td>
                     <td class="text-center"><span class="pill pill-high">Alta</span></td>
                   </tr>
                   <tr>
                     <td><strong>Base de Clientes</strong></td>
                     <td>Facilita el seguimiento de clientes y el envío de saludos por cumpleaños.</td>
-                    <td>Gratuito (Google Sheets)</td>
+                    <td>Sin costo de licenciamiento (desarrollo propio del equipo)</td>
                     <td class="text-center"><span class="pill pill-med">Media</span></td>
                   </tr>
                   <tr>
                     <td><strong>Catálogo Digital</strong></td>
-                    <td>Incrementa la conversión de pedidos enviando un enlace rápido.</td>
-                    <td>Gratuito (Canva / PDF)</td>
+                    <td>Incrementa la conversión de pedidos enviando un enlace rápido y simulando compra.</td>
+                    <td>Sin costo de licenciamiento (desarrollo propio del equipo)</td>
                     <td class="text-center"><span class="pill pill-high">Alta</span></td>
                   </tr>
                   <tr>
@@ -1057,14 +1082,14 @@
               <div>
                 <h4 class="font-extrabold text-teal-950 text-sm uppercase mb-2">Descripción del Proyecto</h4>
                 <p class="text-xs text-teal-900 leading-relaxed">
-                  Diseñar una solución de transformación digital básica para la Florería Adonai que mejore la gestión operativa y comercial mediante herramientas digitales accesibles, gratuitas o de bajo costo, orientadas a organizar el inventario, centralizar las ventas, gestionar clientes frecuentes y mejorar la atención comercial.
+                  Desarrollar y desplegar un sistema web propio en Django para la Florería Adonai que mejore la gestión operativa y comercial, orientándose a organizar el inventario, centralizar las ventas, gestionar clientes frecuentes y ofrecer un catálogo digital integrado.
                 </p>
               </div>
 
               <div>
                 <h4 class="font-extrabold text-teal-950 text-sm uppercase mb-2">Alcance del Producto</h4>
                 <p class="text-xs text-teal-900 leading-relaxed">
-                  El producto consiste en un conjunto integrado de seis herramientas digitales: plantilla de inventario por categorías con alertas de stock, plantilla de registro de ventas por canal, base de datos básica de clientes, catálogo digital con fotografías reales, canal de WhatsApp Business organizado y una guía de uso dirigida a la propietaria y la vendedora.
+                  El producto consiste en un sistema web compuesto por: módulo de inventario con alertas de stock, módulo de ventas por canal, módulo de gestión de clientes, un catálogo público con flujo de compra simulada (vía WhatsApp/Yape), un panel administrativo protegido con roles y la integración a WhatsApp Business para la recepción de pedidos, junto a una guía de uso para la propietaria.
                 </p>
               </div>
 
@@ -1082,33 +1107,38 @@
                     <tbody>
                       <tr>
                         <td>1</td>
-                        <td><strong>Plantilla de inventario por categorías</strong></td>
-                        <td>Mínimo 4 categorías activas, campos de entrada/salida y alertas de stock mínimo funcionando.</td>
+                        <td><strong>Módulo de inventario del sistema</strong></td>
+                        <td>Mínimo 4 categorías activas, campos de entrada/salida y alertas automáticas de stock mínimo funcionando.</td>
                       </tr>
                       <tr>
                         <td>2</td>
-                        <td><strong>Plantilla de registro de ventas</strong></td>
-                        <td>Formulario en la nube con campos de fecha, producto, cantidad, precio y origen del canal de venta.</td>
+                        <td><strong>Módulo de registro de ventas</strong></td>
+                        <td>Formulario web con campos de fecha, producto, cantidad, precio y origen del canal de venta.</td>
                       </tr>
                       <tr>
                         <td>3</td>
-                        <td><strong>Base de datos básica de clientes</strong></td>
-                        <td>Estructura de registro con datos de contacto, tipo de flor preferida e historial de compras cargado.</td>
+                        <td><strong>Módulo base de clientes</strong></td>
+                        <td>Estructura de registro con datos de contacto, tipo de flor preferida e historial de compras.</td>
                       </tr>
                       <tr>
                         <td>4</td>
-                        <td><strong>Catálogo digital de productos</strong></td>
-                        <td>Mínimo 10 arreglos florales y productos listados con fotografía nítida real y precio referencial.</td>
+                        <td><strong>Catálogo público con compra simulada</strong></td>
+                        <td>Mínimo 10 arreglos florales y productos listados con fotografía real, precio y botón funcional de pedido por WhatsApp.</td>
                       </tr>
                       <tr>
                         <td>5</td>
-                        <td><strong>Configuración de WhatsApp Business</strong></td>
-                        <td>Perfil comercial activo con al menos 4 etiquetas de pedidos y 5 respuestas rápidas cargadas en celular.</td>
+                        <td><strong>Panel administrativo con control de acceso</strong></td>
+                        <td>Rutas internas protegidas con HTTP 403 para visitantes no autorizados, dashboard funcional y diferenciación de roles (staff/superuser).</td>
                       </tr>
                       <tr>
                         <td>6</td>
+                        <td><strong>Configuración de WhatsApp Business</strong></td>
+                        <td>Perfil comercial activo con etiquetas de pedidos, conectado correctamente con el flujo del catálogo público.</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
                         <td><strong>Guía básica de uso</strong></td>
-                        <td>Guía aprobada e impartida mediante una capacitación grabada o con acta a la dueña y vendedora.</td>
+                        <td>Guía aprobada e impartida para manejar el panel interno y catálogo de forma fluida.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1121,7 +1151,7 @@
                   <ul class="text-[11px] text-slate-600 list-disc pl-4 space-y-1">
                     <li>Sistema ERP empresarial.</li>
                     <li>Aplicación móvil nativa.</li>
-                    <li>Plataforma web e-commerce.</li>
+                    <li>Pasarela de pago electrónica real.</li>
                     <li>Facturación SUNAT.</li>
                     <li>Costo de internet o equipos.</li>
                   </ul>
@@ -1129,15 +1159,15 @@
                 <div class="bg-white p-4 rounded-xl border border-teal-100">
                   <h5 class="font-bold text-xs uppercase text-teal-800 mb-2">Restricciones Clave</h5>
                   <ul class="text-[11px] text-slate-600 list-disc pl-4 space-y-1">
-                    <li>Solo herramientas gratis/bajo costo.</li>
+                    <li>Sin costo de licenciamiento para el negocio.</li>
                     <li>Debe poder usarse en celulares.</li>
-                    <li>No requiere código avanzado.</li>
-                    <li>Se limita al diseño lógico.</li>
+                    <li>No requiere código avanzado (para el negocio).</li>
                   </ul>
                 </div>
                 <div class="bg-white p-4 rounded-xl border border-teal-100">
                   <h5 class="font-bold text-xs uppercase text-teal-800 mb-2">Supuestos Aceptados</h5>
                   <ul class="text-[11px] text-slate-600 list-disc pl-4 space-y-1">
+                    <li>Conectividad a internet estable en el local.</li>
                     <li>Participación activa de la dueña.</li>
                     <li>Operación continua en tienda.</li>
                     <li>Fotos reales de arreglos florales.</li>
@@ -1229,7 +1259,7 @@
                 <li class="wbs-node">
                   <div class="wbs-label wbs-lvl-1">
                     <span class="node-code">1.0</span>
-                    <span class="node-text">Florería Adonai — Transformación Digital Básica</span>
+                    <span class="node-text">Florería Adonai — Transformación Digital</span>
                   </div>
                   
                   <ul class="wbs-tree">
@@ -1244,11 +1274,11 @@
                         <li class="wbs-node">
                           <div class="wbs-label wbs-lvl-3">
                             <span class="node-code">1.1.1</span>
-                            <span class="node-text">Plantilla de inventario</span>
+                            <span class="node-text">Módulo de inventario (sistema)</span>
                           </div>
                           <ul class="wbs-tree">
                             <li class="wbs-node"><div class="wbs-label wbs-lvl-4"><span class="node-code">1.1.1.1</span> Estructura por categorías y campos</div></li>
-                            <li class="wbs-node"><div class="wbs-label wbs-lvl-4"><span class="node-code">1.1.1.2</span> Alertas de stock mínimo</div></li>
+                            <li class="wbs-node"><div class="wbs-label wbs-lvl-4"><span class="node-code">1.1.1.2</span> Alertas de stock mínimo automáticas</div></li>
                           </ul>
                         </li>
                         <li class="wbs-node">
@@ -1274,7 +1304,7 @@
                         <li class="wbs-node">
                           <div class="wbs-label wbs-lvl-3">
                             <span class="node-code">1.2.1</span>
-                            <span class="node-text">Formulario de ventas</span>
+                            <span class="node-text">Módulo de ventas (sistema)</span>
                           </div>
                           <ul class="wbs-tree">
                             <li class="wbs-node"><div class="wbs-label wbs-lvl-4"><span class="node-code">1.2.1.1</span> Campos: fecha, producto, cantidad, precio, canal</div></li>
@@ -1303,7 +1333,7 @@
                         <li class="wbs-node">
                           <div class="wbs-label wbs-lvl-3">
                             <span class="node-code">1.3.1</span>
-                            <span class="node-text">Estructura de la base de clientes</span>
+                            <span class="node-text">Módulo de clientes (sistema)</span>
                           </div>
                           <ul class="wbs-tree">
                             <li class="wbs-node"><div class="wbs-label wbs-lvl-4"><span class="node-code">1.3.1.1</span> Campos: nombre, contacto, preferencias, historial</div></li>
@@ -1341,10 +1371,19 @@
                         <li class="wbs-node">
                           <div class="wbs-label wbs-lvl-3">
                             <span class="node-code">1.4.2</span>
-                            <span class="node-text">Catálogo estructurado</span>
+                            <span class="node-text">Módulo de catálogo público (sistema)</span>
                           </div>
                           <ul class="wbs-tree">
                             <li class="wbs-node"><div class="wbs-label wbs-lvl-4"><span class="node-code">1.4.2.1</span> Producto, foto y precio referencial por ítem</div></li>
+                          </ul>
+                        </li>
+                        <li class="wbs-node">
+                          <div class="wbs-label wbs-lvl-3">
+                            <span class="node-code">1.4.3</span>
+                            <span class="node-text">Flujo de compra simulada (WhatsApp/Yape)</span>
+                          </div>
+                          <ul class="wbs-tree">
+                            <li class="wbs-node"><div class="wbs-label wbs-lvl-4"><span class="node-code">1.4.3.1</span> Integración web de carrito y envío de pedido</div></li>
                           </ul>
                         </li>
                       </ul>
@@ -1401,6 +1440,64 @@
                       </ul>
                     </li>
 
+                    <!-- 1.7 -->
+                    <li class="wbs-node">
+                      <div class="wbs-label wbs-lvl-2">
+                        <span class="node-code">1.7</span>
+                        <span class="node-text">Panel Administrativo</span>
+                      </div>
+                      
+                      <ul class="wbs-tree">
+                        <li class="wbs-node">
+                          <div class="wbs-label wbs-lvl-3">
+                            <span class="node-code">1.7.1</span>
+                            <span class="node-text">Control de acceso (staff/superuser)</span>
+                          </div>
+                          <ul class="wbs-tree">
+                            <li class="wbs-node"><div class="wbs-label wbs-lvl-4"><span class="node-code">1.7.1.1</span> Rutas protegidas y autenticación de usuarios</div></li>
+                          </ul>
+                        </li>
+                        <li class="wbs-node">
+                          <div class="wbs-label wbs-lvl-3">
+                            <span class="node-code">1.7.2</span>
+                            <span class="node-text">Dashboard de KPIs</span>
+                          </div>
+                          <ul class="wbs-tree">
+                            <li class="wbs-node"><div class="wbs-label wbs-lvl-4"><span class="node-code">1.7.2.1</span> Resumen métrico del negocio para administración</div></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- 1.8 -->
+                    <li class="wbs-node">
+                      <div class="wbs-label wbs-lvl-2">
+                        <span class="node-code">1.8</span>
+                        <span class="node-text">Despliegue y Pruebas</span>
+                      </div>
+                      
+                      <ul class="wbs-tree">
+                        <li class="wbs-node">
+                          <div class="wbs-label wbs-lvl-3">
+                            <span class="node-code">1.8.1</span>
+                            <span class="node-text">Despliegue en entorno de producción</span>
+                          </div>
+                          <ul class="wbs-tree">
+                            <li class="wbs-node"><div class="wbs-label wbs-lvl-4"><span class="node-code">1.8.1.1</span> Hosting web, base de datos de producción y dominio</div></li>
+                          </ul>
+                        </li>
+                        <li class="wbs-node">
+                          <div class="wbs-label wbs-lvl-3">
+                            <span class="node-code">1.8.2</span>
+                            <span class="node-text">Suite de pruebas automatizadas</span>
+                          </div>
+                          <ul class="wbs-tree">
+                            <li class="wbs-node"><div class="wbs-label wbs-lvl-4"><span class="node-code">1.8.2.1</span> Pruebas de integración en componentes clave</div></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+
                   </ul>
                 </li>
               </ul>
@@ -1417,7 +1514,7 @@
                 <div class="org-card">
                   <div class="org-card-header">1.1 Inventario</div>
                   <div class="org-card-body">
-                    <div class="org-card-subnode">1.1.1 Plantilla Sheets</div>
+                    <div class="org-card-subnode">1.1.1 Módulo en sistema</div>
                     <div class="org-card-subnode">1.1.2 Carga de Productos</div>
                   </div>
                 </div>
@@ -1425,7 +1522,7 @@
                 <div class="org-card">
                   <div class="org-card-header">1.2 Registro Ventas</div>
                   <div class="org-card-body">
-                    <div class="org-card-subnode">1.2.1 Formulario</div>
+                    <div class="org-card-subnode">1.2.1 Módulo en sistema</div>
                     <div class="org-card-subnode">1.2.2 Vista por canal</div>
                   </div>
                 </div>
@@ -1433,7 +1530,7 @@
                 <div class="org-card">
                   <div class="org-card-header">1.3 Base Clientes</div>
                   <div class="org-card-body">
-                    <div class="org-card-subnode">1.3.1 Estructura base</div>
+                    <div class="org-card-subnode">1.3.1 Módulo en sistema</div>
                     <div class="org-card-subnode">1.3.2 Carga clientes</div>
                   </div>
                 </div>
@@ -1442,7 +1539,8 @@
                   <div class="org-card-header">1.4 Catálogo Digital</div>
                   <div class="org-card-body">
                     <div class="org-card-subnode">1.4.1 Fotos de flores</div>
-                    <div class="org-card-subnode">1.4.2 PDF de catálogo</div>
+                    <div class="org-card-subnode">1.4.2 Módulo público</div>
+                    <div class="org-card-subnode">1.4.3 Flujo de compra</div>
                   </div>
                 </div>
                 <!-- 1.5 -->
@@ -1459,6 +1557,22 @@
                   <div class="org-card-body">
                     <div class="org-card-subnode">1.6.1 Guía del usuario</div>
                     <div class="org-card-subnode">1.6.2 Sesión de demo</div>
+                  </div>
+                </div>
+                <!-- 1.7 -->
+                <div class="org-card">
+                  <div class="org-card-header">1.7 Panel Administr.</div>
+                  <div class="org-card-body">
+                    <div class="org-card-subnode">1.7.1 Control de acceso</div>
+                    <div class="org-card-subnode">1.7.2 Dashboard</div>
+                  </div>
+                </div>
+                <!-- 1.8 -->
+                <div class="org-card">
+                  <div class="org-card-header">1.8 Despliegue</div>
+                  <div class="org-card-body">
+                    <div class="org-card-subnode">1.8.1 Prod. Entorno</div>
+                    <div class="org-card-subnode">1.8.2 Pruebas automat.</div>
                   </div>
                 </div>
               </div>
@@ -1481,65 +1595,72 @@
                   <tr>
                     <td><strong>1.1.1.1</strong></td>
                     <td>Estructura de inventario por categorías</td>
-                    <td>Plantilla en Google Sheets con categorías: flores frescas, flores secas, complementos y productos de temporada, con campos de entrada y salida de stock.</td>
+                    <td>Desarrollo del modelo de datos e interfaz en Django para gestionar productos por categorías, con campos de entrada y salida de stock.</td>
                     <td>Equipo del proyecto</td>
-                    <td>Mínimo 4 categorías activas y campos de entradas/salidas funcionales.</td>
+                    <td>Mínimo 4 categorías activas y CRUD de productos funcional en el sistema.</td>
                   </tr>
                   <tr>
                     <td><strong>1.1.1.2</strong></td>
                     <td>Alertas de stock mínimo</td>
-                    <td>Configuración de alertas visuales en la plantilla para identificar cuando un producto llega al nivel mínimo de stock.</td>
+                    <td>Programación de alertas automáticas en el sistema web para identificar productos con stock bajo en el panel administrativo.</td>
                     <td>Equipo del proyecto</td>
-                    <td>Alerta visible ante stock bajo; validada por la propietaria.</td>
+                    <td>Alerta visible en el dashboard ante stock bajo; validada por la propietaria.</td>
                   </tr>
                   <tr>
                     <td><strong>1.1.2.1</strong></td>
                     <td>Registro de productos reales</td>
-                    <td>Carga inicial de datos de inventario del negocio (precios y cantidades de inicio de flores y complementos) en la plantilla Google Sheets.</td>
+                    <td>Carga inicial de datos de inventario del negocio (precios y cantidades de inicio) en la base de datos del sistema web.</td>
                     <td>Equipo del proyecto</td>
                     <td>Al menos 20 productos registrados con su stock inicial real.</td>
                   </tr>
                   <tr>
                     <td><strong>1.2.1.1</strong></td>
                     <td>Campos mínimos de venta</td>
-                    <td>Creación del formato de formulario para el registro de ventas diarias.</td>
+                    <td>Desarrollo del formulario web y modelo de base de datos para el registro de ventas diarias.</td>
                     <td>Equipo del proyecto</td>
-                    <td>Formulario con los 5 campos mínimos de control funcionando.</td>
+                    <td>Formulario web con los 5 campos mínimos de control funcionando.</td>
                   </tr>
                   <tr>
                     <td><strong>1.2.2.1</strong></td>
                     <td>Vista diferenciada por canal</td>
-                    <td>Dashboard o filtros para visualizar ventas y consolidar estadísticas agregadas por canal de venta.</td>
+                    <td>Dashboard o filtros en el panel administrativo para visualizar ventas y consolidar estadísticas por canal.</td>
                     <td>Equipo del proyecto</td>
-                    <td>Gráfico o tabla dinámica que agrupe ventas presenciales y por WhatsApp.</td>
+                    <td>Vista que agrupe ventas presenciales y por WhatsApp de forma diferenciada.</td>
                   </tr>
                   <tr>
                     <td><strong>1.3.1.1</strong></td>
                     <td>Campos de clientes</td>
-                    <td>Estructuración del formulario/tabla para capturar y ordenar datos de contacto e historial del cliente.</td>
+                    <td>Desarrollo del modelo de clientes y tabla interactiva para capturar y ordenar datos de contacto e historial.</td>
                     <td>Equipo del proyecto</td>
-                    <td>Campos estructurados habilitados para búsqueda y registro.</td>
+                    <td>Gestión de clientes funcional en el sistema, permitiendo búsqueda y registro.</td>
                   </tr>
                   <tr>
                     <td><strong>1.3.2.1</strong></td>
                     <td>Registro de contactos habituales</td>
-                    <td>Migración inicial de al menos 15 clientes habituales de WhatsApp y del cuaderno físico.</td>
+                    <td>Migración inicial de al menos 15 clientes habituales de WhatsApp y del cuaderno físico a la base de datos.</td>
                     <td>Equipo del proyecto</td>
-                    <td>15 registros iniciales reales de clientes cargados.</td>
+                    <td>15 registros iniciales reales de clientes cargados en el sistema.</td>
                   </tr>
                   <tr>
                     <td><strong>1.4.1.1</strong></td>
                     <td>Fotografías de productos</td>
-                    <td>Captura y edición básica de fotografías de los productos principales del negocio.</td>
+                    <td>Captura y edición básica de fotografías reales, subidas y gestionadas a través del sistema web (media files).</td>
                     <td>Equipo del proyecto</td>
-                    <td>Al menos 10 fotografías reales tomadas en la florería.</td>
+                    <td>Al menos 10 fotografías reales cargadas y mostradas en el catálogo.</td>
                   </tr>
                   <tr>
                     <td><strong>1.4.2.1</strong></td>
-                    <td>Diseño del catálogo</td>
-                    <td>Diseño del catálogo digital en PDF (vía Canva) para enviar a los clientes.</td>
+                    <td>Diseño del catálogo público</td>
+                    <td>Desarrollo de la vista pública del catálogo (front-end) integrada al backend de Django con productos, fotos y precios.</td>
                     <td>Equipo del proyecto</td>
-                    <td>Archivo PDF final con diseño premium, 10 productos listados con su precio.</td>
+                    <td>Catálogo web navegable, responsivo, listando productos activos.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>1.4.3.1</strong></td>
+                    <td>Flujo de compra simulada</td>
+                    <td>Desarrollo del carrito de compras web con redirección a WhatsApp para finalizar la venta y pasarela simulada por Yape.</td>
+                    <td>Equipo del proyecto</td>
+                    <td>Botón de pedido funcional que genera un mensaje prellenado en WhatsApp.</td>
                   </tr>
                   <tr>
                     <td><strong>1.5.1.1</strong></td>
@@ -1565,16 +1686,44 @@
                   <tr>
                     <td><strong>1.6.1.1</strong></td>
                     <td>Material de capacitación</td>
-                    <td>Elaboración de un manual sencillo paso a paso con imágenes explicativas para el uso diario de Sheets y WhatsApp Business.</td>
+                    <td>Elaboración de un manual sencillo paso a paso con imágenes explicativas para el uso diario del sistema web (catálogo, panel interno) y WhatsApp Business.</td>
                     <td>Equipo del proyecto</td>
                     <td>Guía interactiva en formato digital o folleto, validada por el docente.</td>
                   </tr>
                   <tr>
                     <td><strong>1.6.2.1</strong></td>
                     <td>Sesión de presentación y demo</td>
-                    <td>Sesión de capacitación práctica donde se simula el registro de ventas, inventario y atención comercial.</td>
+                    <td>Sesión de capacitación práctica donde se simula el registro de ventas, inventario y atención comercial en el sistema.</td>
                     <td>Equipo del proyecto</td>
                     <td>Firma de conformidad y capturas de pantalla de la propietaria operando el sistema.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>1.7.1.1</strong></td>
+                    <td>Control de acceso y rutas protegidas</td>
+                    <td>Implementación de autenticación de usuarios y protección de rutas administrativas (decorators de Django).</td>
+                    <td>Equipo del proyecto</td>
+                    <td>Acceso restringido al panel interno; redirección a login para usuarios no autorizados.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>1.7.2.1</strong></td>
+                    <td>Dashboard de KPIs</td>
+                    <td>Desarrollo de un panel de métricas con indicadores clave (ventas del día, productos más vendidos).</td>
+                    <td>Equipo del proyecto</td>
+                    <td>Dashboard funcional mostrando métricas actualizadas de la base de datos.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>1.8.1.1</strong></td>
+                    <td>Despliegue en entorno de producción</td>
+                    <td>Configuración de servidor VPS/PaaS (ej. Render/Railway), base de datos de producción (PostgreSQL) y dominio.</td>
+                    <td>Equipo del proyecto</td>
+                    <td>Sistema web accesible públicamente a través de internet sin errores 500.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>1.8.2.1</strong></td>
+                    <td>Suite de pruebas automatizadas</td>
+                    <td>Creación de pruebas unitarias y de integración para validar el flujo del inventario y las ventas.</td>
+                    <td>Equipo del proyecto</td>
+                    <td>Tests pasando correctamente en el entorno de desarrollo y CI/CD.</td>
                   </tr>
                 </tbody>
               </table>

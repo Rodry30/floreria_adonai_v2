@@ -43,7 +43,7 @@ import { CommonModule } from '@angular/common';
           <div class="border-t border-teal-800/80 pt-6 mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
             <div class="space-y-1">
               <span class="text-teal-400 font-bold uppercase tracking-wider text-[10px]">Proyecto</span>
-              <p class="font-bold text-white">Transformación Digital Básica – Florería Adonai</p>
+              <p class="font-bold text-white">Transformación Digital – Florería Adonai (Sistema Web a Medida)</p>
             </div>
             <div class="space-y-1">
               <span class="text-teal-400 font-bold uppercase tracking-wider text-[10px]">Ubicación</span>
@@ -95,7 +95,7 @@ import { CommonModule } from '@angular/common';
             <div class="relative flex flex-col items-center">
               <div class="bg-teal-900 text-white p-5 rounded-2xl shadow-lg w-[500px] text-center z-10 border-4 border-teal-600">
                 <span class="block text-teal-300 text-[10px] uppercase font-bold tracking-wider mb-2">Objetivo Central</span>
-                <span class="font-black text-sm leading-tight">Gestión operativa y comercial eficiente de la Florería Adonai mediante herramientas digitales básicas, gratuitas o de bajo costo</span>
+                <span class="font-black text-sm leading-tight">Gestión operativa y comercial eficiente de la Florería Adonai mediante una solución tecnológica adecuada a sus necesidades operativas y comerciales</span>
               </div>
               <!-- Conector vertical hacia abajo -->
               <div class="w-px h-8 bg-slate-400 absolute -bottom-8"></div>
@@ -192,7 +192,7 @@ import { CommonModule } from '@angular/common';
               <li class="flex items-start gap-3">
                 <span class="bg-slate-100 text-slate-650 font-black text-xs px-2.5 py-1 rounded-md mt-0.5 flex-shrink-0">A1.1b</span>
                 <span class="text-xs text-slate-600 leading-relaxed">
-                  <strong>Implementar software especializado (Odoo, Zoho Inventory):</strong> Requiere licenciamiento, configuración de servidores y mantenimiento continuo.
+                  <strong>Desarrollar sistema de inventario a medida:</strong> Aplicación web propia con módulo de Productos y Categorías, control de stock, precio unitario y alertas automáticas de stock mínimo; construida por el equipo sin costo de licencia para el negocio.
                 </span>
               </li>
             </ul>
@@ -244,7 +244,7 @@ import { CommonModule } from '@angular/common';
               <li class="flex items-start gap-3">
                 <span class="bg-slate-100 text-slate-650 font-black text-xs px-2.5 py-1 rounded-md mt-0.5 flex-shrink-0">A3.1b</span>
                 <span class="text-xs text-slate-600 leading-relaxed">
-                  <strong>Tienda virtual en e-commerce (Shopify, MercadoShops):</strong> Solución robusta de carrito web, pero con costo recurrente e ineficiente para el flujo del negocio.
+                  <strong>Catálogo digital público integrado en la plataforma propia:</strong> Vitrina web filtrable con flujo de compra simulada que verifica stock en tiempo real, genera el pedido y redirige al cliente con enlace directo a WhatsApp y QR de Yape; sin pasarela de pago de terceros ni comisiones.
                 </span>
               </li>
               <li class="flex items-start gap-3">
@@ -281,11 +281,11 @@ import { CommonModule } from '@angular/common';
               Acciones Mutuamente Excluyentes
             </h4>
             <p class="text-xs text-rose-950/80 leading-relaxed mb-4">
-              Elegir una acción descarta a la otra por representar caminos diferentes para alcanzar el mismo objetivo.
+              Elegir una acción descarta a la otra por representar caminos tecnológicos distintos para alcanzar el mismo objetivo.
             </p>
             <ul class="space-y-2 text-xs text-rose-900">
-              <li><strong>A1.1a vs. A1.1b:</strong> Plantilla en Google Sheets (Gratuita) vs. Software de Inventario comercial (De costo).</li>
-              <li><strong>A3.1a vs. A3.1b:</strong> Catálogo PDF/Imagen interactivo vs. Tienda e-commerce web (Shopify/MercadoShops).</li>
+              <li><strong>A1.1a vs. A1.1b:</strong> Plantilla en Google Sheets vs. Módulo de inventario a medida desarrollado por el equipo.</li>
+              <li><strong>A3.1a vs. A3.1b:</strong> Catálogo PDF/Imagen compartible vs. Catálogo digital público integrado en la plataforma propia con flujo de compra simulada.</li>
             </ul>
           </div>
 
@@ -299,8 +299,9 @@ import { CommonModule } from '@angular/common';
               Deben implementarse de forma conjunta, pues se potencian mutuamente para brindar valor al negocio.
             </p>
             <ul class="space-y-2 text-xs text-emerald-900">
-              <li><strong>A2.1 + A2.2 + A2.3:</strong> Toda la suite de control de ventas y clientes operará unificada en las hojas de cálculo.</li>
-              <li><strong>A3.2:</strong> WhatsApp Business sirve de soporte comercial y potencia cualquiera de las dos alternativas de catálogo.</li>
+              <li><strong>A2.1 + A2.2 + A2.3 (SA N°1):</strong> Formulario de ventas, base de clientes y seguimiento de pedidos operan unificados en hojas de cálculo.</li>
+              <li><strong>A2.1 + A2.2 + A2.3 (SA N°2):</strong> En el sistema a medida, ventas y clientes son módulos nativos — el pedido registra canal, método de pago y estado; el cliente queda vinculado a su historial de compras de forma automática.</li>
+              <li><strong>A3.2:</strong> WhatsApp Business actúa como canal de atención comercial y se integra al flujo de confirmación de pedido en ambas alternativas.</li>
             </ul>
           </div>
         </div>
@@ -346,36 +347,36 @@ import { CommonModule } from '@angular/common';
           </div>
 
           <!-- Solución 2 Card -->
-          <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-300 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
-            <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-slate-200/40 rounded-full blur-xl"></div>
+          <div class="bg-gradient-to-br from-teal-50 to-white border-2 border-teal-300 rounded-3xl p-6 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden flex flex-col justify-between">
+            <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-teal-100/40 rounded-full blur-xl"></div>
             <div>
-              <div class="flex items-center justify-between mb-4 border-b border-slate-200 pb-3">
-                <h4 class="font-extrabold text-slate-800 text-base flex items-center gap-2">
-                  <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+              <div class="flex items-center justify-between mb-4 border-b border-teal-200/50 pb-3">
+                <h4 class="font-extrabold text-teal-950 text-base flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-teal-500"></span>
                   Solución Alternativa N° 2
                 </h4>
-                <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Software Especializado</span>
+                <span class="bg-teal-100 text-teal-800 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Sistema Web a Medida</span>
               </div>
               <p class="text-xs text-slate-500 mb-4 leading-relaxed">
-                Esquema de alto nivel de integración técnica y corporativa. Ofrece mayor automatización de catálogo y procesamiento web, pero introduce dependencias de licenciamiento, soporte TI y costos.
+                Sistema web propio desarrollado por el equipo del proyecto, sin costo de licencia para el negocio. Cubre inventario con alertas de stock, gestión de ventas y clientes integrada, catálogo público con compra simulada + WhatsApp/Yape, y panel interno protegido.
               </p>
             </div>
             <div class="space-y-2">
               <div class="flex items-center gap-2 bg-white p-2 rounded-lg border border-slate-150">
-                <span class="bg-slate-50 text-slate-750 text-[10px] font-bold px-2 py-0.5 rounded border border-slate-200 flex-shrink-0">A1.1b</span>
-                <span class="text-xs text-slate-655 font-medium">Software especializado de inventario (Zoho/Odoo)</span>
+                <span class="bg-teal-50 text-teal-700 text-[10px] font-bold px-2 py-0.5 rounded border border-teal-100 flex-shrink-0">A1.1b</span>
+                <span class="text-xs text-slate-700 font-medium">Módulo de inventario a medida con alertas de stock mínimo</span>
               </div>
               <div class="flex items-center gap-2 bg-white p-2 rounded-lg border border-slate-150">
-                <span class="bg-slate-50 text-slate-750 text-[10px] font-bold px-2 py-0.5 rounded border border-slate-200 flex-shrink-0">A2.1-3</span>
-                <span class="text-xs text-slate-655 font-medium">Formularios de ventas, base de clientes y seguimiento</span>
+                <span class="bg-teal-50 text-teal-700 text-[10px] font-bold px-2 py-0.5 rounded border border-teal-100 flex-shrink-0">A2.1-3</span>
+                <span class="text-xs text-slate-700 font-medium">Módulos nativos de Ventas y Clientes con historial y estados de pedido integrados</span>
               </div>
               <div class="flex items-center gap-2 bg-white p-2 rounded-lg border border-slate-150">
-                <span class="bg-slate-50 text-slate-750 text-[10px] font-bold px-2 py-0.5 rounded border border-slate-200 flex-shrink-0">A3.1b</span>
-                <span class="text-xs text-slate-655 font-medium">Tienda virtual e-commerce con pasarela (Shopify)</span>
+                <span class="bg-teal-50 text-teal-700 text-[10px] font-bold px-2 py-0.5 rounded border border-teal-100 flex-shrink-0">A3.1b</span>
+                <span class="text-xs text-slate-700 font-medium">Catálogo público con compra simulada, confirmación por WhatsApp y pago por QR Yape</span>
               </div>
               <div class="flex items-center gap-2 bg-white p-2 rounded-lg border border-slate-150">
-                <span class="bg-slate-50 text-slate-750 text-[10px] font-bold px-2 py-0.5 rounded border border-slate-200 flex-shrink-0">A3.2</span>
-                <span class="text-xs text-slate-655 font-medium">WhatsApp Business configurado para atención comercial</span>
+                <span class="bg-teal-50 text-teal-700 text-[10px] font-bold px-2 py-0.5 rounded border border-teal-100 flex-shrink-0">A3.2</span>
+                <span class="text-xs text-slate-700 font-medium">Enlace a WhatsApp Business generado automáticamente al confirmar cada pedido</span>
               </div>
             </div>
           </div>
@@ -387,25 +388,25 @@ import { CommonModule } from '@angular/common';
             <thead class="bg-teal-900 text-teal-50 text-xs uppercase tracking-wider">
               <tr>
                 <th class="p-4 font-bold w-1/4">Componente</th>
-                <th class="p-4 font-bold">Solución Alternativa N° 1 (Elegida)</th>
-                <th class="p-4 font-bold">Solución Alternativa N° 2</th>
+                <th class="p-4 font-bold">Solución Alternativa N° 1 – Herramientas Gratuitas</th>
+                <th class="p-4 font-bold">Solución Alternativa N° 2 – Sistema Web a Medida (Elegida)</th>
               </tr>
             </thead>
             <tbody class="text-sm text-slate-700 divide-y divide-slate-100">
               <tr class="hover:bg-slate-50">
                 <td class="p-4 font-bold bg-slate-50/50">C1: Control de inventario</td>
-                <td class="p-4 text-emerald-850 font-medium bg-emerald-50/10">Plantilla en Google Sheets con alertas de stock (A1.1a)</td>
-                <td class="p-4 text-slate-600">Software de inventario especializado como Odoo o Zoho (A1.1b)</td>
+                <td class="p-4 text-slate-600">Plantilla en Google Sheets con alertas visuales de stock (A1.1a)</td>
+                <td class="p-4 text-teal-850 font-medium bg-teal-50/10">Módulo de Productos y Categorías con stock, precio y alerta automática de stock mínimo (A1.1b)</td>
               </tr>
               <tr class="hover:bg-slate-50">
                 <td class="p-4 font-bold bg-slate-50/50">C2: Gestión de ventas y clientes</td>
-                <td class="p-4 text-emerald-850 font-medium bg-emerald-50/10">Formulario de ventas + Base de clientes + Seguimiento de pedidos en Google Sheets (A2.1 + A2.2 + A2.3)</td>
                 <td class="p-4 text-slate-600">Formulario de ventas + Base de clientes + Seguimiento de pedidos en Google Sheets (A2.1 + A2.2 + A2.3)</td>
+                <td class="p-4 text-teal-850 font-medium bg-teal-50/10">Módulos nativos de Venta y Cliente: canal, método de pago, estado del pedido e historial de compras integrado automáticamente (A2.1 + A2.2 + A2.3)</td>
               </tr>
               <tr class="hover:bg-slate-50">
                 <td class="p-4 font-bold bg-slate-50/50">C3: Atención digital al cliente</td>
-                <td class="p-4 text-emerald-850 font-medium bg-emerald-50/10">Catálogo digital en PDF/imagen compartible por WhatsApp + WhatsApp Business configurado (A3.1a + A3.2)</td>
-                <td class="p-4 text-slate-600">Tienda virtual en plataforma e-commerce + WhatsApp Business configurado (A3.1b + A3.2)</td>
+                <td class="p-4 text-slate-600">Catálogo digital en PDF/imagen compartible por WhatsApp + WhatsApp Business configurado (A3.1a + A3.2)</td>
+                <td class="p-4 text-teal-850 font-medium bg-teal-50/10">Catálogo público filtrable con flujo de compra simulada, confirmación con enlace a WhatsApp y QR de Yape, sin comisiones (A3.1b + A3.2)</td>
               </tr>
             </tbody>
           </table>
@@ -427,7 +428,7 @@ import { CommonModule } from '@angular/common';
         </div>
 
         <p class="text-slate-600 leading-relaxed text-lg mb-6">
-          Se aplica el método de <strong>Juicio de Expertos</strong> con criterios ponderados, considerando las características reales de la Florería Adonai: microempresa, sin personal técnico, uso exclusivo desde celular y sin presupuesto para software especializado.
+          Se aplica el método de <strong>Juicio de Expertos</strong> con criterios ponderados, considerando las características reales de la Florería Adonai y el contexto del proyecto: microempresa local, propietaria sin formación técnica, y equipo académico que desarrolló un sistema propio desplegado en un entorno real. La evaluación pondera viabilidad real, costos efectivos (no de licenciamiento de terceros), curva de aprendizaje, tiempo hasta la primera versión funcional y sostenibilidad post-entrega.
         </p>
 
         <h4 class="text-xl font-bold text-teal-900 mb-4">Criterios y escala de evaluación</h4>
@@ -486,7 +487,7 @@ import { CommonModule } from '@angular/common';
                 <th class="p-4 font-bold">Criterio de Evaluación</th>
                 <th class="p-4 font-bold w-32">Ponderación</th>
                 <th class="p-4 font-bold">SA N° 1 – Herramientas Gratuitas</th>
-                <th class="p-4 font-bold">SA N° 2 – Software Especializado</th>
+                <th class="p-4 font-bold">SA N° 2 – Sistema Web a Medida</th>
               </tr>
             </thead>
             <tbody class="text-sm divide-y divide-slate-100 text-slate-700">
@@ -494,38 +495,38 @@ import { CommonModule } from '@angular/common';
                 <td class="p-4 font-semibold text-slate-800">Viabilidad técnica</td>
                 <td class="p-4 font-bold text-slate-600">25%</td>
                 <td class="p-4"><span class="bg-emerald-50 text-emerald-800 font-bold px-2 py-1 rounded text-xs">Alta (3)</span></td>
-                <td class="p-4"><span class="bg-rose-50 text-rose-800 font-bold px-2 py-1 rounded text-xs">Baja (1)</span></td>
+                <td class="p-4"><span class="bg-emerald-50 text-emerald-800 font-bold px-2 py-1 rounded text-xs" title="Sistema construido, probado con suite de tests y desplegado en PythonAnywhere.">Alta (3)</span></td>
               </tr>
               <tr class="hover:bg-slate-50">
                 <td class="p-4 font-semibold text-slate-800">Costo de implementación</td>
                 <td class="p-4 font-bold text-slate-600">25%</td>
                 <td class="p-4"><span class="bg-emerald-50 text-emerald-800 font-bold px-2 py-1 rounded text-xs">Bajo (3)</span></td>
-                <td class="p-4"><span class="bg-rose-50 text-rose-800 font-bold px-2 py-1 rounded text-xs">Alto (1)</span></td>
+                <td class="p-4"><span class="bg-amber-50 text-amber-800 font-bold px-2 py-1 rounded text-xs" title="Sin licencias de terceros; hosting inicial gratuito. Costo futuro de mantenimiento/hosting en producción es posible a largo plazo.">Medio (2)</span></td>
               </tr>
               <tr class="hover:bg-slate-50">
                 <td class="p-4 font-semibold text-slate-800">Facilidad de uso</td>
                 <td class="p-4 font-bold text-slate-600">20%</td>
                 <td class="p-4"><span class="bg-emerald-50 text-emerald-800 font-bold px-2 py-1 rounded text-xs">Alta (3)</span></td>
-                <td class="p-4"><span class="bg-amber-50 text-amber-800 font-bold px-2 py-1 rounded text-xs">Media (2)</span></td>
+                <td class="p-4"><span class="bg-amber-50 text-amber-800 font-bold px-2 py-1 rounded text-xs" title="Panel interno requiere login y curva de aprendizaje; catálogo público y flujo de compra son simples para el cliente.">Media (2)</span></td>
               </tr>
               <tr class="hover:bg-slate-50">
                 <td class="p-4 font-semibold text-slate-800">Tiempo de implementación</td>
                 <td class="p-4 font-bold text-slate-600">15%</td>
                 <td class="p-4"><span class="bg-emerald-50 text-emerald-800 font-bold px-2 py-1 rounded text-xs">Corto (3)</span></td>
-                <td class="p-4"><span class="bg-rose-50 text-rose-800 font-bold px-2 py-1 rounded text-xs">Largo (1)</span></td>
+                <td class="p-4"><span class="bg-emerald-50 text-emerald-800 font-bold px-2 py-1 rounded text-xs" title="Primera iteración funcional completada y desplegada; entregas iterativas ya documentadas.">Corto (3)</span></td>
               </tr>
               <tr class="hover:bg-slate-50">
                 <td class="p-4 font-semibold text-slate-800">Sostenibilidad</td>
                 <td class="p-4 font-bold text-slate-600">15%</td>
                 <td class="p-4"><span class="bg-emerald-50 text-emerald-800 font-bold px-2 py-1 rounded text-xs">Alta (3)</span></td>
-                <td class="p-4"><span class="bg-rose-50 text-rose-800 font-bold px-2 py-1 rounded text-xs">Baja (1)</span></td>
+                <td class="p-4"><span class="bg-amber-50 text-amber-800 font-bold px-2 py-1 rounded text-xs" title="La propietaria no tiene conocimientos técnicos; el sistema depende de soporte del equipo o de un responsable externo. Se contempla capacitación y README para reducir esta dependencia.">Media (2)</span></td>
               </tr>
               <!-- Totales -->
               <tr class="bg-slate-50 font-bold border-t-2 border-slate-200">
                 <td class="p-4 text-slate-800 uppercase tracking-wider text-xs">Puntaje Total Ponderado</td>
                 <td class="p-4 text-slate-800">100%</td>
-                <td class="p-4 text-emerald-700 text-lg font-black font-mono">3.00</td>
-                <td class="p-4 text-rose-700 text-lg font-black font-mono">1.20</td>
+                <td class="p-4 text-slate-500 text-lg font-black font-mono">3.00</td>
+                <td class="p-4 text-teal-700 text-lg font-black font-mono">2.55</td>
               </tr>
             </tbody>
           </table>
@@ -534,12 +535,12 @@ import { CommonModule } from '@angular/common';
         <!-- Fórmulas y Cálculos en alerta -->
         <div class="mt-4 bg-slate-50 border border-slate-200 p-4 rounded-xl flex flex-col md:flex-row gap-6 text-xs text-slate-500 justify-between">
           <div>
-            <span class="font-bold text-slate-700 block mb-1">Cálculo SA N° 1:</span>
+            <span class="font-bold text-slate-700 block mb-1">Cálculo SA N° 1 (Herramientas Gratuitas):</span>
             <span class="font-mono">(3×0.25) + (3×0.25) + (3×0.20) + (3×0.15) + (3×0.15) = 3.00</span>
           </div>
           <div>
-            <span class="font-bold text-slate-700 block mb-1">Cálculo SA N° 2:</span>
-            <span class="font-mono">(1×0.25) + (1×0.25) + (2×0.20) + (1×0.15) + (1×0.15) = 1.20</span>
+            <span class="font-bold text-slate-700 block mb-1">Cálculo SA N° 2 (Sistema Web a Medida):</span>
+            <span class="font-mono">(3×0.25) + (2×0.25) + (2×0.20) + (3×0.15) + (2×0.15) = <strong class="text-teal-700">2.55</strong></span>
           </div>
         </div>
 
@@ -548,38 +549,38 @@ import { CommonModule } from '@angular/common';
         <!-- Resultado de la evaluación visual scorecard -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           
-          <!-- SA 1 ELEGIDA -->
+          <!-- SA 2 ELEGIDA -->
           <div class="bg-gradient-to-br from-teal-50 to-white border-2 border-teal-500 rounded-3xl p-6 shadow-sm relative overflow-hidden flex flex-col justify-between">
             <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-teal-100/40 rounded-full blur-xl"></div>
             <div>
               <div class="flex items-center justify-between mb-4">
                 <span class="bg-teal-600 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-                  ELEGIDA (SA N° 1)
+                  ELEGIDA (SA N° 2)
                 </span>
-                <span class="text-3xl font-black text-teal-800 font-mono">3.00</span>
+                <span class="text-3xl font-black text-teal-800 font-mono">2.55</span>
               </div>
-              <h5 class="font-extrabold text-slate-900 text-base mb-2">Herramientas Gratuitas e Integradas</h5>
+              <h5 class="font-extrabold text-slate-900 text-base mb-2">Sistema Web a Medida – Florería Adonai</h5>
               <p class="text-sm text-slate-600 leading-relaxed">
-                Google Sheets + Catálogo PDF + WhatsApp Business. Es <strong>viable, gratuita, operable desde el celular y sostenible</strong> en el mediano plazo sin requerir soporte técnico externo continuo.
+                Plataforma web propia desarrollada por el equipo del proyecto: inventario con alertas de stock, módulos de ventas/clientes integrados, catálogo público con compra simulada vía WhatsApp y Yape, y panel interno protegido. <strong>Sin costo de licencia, desplegada en entorno real y con suite de tests automatizados.</strong>
               </p>
             </div>
           </div>
 
-          <!-- SA 2 DESCARTADA -->
-          <div class="bg-gradient-to-br from-rose-50 to-white border border-rose-200 rounded-3xl p-6 shadow-sm relative overflow-hidden flex flex-col justify-between">
-            <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-rose-100/40 rounded-full blur-xl"></div>
+          <!-- SA 1 DESCARTADA -->
+          <div class="bg-gradient-to-br from-slate-50 to-white border border-slate-200 rounded-3xl p-6 shadow-sm relative overflow-hidden flex flex-col justify-between">
+            <div class="absolute -right-8 -bottom-8 w-24 h-24 bg-slate-100/40 rounded-full blur-xl"></div>
             <div>
               <div class="flex items-center justify-between mb-4">
-                <span class="bg-rose-600 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
+                <span class="bg-slate-500 text-white text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full flex items-center gap-1.5 shadow-sm">
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path></svg>
-                  DESCARTADA (SA N° 2)
+                  NO ELEGIDA (SA N° 1)
                 </span>
-                <span class="text-3xl font-black text-rose-800 font-mono">1.20</span>
+                <span class="text-3xl font-black text-slate-600 font-mono">3.00</span>
               </div>
-              <h5 class="font-extrabold text-slate-900 text-base mb-2">Software Comercial Especializado</h5>
-              <p class="text-sm text-slate-650 leading-relaxed">
-                Odoo/Zoho + Tienda virtual e-commerce + WhatsApp Business. <strong>Descartada</strong> porque requiere presupuesto mensual, administración web técnica compleja y mantenimiento continuo fuera del alcance de la microempresa.
+              <h5 class="font-extrabold text-slate-900 text-base mb-2">Herramientas Gratuitas e Integradas</h5>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Google Sheets + Catálogo PDF + WhatsApp Business. Alternativa válida en la fase de diagnóstico inicial por su inmediatez y costo cero. Sin embargo, al considerar la posibilidad de desarrollar un sistema propio dentro del proyecto académico, fue superada en <strong>escalabilidad, trazabilidad de datos y alineamiento con los objetivos del curso.</strong> No se descarta por mala — se ajusta la decisión con nueva información.
               </p>
             </div>
           </div>
@@ -597,12 +598,12 @@ import { CommonModule } from '@angular/common';
           </div>
           <div>
             <h2 class="text-3xl font-black text-teal-950 tracking-tight">4. Solución Alternativa Seleccionada</h2>
-            <p class="text-teal-600 font-bold text-sm">Transformación digital básica mediante herramientas gratuitas y accesibles</p>
+            <p class="text-teal-600 font-bold text-sm">Sistema web a medida desarrollado por el equipo del proyecto</p>
           </div>
         </div>
 
         <p class="text-slate-600 leading-relaxed text-lg mb-8">
-          La solución elegida responde a las condiciones reales de la Florería Adonai: opera como microempresa local sin presupuesto para software, el personal no tiene formación técnica y toda la gestión operativa y de ventas se realiza desde el celular.
+          La solución elegida es el sistema web propio construido por el equipo como parte del proyecto académico. Cubre los tres componentes identificados en el análisis: control de inventario con alertas de stock, gestión integrada de ventas y clientes, y atención digital mediante catálogo público con flujo de compra simulada. No requiere licenciamiento externo ni suscripción SaaS; el despliegue inicial es gratuito (PythonAnywhere) y se contempla capacitación a la propietaria para la operación del panel interno.
         </p>
 
         <!-- Tabla de la solución seleccionada -->
@@ -617,27 +618,27 @@ import { CommonModule } from '@angular/common';
             <tbody class="text-sm divide-y divide-slate-100 text-slate-700">
               <tr class="hover:bg-slate-50">
                 <td class="p-4 font-bold bg-slate-50/50">Control de inventario</td>
-                <td class="p-4 text-slate-600">Plantilla en Google Sheets con categorías de flores frescas, secas, complementos y temporada; con alertas visuales de stock mínimo (A1.1a)</td>
+                <td class="p-4 text-slate-600">Módulo de Productos y Categorías con nombre, precio unitario, stock actual y stock mínimo; el sistema genera alerta automática cuando el stock cae por debajo del umbral configurado. Gestionable desde el panel interno del staff. (A1.1b)</td>
               </tr>
               <tr class="hover:bg-slate-50">
                 <td class="p-4 font-bold bg-slate-50/50">Gestión de ventas</td>
-                <td class="p-4 text-slate-600">Formulario de ventas con campos: fecha, producto, cantidad, precio y canal (presencial / WhatsApp); vista diferenciada por canal (A2.1 + A2.2 + A2.3)</td>
+                <td class="p-4 text-slate-600">Módulo de Ventas con registro de canal (presencial / WhatsApp / web), método de pago (efectivo / Yape / transferencia), estado del pedido (pendiente, confirmado, entregado) y cálculo automático de totales. (A2.1)</td>
               </tr>
               <tr class="hover:bg-slate-50">
                 <td class="p-4 font-bold bg-slate-50/50">Base de clientes</td>
-                <td class="p-4 text-slate-600">Registro de clientes frecuentes con nombre, contacto, preferencias e historial básico (A2.2)</td>
+                <td class="p-4 text-slate-600">Módulo de Clientes con nombre, contacto y registro del historial de compras vinculado automáticamente a cada venta registrada en el sistema. (A2.2)</td>
               </tr>
               <tr class="hover:bg-slate-50">
                 <td class="p-4 font-bold bg-slate-50/50">Catálogo digital</td>
-                <td class="p-4 text-slate-600">Catálogo en PDF/imagen con fotos reales, nombre y precio de cada producto; compartible directamente por WhatsApp (A3.1a)</td>
+                <td class="p-4 text-slate-600">Catálogo público filtrable por categoría; flujo de compra simulada que verifica stock en tiempo real, genera el pedido en el sistema y redirige al cliente a una página de confirmación con enlace directo a WhatsApp y QR de Yape. Sin pasarela de pago de terceros ni comisiones. (A3.1b)</td>
               </tr>
               <tr class="hover:bg-slate-50">
                 <td class="p-4 font-bold bg-slate-50/50">Atención digital</td>
-                <td class="p-4 text-slate-600">WhatsApp Business con perfil del negocio, etiquetas de pedidos y respuestas rápidas para las consultas más frecuentes (A3.2)</td>
+                <td class="p-4 text-slate-600">Enlace de WhatsApp Business generado automáticamente con mensaje pre-cargado al confirmar cada pedido desde el catálogo, facilitando la coordinación de entrega sin que el cliente deba escribir manualmente los detalles. (A3.2)</td>
               </tr>
               <tr class="hover:bg-slate-50">
                 <td class="p-4 font-bold bg-slate-50/50">Guía de uso</td>
-                <td class="p-4 text-slate-600">Manual práctico y sesión de demostración y entrenamiento para la propietaria y la vendedora del negocio</td>
+                <td class="p-4 text-slate-600">Comando de datos demo para poblar el sistema con ejemplos reales, documentación técnica (README), y sesión de capacitación presencial a la propietaria para la operación del panel interno de administración.</td>
               </tr>
             </tbody>
           </table>
@@ -649,7 +650,7 @@ import { CommonModule } from '@angular/common';
             Impacto de la Solución Elegida
           </h3>
           <p class="text-slate-600 leading-relaxed text-sm">
-            Esta solución permite a la <strong>Florería Adonai</strong> realizar una transición exitosa desde su situación actual —caracterizada por registros manuales en cuadernos físicos, control de inventario estimado de forma visual y un WhatsApp de uso personal saturado con pedidos— hacia un ecosistema de gestión digital básico. Todo esto de forma ordenada, sostenible en el tiempo y sin generar costos operativos adicionales para la microempresa.
+            Esta solución permite a la <strong>Florería Adonai</strong> realizar una transición real desde su situación actual —registros manuales en cuadernos físicos, control de inventario estimado a ojo y un WhatsApp personal saturado con pedidos— hacia un sistema web con trazabilidad completa de inventario, ventas y clientes. El cambio no es solo de herramienta, sino de modelo operativo: cada pedido queda registrado con su canal, método de pago y estado; cada baja de stock es visible en tiempo real; y el cliente puede iniciar su compra desde el catálogo público sin depender de que la propietaria esté disponible para responder manualmente.
           </p>
         </div>
       </section>

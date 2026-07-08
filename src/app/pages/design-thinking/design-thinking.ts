@@ -72,9 +72,7 @@ import { Component } from '@angular/core';
             <!-- Etapa 3 -->
             <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm text-center relative z-10 hover:shadow-md hover:border-slate-200 transition-all duration-300 hover:-translate-y-1 group">
               <div class="w-14 h-14 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-lg mx-auto mb-4 border-4 border-amber-100 shadow-sm group-hover:scale-110 transition-transform duration-300">3</div>
-              <h5 class="font-black text-slate-800 text-base mb-1">IDEAR</h5>
-              <p class="text-xs text-slate-500 leading-relaxed">Diseñar propuestas comerciales de bajo costo.</p>
-              <div class="mt-3 text-[10px] font-bold text-amber-650 bg-amber-50 py-1 px-2.5 rounded-full inline-block">Análisis SCAMPER</div>
+              <p class="text-xs text-slate-500 leading-relaxed">Explorar propuestas de solución digital para el negocio.</p>
             </div>
 
             <!-- Etapa 4 -->
@@ -538,6 +536,13 @@ import { Component } from '@angular/core';
               <span class="text-[9px] uppercase font-black text-sky-600 block border-t border-sky-200/50 pt-2 mt-2">Propuso: propietaria</span>
             </div>
 
+            <!-- Post-it 11 -->
+            <div class="relative bg-teal-50 border border-teal-200 text-teal-950 p-5 rounded-lg shadow-md transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 flex flex-col justify-between h-40 group">
+              <div class="absolute top-[-8px] left-1/2 transform -translate-x-1/2 w-12 h-4 bg-white/40 border border-white/10 shadow-xs rotate-[-1deg] group-hover:rotate-0 transition-transform"></div>
+              <span class="text-xs font-semibold leading-snug">Desarrollo de un sistema/aplicación web propia</span>
+              <span class="text-[9px] uppercase font-black text-teal-600 block border-t border-teal-200/50 pt-2 mt-2">Propuso: Equipo TI</span>
+            </div>
+
           </div>
         </div>
 
@@ -552,7 +557,7 @@ import { Component } from '@angular/core';
               <span class="text-teal-700 font-extrabold text-[10px] uppercase tracking-wider block mb-1">Causa 1</span>
               <h5 class="font-bold text-slate-800 text-sm mb-2">Control de Inventario Informal</h5>
               <p class="text-xs text-slate-650 leading-relaxed mb-4">
-                Google Sheets de inventario por categorías (flores, peluches, globos, chocolates), registro de entradas/salidas y stock real con alertas manuales y formato para pedidos al proveedor.
+                Necesidad de un registro digital de inventario por categorías (flores, peluches, globos, chocolates), con control de entradas/salidas y alertas de stock, aún por definir si mediante hoja de cálculo o sistema propio.
               </p>
               <span class="bg-slate-100 text-slate-500 font-bold px-2 py-0.5 rounded text-[10px]">Relacionados: Propietaria, Vendedora, Proveedor</span>
             </div>
@@ -562,7 +567,7 @@ import { Component } from '@angular/core';
               <span class="text-violet-700 font-extrabold text-[10px] uppercase tracking-wider block mb-1">Causa 2</span>
               <h5 class="font-bold text-slate-800 text-sm mb-2">Registro de Ventas Manual e Incompleto</h5>
               <p class="text-xs text-slate-650 leading-relaxed mb-4">
-                Plantilla en Google Sheets para ventas diarias (fecha, cantidad, precio, canal de venta), reporte semanal, ventas de prueba y organización con Trello.
+                Requerimiento de un módulo o registro digital para ventas diarias (fecha, cantidad, precio, canal), que permita generar reportes y organizar el flujo comercial.
               </p>
               <span class="bg-slate-100 text-slate-500 font-bold px-2 py-0.5 rounded text-[10px]">Relacionados: Propietaria, Vendedora, Equipo TI</span>
             </div>
@@ -572,7 +577,7 @@ import { Component } from '@angular/core';
               <span class="text-amber-700 font-extrabold text-[10px] uppercase tracking-wider block mb-1">Causa 3</span>
               <h5 class="font-bold text-slate-800 text-sm mb-2">Gestión Desordenada de Clientes</h5>
               <p class="text-xs text-slate-650 leading-relaxed mb-4">
-                Google Forms de registro de clientes frecuentes, base de datos básica con preferencias, encuestas breves y promociones por WhatsApp.
+                Creación de una base de clientes frecuentes vinculada a sus preferencias de compra y datos de contacto, para facilitar el seguimiento y promociones por WhatsApp.
               </p>
               <span class="bg-slate-100 text-slate-500 font-bold px-2 py-0.5 rounded text-[10px]">Relacionados: Propietaria, Clientes</span>
             </div>
@@ -582,7 +587,7 @@ import { Component } from '@angular/core';
               <span class="text-rose-700 font-extrabold text-[10px] uppercase tracking-wider block mb-1">Causa 4</span>
               <h5 class="font-bold text-slate-800 text-sm mb-2">Atención Comercial Poco Organizada</h5>
               <p class="text-xs text-slate-650 leading-relaxed mb-4">
-                WhatsApp Business, respuestas rápidas de atención comercial, lista digital de precios para vendedora, QR para catálogo físico y guía para familiares.
+                WhatsApp Business, respuestas rápidas de atención comercial, catálogo digital público (formato a evaluar), QR para tienda física y guía para familiares.
               </p>
               <span class="bg-slate-100 text-slate-500 font-bold px-2 py-0.5 rounded text-[10px]">Relacionados: Propietaria, Vendedora, Clientes</span>
             </div>
@@ -598,7 +603,7 @@ import { Component } from '@angular/core';
           Idear: Diagrama SCAMPER
         </h3>
         <p class="text-slate-655 leading-relaxed text-lg mb-6">
-          SCAMPER se utiliza para generar ideas de solución a partir del problema existente. En este caso, las propuestas son planteadas por el integrante experto del equipo: un desarrollador web con conocimiento en transformación digital y soluciones digitales de bajo costo.
+          SCAMPER se utiliza para generar ideas de solución a partir del problema existente. En este caso, las propuestas son planteadas por el integrante experto del equipo: un desarrollador web con conocimiento en transformación digital y soluciones digitales adecuadas al negocio.
         </p>
 
         <!-- SCAMPER Cards Mejoradas -->
@@ -613,7 +618,7 @@ import { Component } from '@angular/core';
               </div>
             </div>
             <div class="p-5 flex-1 flex flex-col justify-between">
-              <p class="text-xs text-slate-600 leading-relaxed mb-4">Sustituir el cuaderno de ventas y el control visual del inventario por plantillas en Google Sheets; cambiar WhatsApp personal por WhatsApp Business.</p>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">Sustituir el cuaderno de ventas y el control visual del inventario por un registro digital (a definir entre una hoja de cálculo simple o un sistema propio); cambiar WhatsApp personal por WhatsApp Business.</p>
               <span class="bg-rose-50 text-rose-700 text-[10px] font-bold py-1 px-2.5 rounded-full inline-block">Atiende: inventario informal y ventas manuales</span>
             </div>
           </div>
@@ -641,7 +646,7 @@ import { Component } from '@angular/core';
               </div>
             </div>
             <div class="p-5 flex-1 flex flex-col justify-between">
-              <p class="text-xs text-slate-600 leading-relaxed mb-4">Adaptar prácticas comerciales simples de tiendas digitales de bajo costo a la florería, tales como fotos reales y respuestas predefinidas.</p>
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">Adaptar prácticas comerciales ágiles del e-commerce moderno a la florería, tales como catálogo con fotos reales, flujos de compra guiados y respuestas predefinidas.</p>
               <span class="bg-amber-50 text-amber-800 text-[10px] font-bold py-1 px-2.5 rounded-full inline-block">Atiende: baja digitalización y falta de catálogo</span>
             </div>
           </div>
@@ -714,7 +719,7 @@ import { Component } from '@angular/core';
             <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm text-center relative hover:scale-105 hover:shadow-md transition-all duration-300">
               <span class="w-10 h-10 rounded-full bg-teal-600 text-white flex items-center justify-center font-black text-sm mx-auto mb-3 border-4 border-teal-100 shadow-sm">3</span>
               <h5 class="text-xs font-black text-slate-800 uppercase mb-1">Stock</h5>
-              <p class="text-[11px] text-slate-500 leading-normal">Vendedora confirma precios y stock en Google Sheets.</p>
+              <p class="text-[11px] text-slate-500 leading-normal">Vendedora confirma precios y stock en el registro digital.</p>
             </div>
 
             <!-- Step 4 -->
@@ -728,7 +733,7 @@ import { Component } from '@angular/core';
             <div class="bg-teal-900 text-white p-5 rounded-2xl border border-teal-800 shadow-md text-center relative hover:scale-105 transition-all duration-300">
               <span class="w-10 h-10 rounded-full bg-teal-300 text-teal-950 flex items-center justify-center font-black text-sm mx-auto mb-3 border-4 border-teal-850 shadow-sm">5</span>
               <h5 class="text-xs font-black uppercase mb-1">Registro</h5>
-              <p class="text-[11px] text-teal-200 leading-normal">Venta en Sheets y datos del cliente guardados.</p>
+              <p class="text-[11px] text-teal-200 leading-normal">Venta registrada en el sistema digital y datos guardados.</p>
             </div>
 
           </div>
@@ -821,7 +826,7 @@ import { Component } from '@angular/core';
                   </tr>
                   <tr>
                     <td class="p-3.5 font-bold text-slate-800">Solución representada</td>
-                    <td class="p-3.5 text-slate-600">Google Sheets para precios, control de stock y registro rápido de ventas.</td>
+                    <td class="p-3.5 text-slate-600">Un sistema digital de precios e inventario (aún en definición).</td>
                   </tr>
                   <tr>
                     <td class="p-3.5 font-bold text-slate-800">Indicador de validación</td>
@@ -920,10 +925,10 @@ import { Component } from '@angular/core';
             Cierre integrador
           </h3>
           <p class="text-slate-650 leading-relaxed text-lg mb-4">
-            El desarrollo de Design Thinking aplicado a la Florería Adonai permite pasar de la comprensión del usuario a la representación visual de soluciones concretas. El mapa de empatía y el Buyer Persona muestran que Rosa Martínez necesita una compra rápida, clara y confiable. El diagrama de afinidad organiza las ideas de solución según las causas reales del problema. SCAMPER transforma esas necesidades en propuestas viables, simples y de bajo costo para una microempresa. Finalmente, los storyboards permiten prototipar los recorridos principales antes de implementar las herramientas.
+            El desarrollo de Design Thinking aplicado a la Florería Adonai permite pasar de la comprensión del usuario a la representación visual de soluciones concretas. El mapa de empatía y el Buyer Persona muestran que Rosa Martínez necesita una compra rápida, clara y confiable. El diagrama de afinidad organiza las ideas de solución según las causas reales del problema. SCAMPER transforma esas necesidades en propuestas que generen valor, agilidad y confianza. Finalmente, los storyboards permiten prototipar los recorridos principales antes de decidir la arquitectura técnica final.
           </p>
           <p class="text-slate-655 leading-relaxed text-lg font-medium text-teal-950">
-            La propuesta prioriza herramientas accesibles como WhatsApp Business, Google Sheets, catálogo digital, lista de precios, base de clientes frecuentes, publicaciones en redes sociales, planificación básica de campañas y validación visual mediante storyboards.
+            Estas ideas representan un punto de partida exploratorio que será refinado, validado y consolidado en la siguiente iteración. La solución tecnológica definitiva (sea un conjunto de herramientas gratuitas o un sistema propio) se definirá priorizando la escalabilidad y las necesidades operativas del negocio descubiertas en esta fase.
           </p>
         </div>
       </section>

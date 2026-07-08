@@ -1,0 +1,833 @@
+﻿INFORME ACADÉMICO  |  Formulacion y Evaluacion de Proyectos TI  |  Caso: Florería Local
+UNIVERSIDAD  |  FACULTAD DE INGENIERÍA
+Formulacion y Evaluacion de Proyectos de Tecnologías de la Información
+INFORME ACADEMICO
+Identificacion y Analisis de Interesados (Stakeholders)
+Aplicando el Enfoque PMBOK  |  Caso Real: Florería Adonai
+	
+
+
+
+Asignatura:
+	Formulacion y Evaluacion de Proyectos TI
+	Proyecto:
+	Transformación Digital – Florería Local
+	Enfoque Metodológico:
+	PMBOK 6.a Edicion – Gestion de Interesados
+	Fecha:
+	2026
+	Integrantes:
+	* Cabanillas Rojas, Rodrigo Anthony
+* León flores, Abel 
+* Ramos Lopez, Oscar Andre
+* Gamero Palacios, Diego Armando
+	Profesor
+	Arqque Pantigozo Antonio
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESUMEN EJECUTIVO        3
+SECCIÓN 1: ENTRADAS DEL PROCESO (PMBOK)        4
+Stakeholders Identificados en el Acta        4
+1.2 Documentos de Negocio        4
+1.2.1 Caso de Negocio (Business Case)        4
+1.3 Documentos del Proyecto        5
+1.3.1 Registro de Incidentes (versión inicial)        5
+1.3.2 Requisitos Preliminares        5
+1.4 Acuerdos        6
+1.6 Factores Ambientales de la Empresa (EEF)        6
+1.7 Activos de los Procesos de la Organización (OPA)        7
+SECCIÓN 2: HERRAMIENTAS Y TÉCNICAS APLICADAS        8
+2.1 Juicio de Expertos        8
+2.2 Entrevistas        8
+2.3 Observación Directa        9
+2.4 Tormenta de Ideas (Brainstorming)        9
+2.5 Encuestas Propuestas        10
+2.6 Análisis de Datos        10
+2.6.1 Análisis de Interesados        10
+2.6.2 Análisis de Documentos        10
+2.7 Representación de Datos: Matriz Poder – Interés        10
+2.8 Reuniones        11
+SECCIÓN 3: ANÁLISIS DE STAKEHOLDERS        12
+3.1 Identificacion de Interesados        12
+3.2 Clasificación por Impacto (Matriz Poder – Interés Detallada)        13
+3.3 Evaluacion: Influencia y Reacción Potencial        14
+SECCIÓN 4: REPRESENTACIÓN DE DATOS - AVANZADA DE STAKEHOLDERS        16
+4.1 Modelo de Prominencia (Mitchell, Agle y Wood, 1997)        16
+4.2 Clasificación de Stakeholders (Modelo Multidimensional)        17
+SECCIÓN 5: SALIDAS DEL PROCESO        18
+5.1 Registro Completo de Stakeholders        18
+5.2 Posibles Solicitudes de Cambio        19
+5.3 Actualizaciones al Plan de Dirección del Proyecto        19
+5.4 Actualizaciones a Documentos del Proyecto        19
+RESUMEN EJECUTIVO
+
+
+El presente informe académico desarrolla el proceso de Identificación y Análisis de Interesados (Stakeholders) para un proyecto de transformación digital aplicado a una florería local categorizada como microempresa. La elaboración sigue rigurosamente el marco metodológico establecido por el PMBOK (Project Management Body of Knowledge), específicamente el proceso 13.1 – Identificar a los Interesados, correspondiente al área de conocimiento de Gestión de los Interesados del Proyecto.
+
+
+La florería objeto de estudio opera de manera artesanal y manual, sin ningún sistema de información digital. Su propietaria gestiona todas las operaciones con apoyo parcial de una vendedora, y los registros se realizan en cuadernos físicos. La problemática central incluye la ausencia de control de inventario, falta de base de datos de clientes, escaso alcance de mercado y alta estacionalidad de ventas.
+
+
+El objetivo del proyecto consiste en optimizar la gestión operativa y comercial del negocio mediante la implementación de herramientas digitales accesibles, sin requerir desarrollo de software complejo, priorizando soluciones como sistemas de gestión de inventario basados en la nube, estrategias de marketing digital y plataformas de registro de clientes.
+________________
+
+
+SECCIÓN 1: ENTRADAS DEL PROCESO (PMBOK)
+1.1 Stakeholders Identificados en el Acta
+
+
+Interesado
+	Rol en el Proyecto
+	Responsabilidad Principal
+	Propietaria (Karina)
+	Patrocinadora y usuaria final
+	Aprobar decisiones, financiar el proyecto, adoptar los nuevos sistemas.
+	Vendedora (Maria)
+	Usuaria operativa
+	Usar el sistema de inventario y registro de ventas diariamente
+	Estudiante
+	Director del Proyecto
+	Planificar, ejecutar y supervisar la implementación tecnológica
+	Clientes habituales
+	Beneficiarios indirectos
+	Recibir mejoras en el servicio, catálogo digital y comunicación
+	Proveedor de flores
+	Interesado externo
+	Adaptarse a los nuevos procesos de pedidos y abastecimiento
+	Proveedor de internet
+	Soporte técnico externo
+	Garantizar conectividad estable para el uso de herramientas cloud
+	
+
+1.2 Documentos de Negocio
+1.2.1 Caso de Negocio (Business Case)
+PROBLEMA CENTRAL: La florería opera con procesos completamente manuales que generan ineficiencias significativas, el registro de ventas en cuadernos impide un análisis histórico de datos, la ausencia de control de inventario provoca desabastecimiento o desperdicio de flores perecederas, y la falta de presencia digital limita el alcance a nuevos segmentos de mercado.
+NECESIDAD DEL NEGOCIO: La florería requiere mejorar su capacidad operativa y comercial debido a limitaciones en el control de inventario, gestión de clientes y alcance de mercado, lo que afecta directamente su rentabilidad y crecimiento.
+
+
+Problema Identificado
+	Causa
+	Impacto Actual
+	Beneficio Esperado
+	Falta de control de inventario
+	Registro manual
+	Compras desorganizadas, merma de flores
+	Reducción del desperdicio en 40%
+	Sin base de datos de clientes
+	No uso de CRM
+	Incapacidad de fidelización y seguimiento
+	CRM básico con 100+ clientes en 6 meses
+	Bajo alcance de mercado
+	No hay redes sociales
+	Ventas limitadas al radio local físico
+	Incremento de 30% en ventas por canales digitales
+	Ventas inestables
+	Dependencia de fechas festivas
+	Dependencia exclusiva de fechas festivas
+	Campañas digitales en fechas intermedias
+	Procesos 100% manuales
+	Falta de digitalización
+	Errores, pérdida de tiempo, datos no trazables
+	Automatización de registros y reportes
+	
+
+1.3 Documentos del Proyecto
+1.3.1 Requisitos Preliminares
+Los requisitos preliminares fueron identificados durante la visita exploratoria al negocio y la entrevista inicial con la propietaria:
+* REQ-01: Sistema de registro de inventario digital (stock de flores, peluches, globos, chocolates).
+* REQ-02: Base de datos de clientes con nombre, teléfono e historial de compras.
+* REQ-03: Catálogo digital de productos disponible en redes sociales.
+* REQ-04: Sistema de registro de ventas diarias con generación de reportes semanales.
+* REQ-05: Estrategia de marketing digital para fechas festivas y días ordinarios.
+* REQ-06: Integración de pedidos por WhatsApp Business con vínculo a catálogo.
+* REQ-07: Capacitación a la propietaria y vendedora en el uso de herramientas digitales.
+1.4 Acuerdos
+
+
+En el marco del proyecto, se establecieron los siguientes acuerdos formales e informales entre las partes involucradas:
+
+
+Tipo de Acuerdo
+	Partes Involucradas
+	Contenido Principal
+	Acuerdo de colaboración verbal
+	Propietaria – Analista TI
+	Acceso al local para observación y levantamiento de información durante el análisis
+	Acuerdo de confidencialidad
+	Propietaria – Analista TI
+	Los datos del negocio (ventas, proveedores, clientes) serán usados solo con fines académicos
+	Compromiso de disponibilidad
+	Vendedora – Dir. Proyecto
+	Participación en al menos 2 sesiones de capacitación por mes
+	Acuerdo de uso de herramientas
+	Propietaria – Proveedor cloud
+	Uso de cuentas gratuitas o de bajo costo (Google, Canva, Meta Business)
+	
+
+1.5 Factores Ambientales de la Empresa (EEF)
+
+
+Los factores ambientales de la empresa son condiciones externas e internas que influyen en el proyecto sin estar bajo control directo del equipo.
+
+
+Tipo
+	Factor
+	Naturaleza
+	Impacto en el Proyecto
+	Interno
+	Nivel básico de alfabetización digital de la propietaria
+	Restricción
+	Requiere capacitación extensiva; herramientas deben ser intuitivas
+	Interno
+	Disponibilidad parcial de la vendedora (3 días/semana)
+	Restricción
+	El sistema debe ser fácil de retomar sin continuidad
+	Externo
+	Alta penetración de smartphones en el Perú (>85%)
+	Oportunidad
+	Facilita uso de apps móviles para gestión e Instagram
+	Externo
+	Crecimiento del comercio electronico en Peru post-COVID
+	Oportunidad
+	Mercado receptivo a compras por WhatsApp e Instagram
+	Externo
+	Competencia de florerías con presencia digital
+	Amenaza
+	Urgencia de digitalización para no perder cuota de mercado
+	Externo
+	Disponibilidad de herramientas gratuitas (Google, Meta, Canva)
+	Oportunidad
+	Reduce significativamente la inversión inicial requerida
+	
+
+1.6 Activos de los Procesos de la Organización (OPA)
+Los activos de los procesos de la organización incluyen los planes, procesos, políticas, procedimientos y bases de conocimiento específicos de la organización. Para la floreria, estos activos son escasos pero relevantes:
+* Registro manual de ventas en cuaderno: constituye el único historial de transacciones disponible, aunque incompleto e inconsistente.
+* Conocimiento tácito de la propietaria: experiencia de varios años en el negocio floral, incluyendo conocimiento de temporadas, proveedores y preferencias de clientes habituales.
+* Listado informal de clientes frecuentes: nombres y teléfonos guardados en el celular personal de la propietaria vía contactos de WhatsApp.
+* Relaciones establecidas con proveedores: contratos verbales y acuerdos de crédito con proveedores de flores del mercado mayorista local.
+* Experiencia en fechas festivas: conocimiento empírico de los picos de demanda en fechas como San Valentin, Dia de la Madre, Navidad y Año Nuevo.
+SECCIÓN 2: HERRAMIENTAS Y TÉCNICAS APLICADAS
+
+
+Las herramientas y técnicas del proceso de Identificación de Interesados permiten recopilar, analizar y estructurar la información necesaria para comprender quienes son los interesados y cómo se relacionan con el proyecto. A continuación se explica y aplica cada una de ellas al caso concreto de la florería.
+2.1 Juicio de Expertos
+2.2 Entrevistas
+Las entrevistas realizadas tuvieron un carácter exploratorio e improvisado, característico de la fase inicial de levantamiento de información en microempresas. La entrevista principal se realizó con la propietaria en el propio local comercial, en un ambiente informal pero revelador.
+
+
+CARACTERÍSTICAS DE LA ENTREVISTA REALIZADA:
+* Tipo: No estructurada / exploratoria
+* Duración aproximada: 45 minutos
+* Entrevistada: Propietaria (Sra. Ana)
+* Lugar: Local de la florería
+* Técnica: Preguntas abiertas con observación simultánea del entorno
+
+
+PREGUNTAS DE LA ENTREVISTA:
+
+
+N.°
+	Pregunta Mejorada
+	Objetivo de la Pregunta
+	1
+	¿Cuántas unidades de cada tipo de producto vende en promedio por semana y como varía esto en fechas festivas versus días normales?
+	Cuantificar estacionalidad y volúmenes para dimensionar el sistema de inventario
+	2
+	¿Cuántos clientes habituales puede identificar usted actualmente y como los contacta cuando tiene un nuevo producto o promoción?
+	Evaluar el estado actual de la relación con clientes para diseñar el CRM
+	3
+	¿Qué tan cómodo/a se siente usted usando aplicaciones en su celular? ¿Cuáles usa con mayor frecuencia?
+	Determinar nivel de alfabetización digital para adaptar las herramientas a implementar
+	4
+	¿Con cuántos proveedores trabaja actualmente? ¿Cómo realiza los pedidos y con qué frecuencia?
+	Mapear la cadena de abastecimiento para optimizar el proceso de compras
+	5
+	¿Ha perdido algún cliente o venta importante por no tener stock disponible o por no poder comunicarse a tiempo?
+	Evidenciar el impacto económico real de la falta de gestión
+	6
+	¿Cuánto tiempo al día dedica a tareas administrativas como registrar ventas, hacer inventario o contactar proveedores?
+	Medir la carga operativa actual para calcular el ahorro de tiempo con la digitalización
+	7
+	Si tuviera una herramienta que le avisará automáticamente cuando el stock de rosas está por agotarse, ¿la usaría? ¿Por qué?
+	Identificar disposición al cambio y comprensión del valor de la tecnología
+	
+
+
+
+2.3 Observación Directa
+La observación directa consiste en presenciar el funcionamiento real del negocio para identificar problemas que los interesados no mencionan explícitamente. Durante la visita al local se observó:
+* El cuaderno de registro de ventas mostraba entradas incompletas: algunas con precio, otras sin cantidad, otras solo con el nombre del producto.
+* El inventario físico era estimado visualmente por la propietaria ('tengo como 20 rosas blancas'), sin un conteo sistemático.
+* Los mensajes de WhatsApp mezclaban consultas de clientes con comunicaciones personales, sin separación de canales.
+* La vendedora debía consultar a la propietaria por teléfono para confirmar precios y disponibilidad cuando estaba sola en la tienda.
+* Los productos estaban agrupados sin etiquetas de precio, dependiendo completamente del conocimiento memorístico de la propietaria.
+
+
+2.4 Tormenta de Ideas (Brainstorming)
+
+
+La tormenta de ideas fue empleada para identificar el mayor número posible de interesados y soluciones potenciales. Participaron el analista TI y la propietaria. Los resultados principales fueron:
+
+
+INTERESADOS IDENTIFICADOS POR BRAINSTORMING:
+* Propietaria, vendedora, clientes actuales, clientes potenciales, proveedores de flores, proveedores de materiales (cintas, papel), proveedor de globos con helio, proveedores de peluches, proveedor de internet/datos, plataformas digitales (Meta, Google), competencia local, municipalidad (licencia de funcionamiento), familiares de la propietaria (que a veces apoyan en fechas festivas).
+
+
+SOLUCIONES PROPUESTAS EN BRAINSTORMING:
+* Google Sheets para inventario; WhatsApp Business para atención al cliente; Instagram/Facebook para catálogo; Google Forms para registro de clientes; Canva para diseño de publicaciones; Trello para gestión de tareas; Google Calendar para programar campañas; QR codes para precios de productos.
+
+
+2.5 Encuestas Propuestas
+2.6 Análisis de Datos
+2.6.1 Análisis de Interesados
+
+
+El análisis de interesados consiste en recopilar y analizar de forma sistemática información cuantitativa y cualitativa para determinar los intereses particulares de cada stakeholder, su participación, interdependencias, influencia y posible impacto en el éxito del proyecto.
+
+
+Para la floreria, el análisis revela tres grupos diferenciados de interesados:
+* GRUPO A – Interesados internos de alta influencia: Propietaria y Analista TI. Son quienes toman las decisiones y ejecutan el proyecto. Su alineación es crítica.
+* GRUPO B – Interesados internos de influencia media: Vendedora. Su adopción del sistema determinará el éxito operativo del día a día.
+* GRUPO C – Interesados externos: Clientes, proveedores y plataformas digitales. Su involucramiento determina el impacto comercial del proyecto.
+2.6.2 Análisis de Documentos
+
+
+El análisis de documentos implica revisar la información disponible del negocio para identificar interesados y comprender el contexto. En el caso de la floreria, los documentos analizados fueron:
+* Cuaderno de registro de ventas: reveló inconsistencias en el registro, ausencia de datos de clientes y falta de categorías de productos.
+* Conversaciones de WhatsApp (con permiso de la propietaria): mostraron el volumen real de consultas de clientes y los tipos de pedidos más frecuentes.
+* Recibos de proveedores: permitieron mapear los principales proveedores y los montos aproximados de compra por categoría.
+2.7 Representación de Datos: Matriz Poder – Interés
+
+
+La Matriz Poder-Interés es una herramienta de representación visual que clasifica a los interesados según dos dimensiones: el poder (nivel de autoridad o influencia sobre el proyecto) y el interés (grado de involucramiento o afectación por los resultados del proyecto). Esta clasificación permite definir la estrategia de gestión para cada stakeholder.
+
+
+
+
+	BAJO PODER
+	ALTO PODER
+	ALTO INTERÉS
+	MANTENER INFORMADOS
+Clientes actuales
+Vendedora (Maria)
+	GESTIONAR DE CERCA
+Propietaria (Ana)
+Analista TI
+	BAJO INTERÉS
+	MONITOREAR
+Proveedor de internet
+Plataformas digitales
+	MANTENER SATISFECHOS
+Proveedor de flores
+Proveedor de peluches/globos
+	
+
+La matriz revela que los interesados más críticos para el proyecto son la Propietaria y el Analista TI (cuadrante Gestionar de Cerca), quienes deben recibir comunicación constante y participar activamente en todas las decisiones. Los clientes y la vendedora, al tener alto interés pero menor poder de decisión, deben mantenerse informados y motivados.
+
+
+2.8 Reuniones
+
+
+Las reuniones constituyen una herramienta fundamental para validar información, tomar decisiones y construir compromisos con los interesados. Para el proyecto de la florería se definieron los siguientes tipos de reuniones:
+* Reunión de inicio del proyecto (Kick-off): sesión de 2 horas con propietaria y analista TI para presentar el plan del proyecto, aclarar expectativas y firmar el acta de constitución.
+* Reuniones de seguimiento semanal: sesiones de 30 minutos vía WhatsApp o presencial para revisar avances, resolver impedimentos y ajustar el plan.
+* Sesiones de capacitación: talleres prácticos de 1-2 horas para entrenar a la propietaria y vendedora en el uso de cada herramienta digital implementada.
+* Reunión de cierre de fase: al concluir cada etapa del proyecto, sesión para validar entregables y definir los siguientes pasos.
+________________
+
+
+SECCIÓN 3: ANÁLISIS DE STAKEHOLDERS
+3.1 Identificacion de Interesados
+
+
+La identificación de interesados es el proceso sistemático de determinar las personas, grupos u organizaciones que podrían afectar o ser afectados por el proyecto, y de analizar y documentar información relevante sobre sus intereses, participación, interdependencias, influencia e impacto potencial en el éxito del proyecto (PMBOK, 2017).
+
+
+ID
+	Nombre / Grupo
+	Rol
+	Interés Principal
+	Influencia
+	Expectativas
+	Niv. Conocimiento TI
+	S-01
+	Propietaria (Ana)
+	Patrocinadora / Usuaria
+	Mejorar rentabilidad y control del negocio
+	Muy Alta
+	Reducir tiempo en tareas admin.; incrementar ventas
+	Básico
+	S-02
+	Vendedora (Maria)
+	Usuaria operativa
+	Facilitar su trabajo diario
+	Media
+	Herramientas simples que no compliquen su labor
+	Muy básico
+	S-03
+	Analista TI
+	Director del Proyecto
+	Éxito del proyecto; aprendizaje profesional
+	Alta
+	Colaboración activa de la propietaria
+	Avanzado
+	S-04
+	Clientes actuales
+	Beneficiarios directos
+	Mejor servicio, catálogo digital, delivery
+	Media
+	Disponibilidad, facilidad de pedido, precios claros
+	Variable
+	S-05
+	Clientes potenciales
+	Beneficiarios futuros
+	Conocer la florería y acceder a productos
+	Baja
+	Presencia en redes sociales con buena imagen
+	Variable
+	S-06
+	Proveedor de flores
+	Proveedor clave
+	Mantener volumen de pedidos y pagos puntuales
+	Media
+	Órdenes organizadas y predictibles
+	Bajo
+	S-07
+	Proveedor de globos/peluches
+	Proveedor secundario
+	Continuidad de la relación comercial
+	Baja
+	Pedidos regulares y comunicación fluida
+	Bajo
+	S-08
+	Proveedor de internet
+	Soporte técnico
+	Fidelizar al cliente con su servicio
+	Baja
+	No aplica directamente al proyecto
+	Alto
+	S-09
+	Plataformas digitales (Meta, Google)
+	Infraestructura digital
+	Expansión del uso de sus herramientas
+	Baja
+	No aplica directamente al proyecto
+	N/A
+	S-10
+	Municipalidad local
+	Ente regulador
+	Cumplimiento normativo del negocio
+	Media
+	No aplica directamente al proyecto
+	N/A
+	
+
+3.2 Clasificación por Impacto (Matriz Poder – Interés Detallada)
+
+
+ID
+	Stakeholder
+	Poder (1-5)
+	Interés (1-5)
+	Cuadrante
+	Estrategia
+	Prioridad
+	S-01
+	Propietaria (Ana)
+	5
+	5
+	Gestionar de Cerca
+	Comunicación constante; inclusión en decisiones
+	CRÍTICA
+	S-03
+	Analista TI
+	4
+	5
+	Gestionar de Cerca
+	Autonomía técnica; reporte regular
+	CRÍTICA
+	S-02
+	Vendedora (Maria)
+	2
+	4
+	Mantener Informados
+	Capacitación; mostrar beneficios; escuchar feedback
+	ALTA
+	S-04
+	Clientes actuales
+	2
+	4
+	Mantener Informados
+	Comunicación vía redes y WhatsApp; encuestas
+	ALTA
+	S-06
+	Proveedor de flores
+	3
+	2
+	Mantener Satisfechos
+	Comunicación regular de pedidos; pago puntual
+	MEDIA
+	S-05
+	Clientes potenciales
+	1
+	3
+	Mantener Informados
+	Campanas de marketing en redes sociales
+	MEDIA
+	S-07
+	Prov. peluches/globos
+	2
+	2
+	Monitorear
+	Comunicación solo cuando sea necesario
+	BAJA
+	S-08
+	Proveedor de internet
+	1
+	1
+	Monitorear
+	Asegurar contrato de servicio estable
+	BAJA
+	S-09
+	Plataformas digitales
+	1
+	1
+	Monitorear
+	Uso de versiones gratuitas o de bajo costo
+	BAJA
+	S-10
+	Municipalidad
+	3
+	1
+	Mantener Satisfechos
+	Cumplir con normativas vigentes
+	BAJA
+	
+
+
+
+3.3 Evaluacion: Influencia y Reacción Potencial
+
+
+La evaluación de interesados permite anticipar comportamientos y diseñar estrategias de gestión proactivas. Para cada stakeholder clave se analiza cómo puede influir en el proyecto y cómo podría reaccionar ante los cambios.
+
+
+Stakeholder
+	Cómo puede influir
+	Reacción esperada
+	Estrategia recomendada
+	Propietaria (Ana)
+	Puede aprobar o rechazar la implementación de cualquier herramienta; controla el presupuesto y el tiempo disponible para capacitación
+	Positiva si ve beneficios concretos rápidos; negativa si percibe complejidad o costo elevado
+	Iniciar con herramientas gratuitas y de impacto inmediato visible; involucrarla en cada decisión
+	Vendedora (Maria)
+	Puede facilitar o sabotear el uso diario del sistema; si no lo usa correctamente, los datos seran inutiles
+	Inicialmente resistente por temor a la tecnología o a perder su empleo; luego adaptable con apoyo
+	Sesiones de capacitación práctica; demostrar que la tecnología facilita su trabajo, no la reemplaza
+	Clientes actuales
+	Si adoptan el catálogo digital y WhatsApp Business, generan ventas; si no lo usan, el impacto en ingresos será menor
+	Positiva: la mayoría de los clientes ya usan WhatsApp y redes sociales, estarán receptivos
+	Lanzar catalogo atractivo en Instagram; ofrecer descuento por primer pedido online
+	Proveedor de flores
+	Puede retrasar o acelerar el abastecimiento; su disposición a recibir pedidos organizados es clave para la cadena de suministro
+	Neutra a positiva: un sistema organizado le beneficia también a el al reducir pedidos de emergencia
+	Comunicarle los cambios con anticipación; mostrar que los pedidos serán más predictibles
+	________________
+
+
+SECCIÓN 4: REPRESENTACIÓN DE DATOS - AVANZADA DE STAKEHOLDERS
+4.1 Modelo de Prominencia 
+
+
+El Modelo de Prominencia clasifica a los interesados según tres atributos: Poder (capacidad de imponer su voluntad), Legitimidad (validez moral o legal de su involucramiento) y Urgencia (necesidad de atención inmediata de sus demandas). La combinación de estos atributos genera 7 tipos de interesados.
+
+
+Stakeholder
+	Poder
+	Legitimidad
+	Urgencia
+	Tipo
+	Descripción Aplicada
+	Propietaria (Ana)
+	SI
+	SI
+	SI
+	DEFINITIVO
+	Interesada con los 3 atributos; máxima prioridad de atención
+	Analista TI
+	SI
+	SI
+	SI
+	DEFINITIVO
+	Rol legítimo, urgente y con poder de ejecución técnica
+	Vendedora (Maria)
+	NO
+	SI
+	SI
+	DEPENDIENTE
+	Demandas urgentes y legítimas pero sin poder real de decisión
+	Clientes actuales
+	NO
+	SI
+	SI
+	DEPENDIENTE
+	Sus necesidades son válidas y urgentes para el negocio, aunque no deciden
+	Proveedor de flores
+	SI
+	SI
+	NO
+	DOMINANTE
+	Poder e influencia legítima pero sus demandas no son urgentes para el proyecto
+	Municipalidad
+	SI
+	SI
+	NO
+	DOMINANTE
+	Autoridad regulatoria legítima, pero su impacto en el proyecto es indirecto
+	Clientes potenciales
+	NO
+	NO
+	SI
+	URGENTE
+	Solo el atributo de urgencia (oportunidad de mercado)
+	Proveedor de internet
+	NO
+	SI
+	NO
+	DISCRECIONAL
+	Solo legitimidad; sin poder ni urgencia inmediata
+	
+
+4.2 Clasificación de Stakeholders (Modelo Multidimensional)
+Esta clasificación combina múltiples dimensiones para ofrecer una visión integral de cada stakeholder, facilitando la personalización de las estrategias de gestión.
+
+
+Stakeholder
+	Interno/Externo
+	Activo/Pasivo
+	Apoyo/Neutro/Opuesto
+	Conoce el Proyecto
+	Impacto en Proyecto
+	Clasificación Final
+	Propietaria (Ana)
+	Interno
+	Activo
+	Apoyo
+	Si
+	Crítico
+	Aliado Clave
+	Analista TI
+	Interno
+	Activo
+	Apoyo
+	Si
+	Crítico
+	Aliado Clave
+	Vendedora (Maria)
+	Interno
+	Pasivo
+	Neutro-Resistente
+	Parcial
+	Alto
+	Por Convertir
+	Clientes actuales
+	Externo
+	Activo
+	Apoyo
+	No
+	Alto
+	Beneficiario Activo
+	Clientes potenciales
+	Externo
+	Pasivo
+	Neutral
+	No
+	Medio
+	Audiencia Objetivo
+	Proveedor de flores
+	Externo
+	Pasivo
+	Neutral
+	No
+	Medio
+	Stakeholder de Soporte
+	Municipalidad
+	Externo
+	Pasivo
+	Neutral
+	No
+	Bajo-Regulatorio
+	Ente Regulador
+	Proveedor internet
+	Externo
+	Pasivo
+	Neutral
+	No
+	Bajo-Técnico
+	Soporte Tecnico
+	SECCIÓN 5: SALIDAS DEL PROCESO
+5.1 Registro Completo de Stakeholders
+El Registro de Stakeholders es el principal entregable del proceso de Identificación de Interesados. Contiene información detallada de identificación, evaluación y clasificación de todos los interesados identificados.
+
+
+ID
+	Nombre
+	Organización
+	Rol PMBOK
+	Información contacto
+	Requisitos Clave
+	Expectativas
+	Influencia
+	Estrategia PMBOK
+	S-01
+	Ana (Propietaria)
+	Florería Local
+	Patrocinadora
+	Contacto directo / WhatsApp
+	Control de inventario; más ventas
+	ROI rápido; simplicidad
+	MUY ALTA
+	Gestionar de Cerca
+	S-02
+	Maria (Vendedora)
+	Florería Local
+	Usuaria operativa
+	WhatsApp / en local
+	Sistema fácil de usar
+	No perder empleo; trabajar mejor
+	MEDIA
+	Mantener Informada
+	S-03
+	Analista TI
+	Universidad / Equipo
+	Director Proyecto
+	Email / reunión presencial
+	Cooperación de todos
+	Éxito del proyecto; nota académica
+	ALTA
+	Gestionar de Cerca
+	S-04
+	Clientes (habituales)
+	Comunidad local
+	Usuarios beneficiarios
+	WhatsApp / Instagram
+	Catálogo digital; delivery
+	Mejor servicio y comunicación
+	MEDIA
+	Mantener Informados
+	S-05
+	Clientes potenciales
+	Comunidad local
+	Audiencia objetivo
+	Redes sociales
+	Conocer la florería
+	Acceso fácil y precios claros
+	BAJA
+	Monitorear
+	S-06
+	Proveedor flores
+	Mercado mayorista
+	Proveedor clave
+	Telefono / WhatsApp
+	Pedidos organizados
+	Pagos puntuales y pedidos claros
+	MEDIA
+	Mantener Satisfecho
+	S-07
+	Prov. peluches/globos
+	Distribuidor
+	Proveedor secundario
+	Teléfono
+	Continuidad de pedidos
+	Relación comercial estable
+	BAJA
+	Monitorear
+	S-08
+	Proveedor Internet
+	Empresa telecom.
+	Proveedor servicio TI
+	Contrato de servicio
+	Conexión estable
+	Fidelizar al cliente
+	BAJA
+	Monitorear
+	S-09
+	Meta / Google
+	Corporación TI
+	Plataforma digital
+	Términos de servicio
+	Cumplir políticas de uso
+	Expansion de base de usuarios
+	BAJA
+	Monitorear
+	S-10
+	Municipalidad
+	Gobierno local
+	Ente regulador
+	Trámites oficiales
+	Cumplimiento normativo
+	Formalización del negocio
+	MEDIA
+	Mantener Satisfecha
+	
+
+
+
+5.2 Posibles Solicitudes de Cambio
+
+
+5.3 Actualizaciones al Plan de Dirección del Proyecto
+
+
+5.4 Actualizaciones a Documentos del Proyecto
+
+
+REFERENCIAS BIBLIOGRÁFICAS
+Project Management Institute. (2017). Guia de los Fundamentos para la Dirección de Proyectos (PMBOK Guide) – Sexta Edición. PMI.
+Mitchell, R.K., Agle, B.R. & Wood, D.J. (1997). Toward a Theory of Stakeholder Identification and Salience. Academy of Management Review, 22(4), 853-886.
+Freeman, R.E. (1984). Strategic Management: A Stakeholder Approach. Pitman Publishing.
+INEI. (2023). Encuesta Nacional de Hogares y Estadísticas de Tecnología de la Información en Perú. Instituto Nacional de Estadistica e Informatica.
+	
+
+
+
+Página  de

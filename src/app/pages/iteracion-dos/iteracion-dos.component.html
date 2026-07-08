@@ -1,0 +1,2342 @@
+<div class="space-y-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <!-- ENCABEZADO DEL INFORME -->
+  <section class="shadow-card bg-gradient-to-br from-teal-50 to-white p-8 rounded-3xl border border-teal-150">
+    <div class="flex items-center gap-4 mb-6">
+      <div class="p-4 bg-teal-100 rounded-2xl">
+        <svg class="w-10 h-10 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+        </svg>
+      </div>
+      <div>
+        <h2 class="text-3xl font-black text-teal-950 tracking-tight">Informe Integrado de Design Thinking</h2>
+        <p class="text-teal-650 font-bold text-lg">Florería Adonai — Segunda Iteración</p>
+      </div>
+    </div>
+    
+    <p class="intro-text mb-8">
+      El presente informe unifica los entregables desarrollados para la aplicación de Design Thinking al caso de la <strong>Florería Adonai</strong>, una microempresa local ubicada en Villa El Salvador, Lima, Perú. El problema central identificado es la gestión operativa y comercial ineficiente debido al uso de procesos manuales, baja digitalización, atención comercial poco organizada y limitada presencia digital.
+    </p>
+
+    <!-- Flujo de fases (visual stepper) -->
+    <div class="mt-8">
+      <h4 class="text-center font-extrabold text-teal-950 mb-6 uppercase tracking-widest text-xs">Flujo Metodológico de la Segunda Iteración</h4>
+      
+      <!-- Stepper Desktop -->
+      <div class="hidden md:grid grid-cols-9 gap-2 items-center relative">
+        <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-xs">
+          <span class="text-[10px] font-black text-teal-600 block mb-1">FASE 1</span>
+          <h5 class="font-bold text-slate-800 text-xs uppercase">Empatizar</h5>
+          <p class="text-[9px] text-slate-500 mt-1">Mapa de Stakeholders, Persona, CJM</p>
+        </div>
+        <div class="text-teal-400 text-center"><svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+
+        <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-xs">
+          <span class="text-[10px] font-black text-teal-600 block mb-1">FASE 2</span>
+          <h5 class="font-bold text-slate-800 text-xs uppercase">Definir</h5>
+          <p class="text-[9px] text-slate-500 mt-1">Afinidad por causas, POV, HMW</p>
+        </div>
+        <div class="text-teal-400 text-center"><svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+
+        <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-xs">
+          <span class="text-[10px] font-black text-teal-600 block mb-1">FASE 3</span>
+          <h5 class="font-bold text-slate-800 text-xs uppercase">Idear</h5>
+          <p class="text-[9px] text-slate-500 mt-1">Lluvia de ideas, SCAMPER, Selección</p>
+        </div>
+        <div class="text-teal-400 text-center"><svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+
+        <div class="bg-white p-4 rounded-xl border border-slate-200 text-center shadow-xs">
+          <span class="text-[10px] font-black text-teal-600 block mb-1">FASE 4</span>
+          <h5 class="font-bold text-slate-800 text-xs uppercase">Prototipar</h5>
+          <p class="text-[9px] text-slate-500 mt-1">Sketch, Diagrama, 3 Storyboards</p>
+        </div>
+        <div class="text-teal-400 text-center"><svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+
+        <div class="bg-teal-900 text-white p-4 rounded-xl border border-teal-850 text-center shadow-md">
+          <span class="text-[10px] font-black text-teal-350 block mb-1">FASE 5</span>
+          <h5 class="font-bold uppercase text-xs">Evaluar</h5>
+          <p class="text-[9px] text-teal-200 mt-1">Validación, Usabilidad, Feedback, Mejoras</p>
+        </div>
+      </div>
+
+      <!-- Stepper Mobile -->
+      <div class="block md:hidden stepper-flow">
+        <div class="step-node">
+          <div class="step-title">1. Empatizar</div>
+          <div class="step-desc">Stakeholders Map + Buyer Persona + Mapa de Empatía + Customer Journey Map</div>
+        </div>
+        <div class="step-arrow">↓</div>
+        <div class="step-node">
+          <div class="step-title">2. Definir</div>
+          <div class="step-desc">Diagrama de Afinidad por causas + POV (Point of View) + How Might We</div>
+        </div>
+        <div class="step-arrow">↓</div>
+        <div class="step-node">
+          <div class="step-title">3. Idear</div>
+          <div class="step-desc">Brainstorming + SCAMPER + Selección de Ideas (Impacto vs Factibilidad)</div>
+        </div>
+        <div class="step-arrow">↓</div>
+        <div class="step-node">
+          <div class="step-title">4. Prototipar</div>
+          <div class="step-desc">Concept Sketch + Solution Diagram + Tres Storyboards de seis escenas</div>
+        </div>
+        <div class="step-arrow">↓</div>
+        <div class="step-node">
+          <div class="step-title">5. Evaluar</div>
+          <div class="step-desc">Plan de Validación + Guiones + Encuesta + Escenarios de Usabilidad + Matriz de Feedback</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABS DE DESKTOP -->
+  <div class="hidden md:flex desktop-tabs-container">
+    <button (click)="selectTab(1)" [class.active]="activeTab === 1" class="tab-btn">TAB 1 — EMPATIZAR</button>
+    <button (click)="selectTab(2)" [class.active]="activeTab === 2" class="tab-btn">TAB 2 — DEFINIR</button>
+    <button (click)="selectTab(3)" [class.active]="activeTab === 3" class="tab-btn">TAB 3 — IDEAR</button>
+    <button (click)="selectTab(4)" [class.active]="activeTab === 4" class="tab-btn">TAB 4 — PROTOTIPAR</button>
+    <button (click)="selectTab(5)" [class.active]="activeTab === 5" class="tab-btn">TAB 5 — EVALUAR</button>
+  </div>
+
+  <!-- SECCIONES DE CONTENIDO CON SOPORTE RESPONSIVE (TABS / ACCORDIONS) -->
+  <div class="space-y-4 md:space-y-0">
+
+    <!-- TAB 1 — EMPATIZAR -->
+    <div class="accordion-item md:border-none md:shadow-none md:p-0 md:mb-0 md:bg-transparent">
+      <button (click)="toggleAccordion(1)" [class.active]="activeTab === 1" class="accordion-header md:hidden">
+        TAB 1 — EMPATIZAR
+        <span class="arrow-icon" [class.open]="activeTab === 1">▼</span>
+      </button>
+      
+      <div *ngIf="activeTab === 1" class="accordion-content md:p-0">
+        <div class="space-y-10">
+          
+          <!-- 1.1 Stakeholders Map -->
+          <section class="shadow-card">
+            <h3 class="section-title">1.1 Stakeholders Map</h3>
+            <p class="intro-text">
+              El Stakeholders Map identifica a los actores que participan o son afectados por el proceso de transformación digital de la Florería Adonai. Se construye a partir de los mismos actores que aparecen en el Mapa de Empatía, el Buyer Persona, el Diagrama de Afinidad y los Storyboards: propietaria, vendedora, clientes (actuales y potenciales), proveedor de flores, familiares de apoyo y el equipo estudiantil. Se clasifican según su nivel de influencia sobre el proyecto y su nivel de interés en el resultado.
+            </p>
+            
+            <div class="sh-map-container my-6">
+              <div class="quadrant-grid">
+                <!-- Quadrant 1: Alta Influencia / Alto Interés -->
+                <div class="quadrant q-alta-alto">
+                  <div class="quadrant-header">Alta Influencia / Alto Interés (Gestionar de cerca)</div>
+                  <div class="sh-card">
+                    <span class="sh-name">PROPIETARIA</span>
+                    <span class="sh-desc">Decide y financia el proyecto. Usuaria principal del sistema.</span>
+                  </div>
+                  <div class="sh-card">
+                    <span class="sh-name">VENDEDORA</span>
+                    <span class="sh-desc">Usuaria operativa, depende de la dueña para precios y stock.</span>
+                  </div>
+                  <div class="sh-card">
+                    <span class="sh-name">EQUIPO ESTUDIANTIL</span>
+                    <span class="sh-desc">Formulador del proyecto. Aplica conocimientos de TI.</span>
+                  </div>
+                </div>
+
+                <!-- Quadrant 2: Alta Influencia / Bajo Interés -->
+                <div class="quadrant q-alta-bajo">
+                  <div class="quadrant-header">Alta Influencia / Bajo Interés (Mantener satisfechos)</div>
+                  <div class="sh-card">
+                    <span class="sh-name">PROVEEDORES Y REGULADORES</span>
+                    <span class="sh-desc">Impacto indirecto en la operación diaria inicial.</span>
+                  </div>
+                </div>
+
+                <!-- Quadrant 3: Baja Influencia / Alto Interés -->
+                <div class="quadrant q-baja-alto">
+                  <div class="quadrant-header">Baja Influencia / Alto Interés (Mantener informados)</div>
+                  <div class="sh-card">
+                    <span class="sh-name">CLIENTES ACTUALES (Rosa Martínez)</span>
+                    <span class="sh-desc">Beneficiarios directos, buscan catálogo y atención clara.</span>
+                  </div>
+                  <div class="sh-card">
+                    <span class="sh-name">CLIENTES POTENCIALES</span>
+                    <span class="sh-desc">Beneficiarios futuros, conocen la florería por canales digitales.</span>
+                  </div>
+                </div>
+
+                <!-- Quadrant 4: Baja Influencia / Bajo Interés -->
+                <div class="quadrant q-baja-bajo">
+                  <div class="quadrant-header">Baja Influencia / Bajo Interés (Monitorear)</div>
+                  <div class="sh-card">
+                    <span class="sh-name">PROVEEDOR DE FLORES</span>
+                    <span class="sh-desc">Mantiene pedidos regulares.</span>
+                  </div>
+                  <div class="sh-card">
+                    <span class="sh-name">FAMILIARES DE APOYO</span>
+                    <span class="sh-desc">Refuerzo temporal en fechas de alta demanda.</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Axis Labels (Desktop only) -->
+              <div class="hidden md:flex justify-between px-4 py-2 bg-slate-50 border-t border-slate-100 text-[10px] font-bold text-slate-400">
+                <span>← ALTO INTERÉS | BAJO INTERÉS →</span>
+                <span>ALTA INFLUENCIA (ARRIBA) | BAJA INFLUENCIA (ABAJO)</span>
+              </div>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Stakeholder</th>
+                    <th>Influencia</th>
+                    <th>Interés</th>
+                    <th>Rol principal</th>
+                    <th>Relación con otras herramientas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Propietaria</strong></td>
+                    <td>Alta</td>
+                    <td>Alto</td>
+                    <td>Patrocinadora y usuaria principal del sistema.</td>
+                    <td>Aparece en el Mapa de Empatía, Diagrama de Afinidad y los tres Storyboards.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Vendedora</strong></td>
+                    <td>Alta</td>
+                    <td>Alto</td>
+                    <td>Usuaria operativa, depende de la propietaria para precios y stock.</td>
+                    <td>Protagonista del Storyboard 2 (atención interna).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Equipo estudiantil</strong></td>
+                    <td>Alta</td>
+                    <td>Alto</td>
+                    <td>Formulador del proyecto, aplica conocimientos de TI.</td>
+                    <td>Propuso herramientas en el Diagrama de Afinidad y participa en SCAMPER.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Clientes actuales (Rosa Martínez)</strong></td>
+                    <td>Baja</td>
+                    <td>Alto</td>
+                    <td>Beneficiarios directos, buscan catálogo y atención clara.</td>
+                    <td>Base del Buyer Persona, Mapa de Empatía y Storyboard 1.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Clientes potenciales</strong></td>
+                    <td>Baja</td>
+                    <td>Alto</td>
+                    <td>Beneficiarios futuros que conocerían la florería por canales digitales.</td>
+                    <td>Mencionados en el Storyboard 3 (campaña digital).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Proveedor de flores</strong></td>
+                    <td>Baja</td>
+                    <td>Bajo</td>
+                    <td>Mantiene pedidos regulares y abastecimiento.</td>
+                    <td>Vinculado a la causa "control de inventario informal" en el Diagrama de Afinidad.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Familiares de apoyo</strong></td>
+                    <td>Baja</td>
+                    <td>Bajo</td>
+                    <td>Refuerzo temporal en fechas de alta demanda.</td>
+                    <td>Vinculados a la "guía rápida para familiares" del Diagrama de Afinidad.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          
+          <!-- 1.2 Buyer Persona -->
+          <section class="shadow-card">
+            <h3 class="section-title">1.2 Buyer Persona</h3>
+            <p class="intro-text">
+              El Buyer Persona permite convertir la información del mapa de empatía en un perfil más concreto de cliente ideal. Rosa Martínez no busca una experiencia compleja, sino una compra fácil, rápida y confiable desde su celular.
+            </p>
+
+            <div class="buyer-fiche my-6">
+              <div class="fiche-header">
+                <div class="fiche-avatar">RM</div>
+                <div class="fiche-title">
+                  <h4>Rosa Martínez</h4>
+                  <p>Cliente ideal local • Compra flores y detalles por fechas especiales</p>
+                </div>
+              </div>
+              <div class="fiche-grid">
+                <!-- Col 1 -->
+                <div class="fiche-block c-profile">
+                  <div class="block-title">👤 Perfil</div>
+                  <p class="block-content">Administrativa, madre de familia y compradora frecuente de detalles para familiares, amistades y compañeros.</p>
+                </div>
+                <div class="fiche-block c-demog">
+                  <div class="block-title">📊 Datos Demográficos</div>
+                  <p class="block-content">Mujer de 35 años, vive en Villa El Salvador, ingresos medios y usa celular diariamente.</p>
+                </div>
+                <div class="fiche-block c-challenges">
+                  <div class="block-title">🎯 Retos</div>
+                  <p class="block-content">Comprar rápido, cuidar su presupuesto, confirmar stock y coordinar entrega sin complicaciones.</p>
+                </div>
+
+                <!-- Col 2 -->
+                <div class="fiche-block c-habits">
+                  <div class="block-title">🛍️ Hábitos de compra</div>
+                  <p class="block-content">Compra flores en fechas especiales (Día de la Madre, San Valentín, cumpleaños, aniversarios). Consulta por WhatsApp y pide fotos de referencia.</p>
+                </div>
+                <div class="fiche-block c-interests">
+                  <div class="block-title">❤️ Intereses</div>
+                  <p class="block-content">Reuniones familiares, estados de WhatsApp, publicaciones de Facebook, historias de Instagram y detalles con valor emocional.</p>
+                </div>
+                <div class="fiche-block c-frustrations">
+                  <div class="block-title">⚠️ Frustraciones</div>
+                  <p class="block-content">Falta de catálogo, precios poco claros, demora en respuestas de chat e incertidumbre sobre si el arreglo final coincidirá con lo ofrecido.</p>
+                </div>
+
+                <!-- Col 3 -->
+                <div class="fiche-block c-objectives">
+                  <div class="block-title">🏆 Objetivos</div>
+                  <p class="block-content">Elegir desde su celular, ahorrar tiempo, regalar bien, comparar precios y confiar en el cumplimiento del pedido.</p>
+                </div>
+                <div class="fiche-block c-attraction">
+                  <div class="block-title">📢 Cómo atraerla</div>
+                  <p class="block-content">Catálogo con fotos reales, precios referenciales claros, WhatsApp Business activo, respuestas rápidas y promociones en fechas especiales.</p>
+                </div>
+                <div class="fiche-block c-promise">
+                  <div class="block-title">✨ Promesa de valor</div>
+                  <p class="block-content"><strong>Arreglos florales hermosos</strong>, rápidos de consultar y fáciles de pedir por WhatsApp, con información transparente y trato cercano.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Dimensión</th>
+                    <th>Descripción</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Perfil</strong></td>
+                    <td>Trabajadora administrativa, madre de familia y compradora frecuente de detalles para familiares, amistades y compañeros.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Datos demográficos</strong></td>
+                    <td>Mujer de 35 años, vive en Villa El Salvador y tiene ingresos medios.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Nivel digital</strong></td>
+                    <td>Usa celular diariamente, principalmente WhatsApp, Facebook e Instagram.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Hábitos de compra</strong></td>
+                    <td>Compra flores en fechas especiales como Día de la Madre, San Valentín, cumpleaños, aniversarios y graduaciones.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Criterio de decisión</strong></td>
+                    <td>Precio accesible, buena presentación, rapidez de respuesta y confianza en la entrega.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Retos</strong></td>
+                    <td>Comprar rápido, cuidar su presupuesto, confirmar stock y coordinar entrega sin complicaciones.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Frustraciones</strong></td>
+                    <td>Falta de catálogo, precios poco claros, demora en respuestas e incertidumbre sobre el producto final.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Objetivos</strong></td>
+                    <td>Elegir desde su celular, ahorrar tiempo, regalar bien, comparar precios y confiar en el cumplimiento del pedido.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 class="subsection-title">Síntesis Visual de Rosa Martínez</h4>
+            <div class="stepper-vertical max-w-lg mx-auto bg-slate-50 border border-slate-200 p-6 rounded-2xl my-6">
+              <div class="stepper-node">
+                <div class="stepper-circle">1</div>
+                <div class="stepper-line"></div>
+                <div class="stepper-content">
+                  <span class="node-title">Rosa Martínez</span>
+                  <p class="node-text">Necesita comprar flores de forma rápida desde su celular.</p>
+                </div>
+              </div>
+              <div class="stepper-node">
+                <div class="stepper-circle">2</div>
+                <div class="stepper-line"></div>
+                <div class="stepper-content">
+                  <span class="node-title">Búsqueda del cliente</span>
+                  <p class="node-text">Busca: fotos reales + precios claros + respuesta rápida + confianza en la entrega.</p>
+                </div>
+              </div>
+              <div class="stepper-node">
+                <div class="stepper-circle">3</div>
+                <div class="stepper-content">
+                  <span class="node-title">Acción del negocio</span>
+                  <p class="node-text">Florería Adonai debe ofrecer: WhatsApp Business + catálogo digital + atención simple.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- 1.3 Mapa de Empatía -->
+          <section class="shadow-card">
+            <h3 class="section-title">1.3 Mapa de Empatía</h3>
+            <p class="intro-text">
+              Rosa Martínez representa a la cliente ideal de la Florería Adonai. Es una clienta local que compra flores y detalles para fechas especiales, valora la rapidez de respuesta, la claridad en precios y la confianza en que el arreglo floral coincida con lo ofrecido.
+            </p>
+
+            <div class="empatia-cross-container my-6">
+              <!-- Top: Piensa y Siente -->
+              <div class="cross-cell top-cell">
+                <span class="cell-title">💭 Qué piensa y siente</span>
+                <div class="cell-content">
+                  <ul>
+                    <li>Quiere regalar algo bonito y significativo.</li>
+                    <li>Le preocupa comprar tarde o no encontrar disponibilidad.</li>
+                    <li>Busca cuidar su presupuesto.</li>
+                    <li>Desea confiar en que el arreglo será igual a la foto ofrecida.</li>
+                    <li>Valora la rapidez, claridad y buen trato.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Left: Oye -->
+              <div class="cross-cell left-cell">
+                <span class="cell-title">👂 Qué oye</span>
+                <div class="cell-content">
+                  <ul>
+                    <li>Familiares comentan fechas, cumpleaños y celebraciones.</li>
+                    <li>Amigos recomiendan negocios por WhatsApp o redes sociales.</li>
+                    <li>Compañeros piden detalles para aniversarios o fechas de oficina.</li>
+                    <li>Escucha que otros negocios responden rápido y tienen catálogo digital.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Center: Character -->
+              <div class="cross-cell center-char">
+                <span class="text-[9px] uppercase font-extrabold text-teal-350 block mb-1">CLIENTE CENTRAL</span>
+                <span class="font-black text-lg block">ROSA MARTÍNEZ</span>
+                <span class="text-[10px] text-teal-150 mt-1 block">35 años, VES. Compra por fechas especiales y usa el celular a diario.</span>
+              </div>
+
+              <!-- Right: Ve -->
+              <div class="cross-cell right-cell">
+                <span class="cell-title">👁️ Qué ve</span>
+                <div class="cell-content">
+                  <ul>
+                    <li>Estados de WhatsApp con ofertas de flores.</li>
+                    <li>Publicaciones de florerías en Facebook e Instagram.</li>
+                    <li>Fotos de arreglos florales enviados por conocidos.</li>
+                    <li>Opciones variadas, pero no siempre con información clara.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Bottom: Dice y Hace -->
+              <div class="cross-cell bottom-cell">
+                <span class="cell-title">🗣️ Qué dice y hace</span>
+                <div class="cell-content">
+                  <ul>
+                    <li>Escribe por WhatsApp para consultar precios, stock y delivery.</li>
+                    <li>Pide fotos reales o referencias del arreglo antes de pagar.</li>
+                    <li>Compara opciones. Puede cambiar de florería si demoran en responder.</li>
+                    <li>Compra especialmente en fechas importantes.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dolores y Ganancias -->
+            <div class="dolores-ganancias-container my-6">
+              <div class="dolores-card">
+                <h5>⚠️ ESFUERZOS / PUNTOS DE DOLOR</h5>
+                <ul class="list-disc pl-5 text-xs text-slate-700 space-y-1">
+                  <li>No encontrar un catálogo actualizado.</li>
+                  <li>Tener que preguntar uno por uno los precios de los productos.</li>
+                  <li>Demora en la atención por WhatsApp.</li>
+                  <li>Dudar si el arreglo final será igual al ofrecido.</li>
+                  <li>Buscar algo bonito sin exceder su presupuesto.</li>
+                </ul>
+              </div>
+              <div class="ganancias-card">
+                <h5>✓ RESULTADOS / GANANCIAS</h5>
+                <ul class="list-disc pl-5 text-xs text-slate-700 space-y-1">
+                  <li>Elegir un arreglo floral desde su celular.</li>
+                  <li>Recibir respuesta rápida por WhatsApp Business.</li>
+                  <li>Ver fotos reales, precios claros y opciones listas.</li>
+                  <li>Confirmar stock, entrega y forma de pago rápidamente.</li>
+                  <li>Sentir confianza en que el pedido será cumplido y ahorrar tiempo.</li>
+                </ul>
+              </div>
+            </div>
+
+            <h4 class="subsection-title">Síntesis del Mapa de Empatía</h4>
+            <div class="stepper-vertical max-w-lg mx-auto bg-slate-50 border border-slate-200 p-6 rounded-2xl my-6">
+              <div class="stepper-node">
+                <div class="stepper-circle">1</div>
+                <div class="stepper-line"></div>
+                <div class="stepper-content">
+                  <span class="node-title">Rosa Martínez</span>
+                  <p class="node-text">Quiere regalar flores de forma rápida, bonita y confiable.</p>
+                </div>
+              </div>
+              <div class="stepper-node">
+                <div class="stepper-circle">2</div>
+                <div class="stepper-line"></div>
+                <div class="stepper-content">
+                  <span class="node-title">Requisito</span>
+                  <p class="node-text">Necesita un catálogo claro, precios visibles y respuesta rápida por WhatsApp.</p>
+                </div>
+              </div>
+              <div class="stepper-node">
+                <div class="stepper-circle">3</div>
+                <div class="stepper-content">
+                  <span class="node-title">Solución</span>
+                  <p class="node-text">Florería Adonai debe ofrecer atención digital simple, fotos reales y total confianza.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- 1.4 Customer Journey Map -->
+          <section class="shadow-card">
+            <h3 class="section-title">1.4 Customer Journey Map</h3>
+            <p class="intro-text">
+              El Customer Journey Map describe el recorrido completo de Rosa Martínez al comprar un arreglo floral, integrando lo recogido en el Mapa de Empatía (qué piensa, dice, hace, oye y ve) y anticipando lo que luego se representa en el Storyboard 1 (Pedido digital de Rosa Martínez). El recorrido evidencia los puntos de dolor que las nuevas herramientas digitales buscan resolver.
+            </p>
+
+            <div class="cjm-horizontal-timeline my-6">
+              <!-- Etapa 1 -->
+              <div class="timeline-col">
+                <div class="stage-header">
+                  <span class="stage-num">Etapa 1</span>
+                  <span class="stage-name">Recuerda la fecha</span>
+                </div>
+                <div class="stage-row">
+                  <span class="row-label">Acción</span>
+                  <span class="row-val">Recuerda un cumpleaños, aniversario o fecha especial.</span>
+                </div>
+                <div class="stage-row">
+                  <span class="row-label">Piensa/Siente</span>
+                  <span class="row-val">"Quiero regalar algo bonito." Motivada por el detalle.</span>
+                </div>
+                <div class="stage-row pain-cell">
+                  <span class="row-label">⚠️ Punto Dolor</span>
+                  <span class="row-val">Poco tiempo para planificar la compra.</span>
+                </div>
+                <div class="stage-row opportunity-cell">
+                  <span class="row-label">✓ Oportunidad</span>
+                  <span class="row-val">Recordatorios o promociones en fechas especiales.</span>
+                </div>
+              </div>
+
+              <!-- Etapa 2 -->
+              <div class="timeline-col">
+                <div class="stage-header">
+                  <span class="stage-num">Etapa 2</span>
+                  <span class="stage-name">Busca opciones</span>
+                </div>
+                <div class="stage-row">
+                  <span class="row-label">Acción</span>
+                  <span class="row-val">Revisa estados de WhatsApp y publicaciones de Facebook/Instagram.</span>
+                </div>
+                <div class="stage-row">
+                  <span class="row-label">Piensa/Siente</span>
+                  <span class="row-val">"¿Quién tiene buenas opciones cerca y rápido?"</span>
+                </div>
+                <div class="stage-row pain-cell">
+                  <span class="row-label">⚠️ Punto Dolor</span>
+                  <span class="row-val">No hay catálogo actualizado ni claro.</span>
+                </div>
+                <div class="stage-row opportunity-cell">
+                  <span class="row-label">✓ Oportunidad</span>
+                  <span class="row-val">Catálogo digital con fotos reales (Instagram/Facebook).</span>
+                </div>
+              </div>
+
+              <!-- Etapa 3 -->
+              <div class="timeline-col">
+                <div class="stage-header">
+                  <span class="stage-num">Etapa 3</span>
+                  <span class="stage-name">Consulta</span>
+                </div>
+                <div class="stage-row">
+                  <span class="row-label">Acción</span>
+                  <span class="row-val">Escribe al WhatsApp personal de la propietaria para stock y precio.</span>
+                </div>
+                <div class="stage-row">
+                  <span class="row-label">Piensa/Siente</span>
+                  <span class="row-val">"Espero que respondan rápido."</span>
+                </div>
+                <div class="stage-row pain-cell">
+                  <span class="row-label">⚠️ Punto Dolor</span>
+                  <span class="row-val">Demora en la respuesta; chat mezclado con temas personales.</span>
+                </div>
+                <div class="stage-row opportunity-cell">
+                  <span class="row-label">✓ Oportunidad</span>
+                  <span class="row-val">WhatsApp Business como canal exclusivo del negocio.</span>
+                </div>
+              </div>
+
+              <!-- Etapa 4 -->
+              <div class="timeline-col">
+                <div class="stage-header">
+                  <span class="stage-num">Etapa 4</span>
+                  <span class="stage-name">Decide y compra</span>
+                </div>
+                <div class="stage-row">
+                  <span class="row-label">Acción</span>
+                  <span class="row-val">Compara precio, rapidez y confianza antes de decidir.</span>
+                </div>
+                <div class="stage-row">
+                  <span class="row-label">Piensa/Siente</span>
+                  <span class="row-val">"Ojalá el precio sea justo."</span>
+                </div>
+                <div class="stage-row pain-cell">
+                  <span class="row-label">⚠️ Punto Dolor</span>
+                  <span class="row-val">Precios poco claros o no confirmados.</span>
+                </div>
+                <div class="stage-row opportunity-cell">
+                  <span class="row-label">✓ Oportunidad</span>
+                  <span class="row-val">Lista de precios clara y disponible antes de decidir.</span>
+                </div>
+              </div>
+
+              <!-- Etapa 5 -->
+              <div class="timeline-col">
+                <div class="stage-header">
+                  <span class="stage-num">Etapa 5</span>
+                  <span class="stage-name">Recibe pedido</span>
+                </div>
+                <div class="stage-row">
+                  <span class="row-label">Acción</span>
+                  <span class="row-val">Recibe el arreglo floral y entrega el abono final.</span>
+                </div>
+                <div class="stage-row">
+                  <span class="row-label">Piensa/Siente</span>
+                  <span class="row-val">"Espero que el arreglo sea igual al que vi en la foto."</span>
+                </div>
+                <div class="stage-row pain-cell">
+                  <span class="row-label">⚠️ Punto Dolor</span>
+                  <span class="row-val">Incertidumbre sobre el resultado final del arreglo.</span>
+                </div>
+                <div class="stage-row opportunity-cell">
+                  <span class="row-label">✓ Oportunidad</span>
+                  <span class="row-val">Fotos reales y confirmación de entrega para generar confianza.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Etapa</th>
+                    <th>Emoción dominante</th>
+                    <th>Necesidad detectada</th>
+                    <th>Herramienta relacionada en este informe</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Recuerda la fecha</strong></td>
+                    <td>Motivación / urgencia</td>
+                    <td>Anticipar la compra con tiempo.</td>
+                    <td>Storyboard 3: campaña digital y fidelización.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Busca opciones</strong></td>
+                    <td>Incertidumbre</td>
+                    <td>Catálogo claro y actualizado.</td>
+                    <td>Causa 5 del Diagrama de Afinidad (baja presencia digital).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Consulta por WhatsApp</strong></td>
+                    <td>Esperanza con duda</td>
+                    <td>Respuesta rápida y separada de lo personal.</td>
+                    <td>Causa 4 del Diagrama de Afinidad (atención comercial poco organizada); SCAMPER "Sustituir".</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Decide y compra</strong></td>
+                    <td>Cautela</td>
+                    <td>Precios visibles y confianza.</td>
+                    <td>SCAMPER "Combinar"; Storyboard 1.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Recibe el pedido</strong></td>
+                    <td>Expectativa</td>
+                    <td>Cumplimiento de lo ofrecido.</td>
+                    <td>Storyboard 1: indicador de validación.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2 — DEFINIR -->
+    <div class="accordion-item md:border-none md:shadow-none md:p-0 md:mb-0 md:bg-transparent">
+      <button (click)="toggleAccordion(2)" [class.active]="activeTab === 2" class="accordion-header md:hidden">
+        TAB 2 — DEFINIR
+        <span class="arrow-icon" [class.open]="activeTab === 2">▼</span>
+      </button>
+      
+      <div *ngIf="activeTab === 2" class="accordion-content md:p-0">
+        <div class="space-y-10">
+          
+          <!-- 2.1 Diagrama de Afinidad por causas -->
+          <section class="shadow-card">
+            <h3 class="section-title">2.1 Diagrama de Afinidad por causas</h3>
+            <p class="intro-text">
+              En esta etapa se ordenan las ideas surgidas de la lluvia de ideas con stakeholders. Como el problema central ya está identificado, las ideas se agrupan según las causas directas que ayudan a resolver.
+            </p>
+            <h4 class="subsection-title">Problema central</h4>
+            <p class="intro-text">Gestión operativa y comercial ineficiente en la Florería Adonai debido al uso de procesos manuales y escasa digitalización.</p>
+
+            <h4 class="subsection-title">Ideas base de la lluvia de ideas (Tag Cloud de Stakeholders)</h4>
+            <div class="tag-cloud-box my-6">
+              <div class="tags-wrapper">
+                <span class="cloud-chip chip-propietaria">Google Sheets inventario</span>
+                <span class="cloud-chip chip-propietaria">WhatsApp Business</span>
+                <span class="cloud-chip chip-clientes">Instagram / Facebook</span>
+                <span class="cloud-chip chip-equipo">Google Forms clientes</span>
+                <span class="cloud-chip chip-equipo">Canva publicaciones</span>
+                <span class="cloud-chip chip-equipo">Trello tareas</span>
+                <span class="cloud-chip chip-propietaria">Google Calendar campañas</span>
+                <span class="cloud-chip chip-clientes">QR para precios</span>
+                <span class="cloud-chip chip-vendedora">Lista digital precios</span>
+                <span class="cloud-chip chip-propietaria">Plantilla de ventas</span>
+                <span class="cloud-chip chip-clientes">Catálogo digital</span>
+                <span class="cloud-chip chip-propietaria">Reportes semanales</span>
+                <span class="cloud-chip chip-propietaria">Base clientes frecuentes</span>
+                <span class="cloud-chip chip-proveedor">Formato pedidos proveedor</span>
+                <span class="cloud-chip chip-propietaria">Guía para familiares</span>
+              </div>
+              <div class="cloud-legend">
+                <div class="legend-item"><span class="legend-dot dot-prop"></span> Propietaria</div>
+                <div class="legend-item"><span class="legend-dot dot-eq"></span> Equipo TI</div>
+                <div class="legend-item"><span class="legend-dot dot-cl"></span> Clientes</div>
+                <div class="legend-item"><span class="legend-dot dot-vend"></span> Vendedora</div>
+                <div class="legend-item"><span class="legend-dot dot-prov"></span> Proveedor/Familia</div>
+              </div>
+            </div>
+
+            <h4 class="subsection-title">Diagrama de afinidad categorizado por causas</h4>
+            <div class="affinity-flow my-6">
+              <!-- Card Causa 1 -->
+              <div class="affinity-card">
+                <div class="card-header">
+                  <span class="bg-white text-teal-800 rounded px-1.5 py-0.5 text-xs font-bold mr-1">CAUSA 1</span>
+                  Control de inventario informal
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>Google Sheets para inventario.</li>
+                    <li>Inventario digital por categorías: flores, peluches, globos y chocolates.</li>
+                    <li>Registro de entradas, salidas y stock actual.</li>
+                    <li>Alertas manuales para productos críticos o de alta rotación.</li>
+                    <li>Formato de pedido ordenado para proveedor de flores.</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-label">Relacionados:</span>
+                  <span class="footer-chip">Propietaria</span>
+                  <span class="footer-chip">Vendedora</span>
+                  <span class="footer-chip">Proveedor de flores</span>
+                </div>
+              </div>
+
+              <!-- Card Causa 2 -->
+              <div class="affinity-card">
+                <div class="card-header">
+                  <span class="bg-white text-teal-800 rounded px-1.5 py-0.5 text-xs font-bold mr-1">CAUSA 2</span>
+                  Registro de ventas manual e incompleto
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>Plantilla simple de ventas diarias en Google Sheets.</li>
+                    <li>Campos mínimos: fecha, producto, cantidad, precio y canal de venta.</li>
+                    <li>Reporte semanal básico de ventas.</li>
+                    <li>Registro de ventas de prueba durante una semana.</li>
+                    <li>Trello para organizar tareas del equipo durante el proyecto.</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-label">Relacionados:</span>
+                  <span class="footer-chip">Propietaria</span>
+                  <span class="footer-chip">Vendedora</span>
+                  <span class="footer-chip">Equipo estudiantil</span>
+                </div>
+              </div>
+
+              <!-- Card Causa 3 -->
+              <div class="affinity-card">
+                <div class="card-header">
+                  <span class="bg-white text-teal-800 rounded px-1.5 py-0.5 text-xs font-bold mr-1">CAUSA 3</span>
+                  Gestión desordenada de clientes
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>Google Forms para registrar clientes frecuentes.</li>
+                    <li>Base de datos básica con nombre, teléfono, preferencia e historial.</li>
+                    <li>Encuesta breve de satisfacción a clientes actuales.</li>
+                    <li>Segmentación simple de clientes por frecuencia o fecha especial.</li>
+                    <li>Promociones por WhatsApp para clientes frecuentes.</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-label">Relacionados:</span>
+                  <span class="footer-chip">Propietaria</span>
+                  <span class="footer-chip">Clientes actuales</span>
+                  <span class="footer-chip">Clientes potenciales</span>
+                </div>
+              </div>
+
+              <!-- Card Causa 4 -->
+              <div class="affinity-card">
+                <div class="card-header">
+                  <span class="bg-white text-teal-800 rounded px-1.5 py-0.5 text-xs font-bold mr-1">CAUSA 4</span>
+                  Atención comercial poco organizada
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>WhatsApp Business como canal separado del WhatsApp personal.</li>
+                    <li>Respuestas rápidas para precios, horarios, ubicación y delivery.</li>
+                    <li>Lista digital de precios compartida con la vendedora.</li>
+                    <li>QR para consultar precios o catálogo básico.</li>
+                    <li>Guía rápida para familiares que apoyan en fechas de alta demanda.</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-label">Relacionados:</span>
+                  <span class="footer-chip">Propietaria</span>
+                  <span class="footer-chip">Vendedora</span>
+                  <span class="footer-chip">Clientes</span>
+                  <span class="footer-chip">Familiares</span>
+                </div>
+              </div>
+
+              <!-- Card Causa 5 -->
+              <div class="affinity-card">
+                <div class="card-header">
+                  <span class="bg-white text-teal-800 rounded px-1.5 py-0.5 text-xs font-bold mr-1">CAUSA 5</span>
+                  Baja presencia digital
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <li>Catálogo digital inicial con fotos reales.</li>
+                    <li>Publicaciones en Instagram y Facebook.</li>
+                    <li>Canva para diseñar promociones simples.</li>
+                    <li>Google Calendar para programar campañas en fechas especiales.</li>
+                    <li>Mensajes con imagen para difundir arreglos, precios y promociones.</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <span class="footer-label">Relacionados:</span>
+                  <span class="footer-chip">Propietaria</span>
+                  <span class="footer-chip">Clientes actuales</span>
+                  <span class="footer-chip">Clientes potenciales</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Causa / Categoría</th>
+                    <th>Ideas de solución agrupadas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Control de inventario informal</strong></td>
+                    <td>Google Sheets de inventario, categorías de productos, registro de entradas y salidas, alertas de stock, formato de pedido a proveedor.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Registro de ventas manual e incompleto</strong></td>
+                    <td>Plantilla de ventas diarias, campos mínimos, reporte semanal, ventas de prueba y organización de tareas con Trello.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Gestión desordenada de clientes</strong></td>
+                    <td>Google Forms, base de clientes frecuentes, encuesta de satisfacción, segmentación simple y promociones por WhatsApp.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Atención comercial poco organizada</strong></td>
+                    <td>WhatsApp Business, respuestas rápidas, lista digital de precios, QR de precios o catálogo y guía para familiares.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Baja presencia digital</strong></td>
+                    <td>Catálogo digital, Instagram/Facebook, Canva, Google Calendar y mensajes con imagen.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          
+          <!-- 2.2 POV (Point of View) -->
+          <section class="shadow-card">
+            <h3 class="section-title">2.2 POV (Point of View)</h3>
+            <p class="intro-text">
+              El POV sintetiza, a partir del Mapa de Empatía, el Buyer Persona y el Diagrama de Afinidad, quién es el usuario, qué necesita y por qué, conectando directamente con las cinco causas directas del problema central ya identificadas.
+            </p>
+
+            <div class="pov-table-flow my-6">
+              <div class="pov-header-bar hidden md:grid">
+                <div>Usuario / Perfil</div>
+                <div></div>
+                <div>Necesidad</div>
+                <div></div>
+                <div>Insight (Por qué)</div>
+              </div>
+
+              <!-- Fila 1: Cliente externo -->
+              <div class="pov-row">
+                <div class="pov-card pov-usuario">
+                  <span class="card-tag">Usuario</span>
+                  <span class="card-text"><strong>Rosa Martínez</strong>, cliente ideal de la Florería Adonai.</span>
+                </div>
+                <div class="arrow-icon text-center">→</div>
+                <div class="pov-card pov-necesidad">
+                  <span class="card-tag">Necesidad</span>
+                  <span class="card-text">Catálogo claro, precios visibles y respuesta rápida por WhatsApp Business para decidir su compra sin demoras.</span>
+                </div>
+                <div class="arrow-icon text-center">→</div>
+                <div class="pov-card pov-insight">
+                  <span class="card-tag">Insight (Por qué)</span>
+                  <span class="card-text">Porque la florería mezcla WhatsApp personal con pedidos, lo que genera demoras y pérdida de confianza.</span>
+                </div>
+              </div>
+
+              <!-- Fila 2: Cliente interno -->
+              <div class="pov-row">
+                <div class="pov-card pov-usuario">
+                  <span class="card-tag">Usuario Interno</span>
+                  <span class="card-text"><strong>La vendedora</strong> de la Florería Adonai.</span>
+                </div>
+                <div class="arrow-icon text-center">→</div>
+                <div class="pov-card pov-necesidad">
+                  <span class="card-tag">Necesidad</span>
+                  <span class="card-text">Lista digital de precios e inventario accesible desde su celular para atender con rapidez.</span>
+                </div>
+                <div class="arrow-icon text-center">→</div>
+                <div class="pov-card pov-insight">
+                  <span class="card-tag">Insight (Por qué)</span>
+                  <span class="card-text">Porque hoy depende de consultar a la propietaria cada vez que un cliente pregunta por precio o stock, ralentizando la atención.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Causa directa del problema</th>
+                    <th>Declaración POV</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Control de inventario informal</strong></td>
+                    <td>La propietaria necesita un registro digital simple de inventario porque hoy estima el stock visualmente y no detecta a tiempo productos críticos.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Registro de ventas manual e incompleto</strong></td>
+                    <td>La propietaria necesita una plantilla digital de ventas porque el cuaderno físico no permite ver reportes ni historial confiable.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Gestión desordenada de clientes</strong></td>
+                    <td>La propietaria necesita una base de clientes frecuentes porque hoy los contactos están dispersos y no hay seguimiento ni fidelización.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Atención comercial poco organizada</strong></td>
+                    <td>La vendedora necesita una lista digital de precios porque hoy debe consultar a la propietaria para responder a los clientes.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Baja presencia digital</strong></td>
+                    <td>Rosa Martínez necesita un catálogo digital con fotos reales porque hoy no encuentra información clara sobre los productos disponibles.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          
+          <!-- 2.3 How Might We -->
+          <section class="shadow-card">
+            <h3 class="section-title">2.3 How Might We</h3>
+            <p class="intro-text">
+              A partir de cada declaración POV se formulan preguntas "¿Cómo podríamos…?" que abren el camino hacia la fase de Ideación, manteniendo la relación directa con las cinco causas del Diagrama de Afinidad.
+            </p>
+
+            <div class="hmw-list-grid my-6">
+              <!-- Card 1 -->
+              <div class="hmw-card">
+                <span class="hmw-icon">💡</span>
+                <div class="hmw-content">
+                  <span class="hmw-text">¿Cómo podríamos ayudar a la propietaria a conocer su stock real sin tener que contarlo visualmente cada vez?</span>
+                  <span class="hmw-cause-tag">Relacionado: Inventario informal</span>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="hmw-card">
+                <span class="hmw-icon">💡</span>
+                <div class="hmw-content">
+                  <span class="hmw-text">¿Cómo podríamos lograr que el registro diario de ventas sea tan simple como escribir en el cuaderno, pero con reportes automáticos?</span>
+                  <span class="hmw-cause-tag">Relacionado: Ventas manuales</span>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="hmw-card">
+                <span class="hmw-icon">💡</span>
+                <div class="hmw-content">
+                  <span class="hmw-text">¿Cómo podríamos ayudar a la propietaria a recordar y fidelizar a sus clientes frecuentes sin depender de su memoria?</span>
+                  <span class="hmw-cause-tag">Relacionado: Clientes desordenados</span>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="hmw-card">
+                <span class="hmw-icon">💡</span>
+                <div class="hmw-content">
+                  <span class="hmw-text">¿Cómo podríamos permitir que la vendedora responda precios y stock sin tener que llamar siempre a la propietaria?</span>
+                  <span class="hmw-cause-tag">Relacionado: Atención comercial poco organizada</span>
+                </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="hmw-card">
+                <span class="hmw-icon">💡</span>
+                <div class="hmw-content">
+                  <span class="hmw-text">¿Cómo podríamos mostrarle a Rosa Martínez los productos disponibles con fotos reales y precios claros desde su celular?</span>
+                  <span class="hmw-cause-tag">Relacionado: Baja presencia digital</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Causa relacionada</th>
+                    <th>Pregunta How Might We</th>
+                    <th>Conexión con ideación posterior</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Inventario informal</strong></td>
+                    <td>¿Cómo podríamos ayudar a la propietaria a conocer su stock real sin contarlo visualmente?</td>
+                    <td>Inspira la idea SCAMPER "Sustituir" (Google Sheets de inventario).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Ventas manuales</strong></td>
+                    <td>¿Cómo podríamos lograr que el registro de ventas sea simple pero con reportes automáticos?</td>
+                    <td>Inspira la "Plantilla de ventas" del Diagrama de Afinidad y el Brainstorming.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Clientes desordenados</strong></td>
+                    <td>¿Cómo podríamos fidelizar clientes sin depender de la memoria de la propietaria?</td>
+                    <td>Inspira la "Base de clientes frecuentes" y el Storyboard 3.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Atención poco organizada</strong></td>
+                    <td>¿Cómo podríamos permitir que la vendedora responda sin llamar siempre a la propietaria?</td>
+                    <td>Inspira el Storyboard 2 y la idea SCAMPER "Eliminar" llamadas repetidas.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Baja presencia digital</strong></td>
+                    <td>¿Cómo podríamos mostrar productos con fotos reales y precios claros desde el celular?</td>
+                    <td>Inspira el Storyboard 1 y la idea SCAMPER "Combinar".</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3 — IDEAR -->
+    <div class="accordion-item md:border-none md:shadow-none md:p-0 md:mb-0 md:bg-transparent">
+      <button (click)="toggleAccordion(3)" [class.active]="activeTab === 3" class="accordion-header md:hidden">
+        TAB 3 — IDEAR
+        <span class="arrow-icon" [class.open]="activeTab === 3">▼</span>
+      </button>
+      
+      <div *ngIf="activeTab === 3" class="accordion-content md:p-0">
+        <div class="space-y-10">
+          
+          <!-- 3.1 Brainstorming -->
+          <section class="shadow-card">
+            <h3 class="section-title">3.1 Brainstorming</h3>
+            <p class="intro-text">
+              El Brainstorming recopila, sin filtrar todavía, las ideas sueltas que los distintos stakeholders propusieron y que ya fueron documentadas en el Diagrama de Afinidad. Aquí se presentan organizadas como lluvia de ideas previa a la selección y antes de aplicar SCAMPER.
+            </p>
+
+            <div class="tag-cloud-box my-6">
+              <div class="tags-wrapper">
+                <span class="cloud-chip chip-propietaria">Google Sheets inventario</span>
+                <span class="cloud-chip chip-propietaria">WhatsApp Business</span>
+                <span class="cloud-chip chip-clientes">Instagram / Facebook</span>
+                <span class="cloud-chip chip-equipo">Google Forms clientes</span>
+                <span class="cloud-chip chip-equipo">Canva publicaciones</span>
+                <span class="cloud-chip chip-equipo">Trello tareas</span>
+                <span class="cloud-chip chip-propietaria">Google Calendar campañas</span>
+                <span class="cloud-chip chip-clientes">QR para precios</span>
+                <span class="cloud-chip chip-vendedora">Lista digital precios</span>
+                <span class="cloud-chip chip-propietaria">Plantilla de ventas</span>
+                <span class="cloud-chip chip-clientes">Catálogo digital</span>
+                <span class="cloud-chip chip-propietaria">Reportes semanales</span>
+                <span class="cloud-chip chip-propietaria">Base clientes frecuentes</span>
+                <span class="cloud-chip chip-proveedor">Formato pedidos proveedor</span>
+                <span class="cloud-chip chip-propietaria">Guía para familiares</span>
+              </div>
+              <div class="cloud-legend">
+                <div class="legend-item"><span class="legend-dot dot-prop"></span> Propietaria</div>
+                <div class="legend-item"><span class="legend-dot dot-eq"></span> Equipo TI</div>
+                <div class="legend-item"><span class="legend-dot dot-cl"></span> Clientes</div>
+                <div class="legend-item"><span class="legend-dot dot-vend"></span> Vendedora</div>
+                <div class="legend-item"><span class="legend-dot dot-prov"></span> Proveedor/Familia</div>
+              </div>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Idea propuesta</th>
+                    <th>Quién la propuso</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Google Sheets inventario</td>
+                    <td>Equipo TI + propietaria</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>WhatsApp Business</td>
+                    <td>Propietaria + clientes</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Instagram / Facebook</td>
+                    <td>Clientes + equipo TI</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Google Forms clientes</td>
+                    <td>Equipo TI</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Canva publicaciones</td>
+                    <td>Equipo TI</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Trello tareas</td>
+                    <td>Equipo TI</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Google Calendar campañas</td>
+                    <td>Equipo TI + propietaria</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>QR para precios</td>
+                    <td>Equipo TI + clientes</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Lista digital precios</td>
+                    <td>Vendedora + clientes</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Plantilla de ventas</td>
+                    <td>Propietaria</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>Catálogo digital</td>
+                    <td>Clientes + equipo TI</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Reportes semanales</td>
+                    <td>Propietaria</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>Base de clientes frecuentes</td>
+                    <td>Propietaria + clientes</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>Formato pedidos proveedor</td>
+                    <td>Proveedor + propietaria</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>Guía para familiares</td>
+                    <td>Propietaria + familia</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          
+          <!-- 3.2 SCAMPER -->
+          <section class="shadow-card">
+            <h3 class="section-title">3.2 SCAMPER</h3>
+            <p class="intro-text">
+              SCAMPER se utiliza para generar ideas de solución a partir del problema existente. En este caso, las propuestas son planteadas por el integrante experto del equipo: un desarrollador web con conocimiento en transformación digital y soluciones digitales de bajo costo.
+            </p>
+            
+            <h4 class="subsection-title">Perfil del Experto</h4>
+            <div class="overflow-x-auto">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Rol experto</th>
+                    <th>Conocimiento aplicado</th>
+                    <th>Criterio para proponer soluciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Desarrollador web del equipo</strong></td>
+                    <td>Transformación digital, herramientas web, automatización simple, formularios, catálogos digitales y gestión básica de datos.</td>
+                    <td>Soluciones gratuitas o de bajo costo, fáciles de usar desde celular y sostenibles para una microempresa.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="scamper-cards-grid my-6">
+              <!-- S -->
+              <div class="scamper-letter-card">
+                <div class="letter-badge">S</div>
+                <div class="letter-body">
+                  <span class="letter-title">Sustituir</span>
+                  <p class="letter-text">Sustituir el cuaderno de ventas y el control visual del inventario por plantillas simples en Google Sheets, accesibles desde el celular de la propietaria y vendedora. También sustituir el WhatsApp personal por WhatsApp Business como canal comercial.</p>
+                  <span class="letter-causes">Causas que atiende: inventario informal, ventas manuales, atención desordenada.</span>
+                </div>
+              </div>
+
+              <!-- C -->
+              <div class="scamper-letter-card">
+                <div class="letter-badge">C</div>
+                <div class="letter-body">
+                  <span class="letter-title">Combinar</span>
+                  <p class="letter-text">Combinar WhatsApp Business, catálogo digital, lista de precios y formulario breve de pedidos en un solo flujo de atención. El cliente ve el producto, consulta precio, confirma disponibilidad y deja sus datos sin procesos complicados.</p>
+                  <span class="letter-causes">Causas que atiende: baja presencia digital, clientes desordenados, atención lenta.</span>
+                </div>
+              </div>
+
+              <!-- A -->
+              <div class="scamper-letter-card">
+                <div class="letter-badge">A</div>
+                <div class="letter-body">
+                  <span class="letter-title">Adaptar</span>
+                  <p class="letter-text">Adaptar prácticas de comercio digital usadas por negocios pequeños: catálogos de WhatsApp, respuestas rápidas, formularios de clientes y publicaciones con fotos reales. No se crea una web compleja; se adapta lo existente a la realidad local.</p>
+                  <span class="letter-causes">Causas que atiende: baja digitalización, bajo alcance, falta de catálogo formal.</span>
+                </div>
+              </div>
+
+              <!-- M -->
+              <div class="scamper-letter-card">
+                <div class="letter-badge">M</div>
+                <div class="letter-body">
+                  <span class="letter-title">Modificar</span>
+                  <p class="letter-text">Modificar la forma de presentar los productos: crear paquetes por ocasión (cumpleaños, aniversario, Día de la Madre, condolencias), con foto real, precio referencial, colores disponibles y tiempo estimado de preparación.</p>
+                  <span class="letter-causes">Causas que atiende: atención comercial poco organizada y baja presencia digital.</span>
+                </div>
+              </div>
+
+              <!-- P -->
+              <div class="scamper-letter-card">
+                <div class="letter-badge">P</div>
+                <div class="letter-body">
+                  <span class="letter-title">Poner otro uso</span>
+                  <p class="letter-text">Poner otro uso a herramientas que la florería ya maneja: usar estados de WhatsApp como vitrina diaria, usar fotos reales para responder a clientes y usar Google Sheets no solo para inventarios sino también como base para reportes de rentabilidad.</p>
+                  <span class="letter-causes">Causas que atiende: registro incompleto y baja presencia digital.</span>
+                </div>
+              </div>
+
+              <!-- E -->
+              <div class="scamper-letter-card">
+                <div class="letter-badge">E</div>
+                <div class="letter-body">
+                  <span class="letter-title">Eliminar</span>
+                  <p class="letter-text">Eliminar las llamadas telefónicas repetitivas y confusas para consultar disponibilidad y precios de stock entre la propietaria y la vendedora en la tienda, consolidando una lista digital y compartida en la nube para consulta inmediata.</p>
+                  <span class="letter-causes">Causas que atiende: atención lenta y desorganización interna.</span>
+                </div>
+              </div>
+
+              <!-- R -->
+              <div class="scamper-letter-card">
+                <div class="letter-badge">R</div>
+                <div class="letter-body">
+                  <span class="letter-title">Reordenar</span>
+                  <p class="letter-text">Reordenar el flujo del pedido: validar stock y confirmar el pago del abono antes de proceder a la confección del arreglo floral, garantizando un menor índice de mermas y un control financiero riguroso.</p>
+                  <span class="letter-causes">Causas que atiende: pérdidas de inventario por arreglos no reclamados.</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 3.3 Selección de Ideas (Impacto vs Factibilidad) -->
+          <section class="shadow-card">
+            <h3 class="section-title">3.3 Selección de Ideas (Impacto vs Factibilidad)</h3>
+            <p class="intro-text">
+              Para evaluar y priorizar las ideas recopiladas del brainstorming y refinadas con SCAMPER, se aplica la Matriz de Impacto vs Factibilidad. Esto permite enfocar los esfuerzos en las iniciativas que generen el mayor beneficio operativo y comercial de forma rápida y de bajo costo.
+            </p>
+
+            <div class="feasibility-chart-grid my-6">
+              <div class="chart-area relative">
+                <span class="axis-label-y">Impacto (Bajo → Alto)</span>
+                <span class="axis-label-x">Factibilidad (Bajo → Alto)</span>
+
+                <!-- Top-Left: Alto Impacto / Baja Factibilidad -->
+                <div class="chart-quadrant quad-t-left">
+                  <span class="quadrant-label">Alto Impacto / Baja Factibilidad (Mediano Plazo)</span>
+                  <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="mat-badge bad-yellow">Base de clientes CRM</span>
+                    <span class="mat-badge bad-yellow">Google Calendar Campañas</span>
+                  </div>
+                </div>
+
+                <!-- Top-Right: Alto Impacto / Alta Factibilidad -->
+                <div class="chart-quadrant quad-t-right">
+                  <span class="quadrant-label">Alto Impacto / Alta Factibilidad (Implementación Inmediata)</span>
+                  <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="mat-badge bad-green">WhatsApp Business + Catálogo</span>
+                    <span class="mat-badge bad-green">Google Sheets Inventario/Ventas</span>
+                    <span class="mat-badge bad-green">Lista digital de precios</span>
+                  </div>
+                </div>
+
+                <!-- Bottom-Left: Bajo Impacto / Baja Factibilidad -->
+                <div class="chart-quadrant quad-b-left">
+                  <span class="quadrant-label">Bajo Impacto / Baja Factibilidad (Descartados)</span>
+                  <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="mat-badge bad-grey">Web E-Commerce a medida</span>
+                    <span class="mat-badge bad-grey">Pasarela de pago API</span>
+                  </div>
+                </div>
+
+                <!-- Bottom-Right: Bajo Impacto / Alta Factibilidad -->
+                <div class="chart-quadrant quad-b-right">
+                  <span class="quadrant-label">Bajo Impacto / Alta Factibilidad (Tareas Sencillas)</span>
+                  <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="mat-badge bad-grey">Canva Diseños</span>
+                    <span class="mat-badge bad-grey">Trello tareas equipo</span>
+                    <span class="mat-badge bad-grey">Formato Pedidos Proveedor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="subsection-title">Estrategia de Priorización de Implementación</h4>
+            <div class="overflow-x-auto">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Prioridad</th>
+                    <th>Iniciativas seleccionadas</th>
+                    <th>Justificación técnica</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="bg-teal-100 text-teal-800 font-bold px-2 py-0.5 rounded text-xs">PRIORIDAD 1</span></td>
+                    <td>WhatsApp Business, Catálogo con fotos reales, Lista digital de precios e Inventario en Google Sheets.</td>
+                    <td>Son de implementación inmediata, costo cero en licencias de software y atacan las causas raíz críticas: desinformación de precios y descontrol de stock.</td>
+                  </tr>
+                  <tr>
+                    <td><span class="bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded text-xs">PRIORIDAD 2</span></td>
+                    <td>Formularios para base de clientes (Google Forms) y diseños en Canva para promociones en fechas especiales.</td>
+                    <td>Requiere un poco más de tiempo para capacitar a la propietaria en la recolección activa de datos de clientes, pero es altamente factible.</td>
+                  </tr>
+                  <tr>
+                    <td><span class="bg-slate-100 text-slate-800 font-bold px-2 py-0.5 rounded text-xs">POSTERGADOS</span></td>
+                    <td>Desarrollo de página web de e-commerce a medida y pasarela de pago automatizada.</td>
+                    <td>Descartados en esta etapa para evitar costos de desarrollo, mantenimiento y soporte técnico que una microempresa no puede asumir.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4 — PROTOTIPAR -->
+    <div class="accordion-item md:border-none md:shadow-none md:p-0 md:mb-0 md:bg-transparent">
+      <button (click)="toggleAccordion(4)" [class.active]="activeTab === 4" class="accordion-header md:hidden">
+        TAB 4 — PROTOTIPAR
+        <span class="arrow-icon" [class.open]="activeTab === 4">▼</span>
+      </button>
+      
+      <div *ngIf="activeTab === 4" class="accordion-content md:p-0">
+        <div class="space-y-10">
+          
+          <!-- 4.1 Concept Sketch -->
+          <section class="shadow-card">
+            <h3 class="section-title">4.1 Concept Sketch</h3>
+            <p class="intro-text">
+              El Concept Sketch o bosquejo de concepto representa visualmente las pantallas móviles que utilizará el cliente para interactuar con la florería y las herramientas que utilizará el negocio. Se diseña bajo un enfoque móvil-primero, simulando la interfaz simplificada del catálogo digital en WhatsApp Business y el registro en Google Sheets.
+            </p>
+
+            <div class="concept-sketch-layout my-6">
+              <!-- Phone 1: WhatsApp Business -->
+              <div class="phone-mockup">
+                <div class="phone-screen">
+                  <div class="wa-header">
+                    <span class="wa-avatar">FA</span>
+                    <span>Florería Adonai (Catálogo)</span>
+                  </div>
+                  <div class="wa-chat-area">
+                    <div class="wa-msg msg-in">Hola! ¿Qué arreglos tienen disponibles para hoy?</div>
+                    <div class="wa-msg msg-out">Hola Rosa, puedes ver nuestro catálogo activo aquí mismo:</div>
+                    
+                    <div class="wa-product-card">
+                      <div class="wa-prod-img">💐</div>
+                      <div class="wa-prod-body">
+                        <span class="wa-prod-name">Arreglo Rosas "Amor Eterno"</span>
+                        <span class="wa-prod-price">S/. 50.00</span>
+                        <span class="wa-btn">Pedir por WhatsApp</span>
+                      </div>
+                    </div>
+
+                    <div class="wa-product-card">
+                      <div class="wa-prod-img">🌷</div>
+                      <div class="wa-prod-body">
+                        <span class="wa-prod-name">Caja Tulipanes Primavera</span>
+                        <span class="wa-prod-price">S/. 85.00</span>
+                        <span class="wa-btn">Pedir por WhatsApp</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone 2: Google Sheets -->
+              <div class="phone-mockup">
+                <div class="phone-screen">
+                  <div class="sheet-header">📊 Sheets — Control Interno</div>
+                  <div class="sheet-cells">
+                    <div class="sheet-row">
+                      <div class="sheet-cell">ID</div>
+                      <div class="sheet-cell">Producto</div>
+                      <div class="sheet-cell">Stock</div>
+                      <div class="sheet-cell">Precio</div>
+                    </div>
+                    <div class="sheet-row">
+                      <div class="sheet-cell">A-01</div>
+                      <div class="sheet-cell">Rosas Rojas</div>
+                      <div class="sheet-cell">35 u</div>
+                      <div class="sheet-cell">S/. 50</div>
+                    </div>
+                    <div class="sheet-row">
+                      <div class="sheet-cell">A-02</div>
+                      <div class="sheet-cell">Tulipanes</div>
+                      <div class="sheet-cell">12 u</div>
+                      <div class="sheet-cell">S/. 85</div>
+                    </div>
+                    <div class="sheet-row">
+                      <div class="sheet-cell">A-03</div>
+                      <div class="sheet-cell">Girasoles</div>
+                      <div class="sheet-cell">20 u</div>
+                      <div class="sheet-cell">S/. 40</div>
+                    </div>
+                    <div class="sheet-row">
+                      <div class="sheet-cell">A-04</div>
+                      <div class="sheet-cell">Peluches Oso</div>
+                      <div class="sheet-cell">5 u</div>
+                      <div class="sheet-cell">S/. 25</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- 4.2 Solution Diagram -->
+          <section class="shadow-card">
+            <h3 class="section-title">4.2 Solution Diagram</h3>
+            <p class="intro-text">
+              El Solution Diagram muestra el flujo lógico de información y control desde que el cliente interactúa con la marca digitalmente hasta que el pedido es entregado y registrado financieramente, conectando los procesos del cliente con las herramientas del negocio.
+            </p>
+
+            <div class="solution-flowchart my-6">
+              <!-- Columna Cliente (Izquierda) -->
+              <div class="flow-column">
+                <span class="column-title">Lado Cliente</span>
+                
+                <div class="flow-card">
+                  <span class="flow-icon">📸</span>
+                  <div class="flow-text-box">
+                    <span class="flow-title">Catálogo / Redes</span>
+                    <span class="flow-desc">Ve productos con fotos reales</span>
+                  </div>
+                </div>
+
+                <div class="flow-card">
+                  <span class="flow-icon">📱</span>
+                  <div class="flow-text-box">
+                    <span class="flow-title">WhatsApp Business</span>
+                    <span class="flow-desc">Consulta stock y realiza el pedido</span>
+                  </div>
+                </div>
+
+                <div class="flow-card">
+                  <span class="flow-icon">💳</span>
+                  <div class="flow-text-box">
+                    <span class="flow-title">Pago Digital</span>
+                    <span class="flow-desc">Envía Yape/Plin para confirmar</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Flechas conectores -->
+              <div class="flow-connectors">
+                <span class="arrow">→</span>
+                <span class="arrow">←</span>
+                <span class="arrow">→</span>
+              </div>
+
+              <!-- Columna Negocio (Derecha) -->
+              <div class="flow-column">
+                <span class="column-title">Lado Florería (Vendedora/Dueña)</span>
+
+                <div class="flow-card">
+                  <span class="flow-icon">📊</span>
+                  <div class="flow-text-box">
+                    <span class="flow-title">Google Sheets Stock</span>
+                    <span class="flow-desc">Verifica disponibilidad y precios</span>
+                  </div>
+                </div>
+
+                <div class="flow-card">
+                  <span class="flow-icon">📝</span>
+                  <div class="flow-text-box">
+                    <span class="flow-title">Google Sheets Ventas</span>
+                    <span class="flow-desc">Registra transacción de forma ágil</span>
+                  </div>
+                </div>
+
+                <div class="flow-card">
+                  <span class="flow-icon">👥</span>
+                  <div class="flow-text-box">
+                    <span class="flow-title">Base de datos CRM</span>
+                    <span class="flow-desc">Fideliza al cliente para campañas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <!-- 4.3 Storyboards de validación -->
+          <section class="shadow-card">
+            <h3 class="section-title">4.3 Storyboards de validación</h3>
+            <p class="intro-text">
+              La fase Prototipar convierte las ideas seleccionadas en representaciones visuales que permiten revisar el funcionamiento de la solución antes de implementarla. Para este caso, los prototipos se presentan como tres storyboards de seis escenas, centrados en la experiencia de compra, la atención interna y la campaña digital.
+            </p>
+
+            <!-- Storyboard 1 Detalle -->
+            <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 mb-8">
+              <h4 class="font-bold text-slate-800 text-lg mb-2">Storyboard 1: Pedido digital de Rosa Martínez</h4>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Este storyboard representa el recorrido de Rosa Martínez, cliente ideal de la Florería Adonai, desde que recuerda una fecha especial hasta que recibe la confirmación del arreglo floral.
+              </p>
+
+              <!-- Imagen del Storyboard -->
+              <div class="bg-white p-2 border border-slate-200 rounded-2xl mb-6 overflow-hidden shadow-xs hover:shadow-md transition-shadow duration-200">
+                <img src="/storyboard1.jpeg" alt="Storyboard 1: Pedido digital de Rosa Martínez" class="w-full h-auto rounded-xl object-contain max-h-[500px] mx-auto">
+              </div>
+
+              <div class="overflow-x-auto">
+                <table class="custom-table">
+                  <thead>
+                    <tr>
+                      <th class="w-1/3">Elemento</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Tipo de prototipo</strong></td>
+                      <td>Storyboard de experiencia del cliente.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Objetivo</strong></td>
+                      <td>Validar si el proceso de compra por WhatsApp Business resulta claro, rápido y confiable para Rosa Martínez.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Solución representada</strong></td>
+                      <td>Catálogo digital, WhatsApp Business, precios visibles y confirmación de entrega.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Indicador de validación</strong></td>
+                      <td>El recorrido se entiende sin explicación adicional y no contiene pasos innecesarios para el cliente.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Storyboard 2 Detalle -->
+            <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 mb-8">
+              <h4 class="font-bold text-slate-800 text-lg mb-2">Storyboard 2: Atención interna con lista de precios e inventario</h4>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Este storyboard muestra cómo la vendedora puede atender mejor usando una lista digital de precios y una plantilla de inventario, reduciendo notablemente la dependencia de la memoria de la propietaria.
+              </p>
+
+              <!-- Imagen del Storyboard -->
+              <div class="bg-white p-2 border border-slate-200 rounded-2xl mb-6 overflow-hidden shadow-xs hover:shadow-md transition-shadow duration-200">
+                <img src="/storyboard2.jpeg" alt="Storyboard 2: Atención interna con lista de precios e inventario" class="w-full h-auto rounded-xl object-contain max-h-[500px] mx-auto">
+              </div>
+
+              <div class="overflow-x-auto">
+                <table class="custom-table">
+                  <thead>
+                    <tr>
+                      <th class="w-1/3">Elemento</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Tipo de prototipo</strong></td>
+                      <td>Storyboard de proceso interno del negocio.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Objetivo</strong></td>
+                      <td>Validar si la lista de precios y el inventario digital facilitan de manera concreta la atención diaria de la vendedora.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Solución representada</strong></td>
+                      <td>Google Sheets para precios, control de stock y registro rápido de ventas.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Indicador de validación</strong></td>
+                      <td>La vendedora puede confirmar el precio y la disponibilidad al cliente sin tener que llamar repetidamente a la propietaria.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Storyboard 3 Detalle -->
+            <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 mb-8">
+              <h4 class="font-bold text-slate-800 text-lg mb-2">Storyboard 3: Campaña digital y fidelización</h4>
+              <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                Este storyboard representa cómo la Florería Adonai puede preparar una campaña sencilla en redes sociales y convertir las consultas entrantes en clientes frecuentes del negocio.
+              </p>
+
+              <!-- Imagen del Storyboard -->
+              <div class="bg-white p-2 border border-slate-200 rounded-2xl mb-6 overflow-hidden shadow-xs hover:shadow-md transition-shadow duration-200">
+                <img src="/storyboard3.jpeg" alt="Storyboard 3: Campaña digital y fidelización" class="w-full h-auto rounded-xl object-contain max-h-[500px] mx-auto">
+              </div>
+
+              <div class="overflow-x-auto">
+                <table class="custom-table">
+                  <thead>
+                    <tr>
+                      <th class="w-1/3">Elemento</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Tipo de prototipo</strong></td>
+                      <td>Storyboard de comunicación comercial externa.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Objetivo</strong></td>
+                      <td>Validar si una campaña digital simple en redes puede atraer consultas reales y alimentar la base de clientes.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Solución representada</strong></td>
+                      <td>Diseños en Canva, publicaciones, WhatsApp Business y base de datos de clientes frecuentes.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Indicador de validación</strong></td>
+                      <td>La publicación comunica de manera sumamente clara el producto, su precio referencial y el canal rápido de atención.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Validación rápida de los storyboards -->
+            <div>
+              <h4 class="subsection-title">Validación Rápida de los Storyboards</h4>
+              <div class="overflow-x-auto">
+                <table class="custom-table">
+                  <thead>
+                    <tr>
+                      <th>Storyboard</th>
+                      <th>Pregunta de validación</th>
+                      <th>A quién se consulta</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Pedido digital de Rosa Martínez</strong></td>
+                      <td>¿El recorrido de compra se entiende de inicio a fin?</td>
+                      <td>Clientes actuales o familiares con perfil de consumo similar.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Atención interna con lista e inventario</strong></td>
+                      <td>¿La vendedora entiende qué debe revisar antes de confirmar un pedido?</td>
+                      <td>Vendedora y propietaria del negocio.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Campaña digital y fidelización</strong></td>
+                      <td>¿La promoción comunica claramente qué se vende y cómo solicitarlo?</td>
+                      <td>Propietaria, clientes actuales de la tienda y el equipo estudiantil.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 5 — EVALUAR -->
+    <div class="accordion-item md:border-none md:shadow-none md:p-0 md:mb-0 md:bg-transparent">
+      <button (click)="toggleAccordion(5)" [class.active]="activeTab === 5" class="accordion-header md:hidden">
+        TAB 5 — EVALUAR
+        <span class="arrow-icon" [class.open]="activeTab === 5">▼</span>
+      </button>
+      
+      <div *ngIf="activeTab === 5" class="accordion-content md:p-0">
+        <div class="space-y-10">
+          
+          <!-- 5.1 & 5.2 Objetivo de la fase y Técnicas aplicadas -->
+          <section class="shadow-card">
+            <h3 class="section-title">5.1 Objetivo de la fase</h3>
+            <p class="intro-text">
+              Validar con los usuarios reales —propietaria, vendedora y clientes frecuentes— si los prototipos desarrollados en la Fase 4 resuelven efectivamente los problemas identificados en el árbol de causas del diagnóstico. A partir de la retroalimentación obtenida, se definen los ajustes necesarios antes de iniciar la implementación definitiva de las herramientas digitales.
+            </p>
+
+            <h3 class="section-title mt-10">5.2 Técnicas aplicadas</h3>
+            <div class="overflow-x-auto">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th class="w-1/3">Técnica</th>
+                    <th>Aplicación concreta en este proyecto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Entrevista con usuarios</strong></td>
+                    <td>Realizada con la propietaria Karina y la vendedora María, después de presentarles y detallarles los storyboards de proceso y el solution diagram de la iteración.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Encuesta de satisfacción</strong></td>
+                    <td>Aplicada de forma digital a 6 clientes frecuentes del local con perfiles similares al de Rosa Martínez, mediante Google Forms compartido a través de WhatsApp.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Prueba de usabilidad</strong></td>
+                    <td>Escenario simulado y controlado en el que la vendedora utiliza la lista de precios y la plantilla de inventario en Google Sheets sin ayuda ni intervención directa de la propietaria.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- 5.3 Plan de validación -->
+          <section class="shadow-card">
+            <h3 class="section-title">5.3 Plan de validación</h3>
+            <p class="intro-text">
+              El plan organiza qué hipótesis se prueba, con qué método, con quién y cuál es el criterio de éxito definido.
+            </p>
+            <div class="overflow-x-auto">
+              <table class="custom-table text-xs">
+                <thead>
+                  <tr>
+                    <th class="w-12">#</th>
+                    <th class="w-1/3">Hipótesis a validar</th>
+                    <th>Método de validación</th>
+                    <th>Participante clave</th>
+                    <th>Criterio de éxito</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="font-bold text-teal-800 text-center">H1</td>
+                    <td>El storyboard del pedido digital de Rosa Martínez se entiende de inicio a fin sin explicación adicional.</td>
+                    <td>Entrevista + revisión detallada del storyboard</td>
+                    <td>3 clientes actuales con perfil de compra similar al de Rosa Martínez</td>
+                    <td>Al menos 2 de los 3 participantes comprenden el recorrido de compra sin necesidad de preguntas de apoyo.</td>
+                  </tr>
+                  <tr>
+                    <td class="font-bold text-teal-800 text-center">H2</td>
+                    <td>La vendedora puede confirmar precio y disponibilidad usando solo Google Sheets, sin llamar a la propietaria.</td>
+                    <td>Prueba de usabilidad en escenario simulado</td>
+                    <td>Vendedora del local (María)</td>
+                    <td>Responde de manera correcta 4 de 5 consultas simuladas en menos de 3 minutos sin llamar a la dueña.</td>
+                  </tr>
+                  <tr>
+                    <td class="font-bold text-teal-800 text-center">H3</td>
+                    <td>El catálogo digital y WhatsApp Business comunican producto, precio y forma de pedido de manera clara para el cliente.</td>
+                    <td>Encuesta de satisfacción + entrevista breve</td>
+                    <td>6 clientes frecuentes de la florería</td>
+                    <td>Al menos el 70 % califica la claridad general como 4 o 5 en una escala del 1 al 5.</td>
+                  </tr>
+                  <tr>
+                    <td class="font-bold text-teal-800 text-center">H4</td>
+                    <td>La propietaria puede registrar una venta diaria en Google Sheets sin asistencia técnica del equipo.</td>
+                    <td>Prueba de usabilidad en escenario simulado</td>
+                    <td>Propietaria del negocio (Karina)</td>
+                    <td>Completa el registro de 3 ventas consecutivas en menos de 10 minutos sin errores de formato en las celdas.</td>
+                  </tr>
+                  <tr>
+                    <td class="font-bold text-teal-800 text-center">H5</td>
+                    <td>El storyboard de campaña digital y fidelización comunica claramente el proceso de publicación y captura de clientes.</td>
+                    <td>Entrevista individual de validación</td>
+                    <td>Propietaria y equipo estudiantil</td>
+                    <td>La propietaria describe correctamente los tres pasos del flujo (publicar, recibir consulta y registrar cliente) sin leer el storyboard dos veces.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- 5.4 Guion de entrevista -->
+          <section class="shadow-card">
+            <h3 class="section-title">5.4 Guion de entrevista</h3>
+            
+            <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 mb-8">
+              <h4 class="font-bold text-slate-800 text-base mb-2">5.4.1 Entrevista con la propietaria (Karina) — post storyboards y solution diagram</h4>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-[10px] text-slate-500 mb-6 bg-white p-4 rounded-xl border border-slate-150 font-bold uppercase tracking-wider">
+                <div>🗣️ Tipo: Semi-estructurada</div>
+                <div>⏱️ Duración estimada: 40 minutos</div>
+                <div>📍 Lugar: Local de la Florería Adonai</div>
+                <div class="sm:col-span-2 md:col-span-3 text-teal-700 font-extrabold normal-case">Contexto previo: Se le muestran los tres storyboards y el solution diagram antes de iniciar.</div>
+              </div>
+              
+              <div class="overflow-x-auto">
+                <table class="custom-table text-xs">
+                  <thead>
+                    <tr>
+                      <th class="w-12 text-center">#</th>
+                      <th class="w-1/2">Pregunta formulada</th>
+                      <th>Objetivo de la pregunta</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="font-bold text-teal-800 text-center">1</td>
+                      <td>¿Al ver el storyboard del pedido de Rosa, hay algún paso que no le quede claro o que crea que no funcionaría en su negocio?</td>
+                      <td>Detectar puntos de fricción o inconsistencias en el flujo de compra propuesto.</td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-teal-800 text-center">2</td>
+                      <td>¿Cree que podría usar la hoja de Google Sheets para registrar sus ventas del día? ¿Qué parte le preocupa más?</td>
+                      <td>Evaluar la disposición al cambio y barreras emocionales o técnicas de adopción.</td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-teal-800 text-center">3</td>
+                      <td>Cuando la vendedora está sola en el local, ¿cuántas veces al día le llama para preguntar un precio o verificar stock?</td>
+                      <td>Medir la carga del problema actual para comparar su disminución tras la solución.</td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-teal-800 text-center">4</td>
+                      <td>¿El catálogo que le mostramos en el storyboard tiene los productos que usted vendería primero? ¿Falta algo importante?</td>
+                      <td>Ajustar el contenido inicial del catálogo digital antes de realizar la publicación real.</td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-teal-800 text-center">5</td>
+                      <td>¿Qué parte de todo lo que le mostramos le parece más difícil de mantener semana a semana?</td>
+                      <td>Identificar el riesgo de abandono de las herramientas y prever la capacitación.</td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-teal-800 text-center">6</td>
+                      <td>Si una cliente le escribe por WhatsApp Business y usted no está en el local, ¿cómo cree que debería manejarse ese mensaje?</td>
+                      <td>Validar el flujo de atención cuando la propietaria está ausente del local comercial.</td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-teal-800 text-center">7</td>
+                      <td>¿Recomendaría estas herramientas a otra florería del barrio? ¿Por qué sí o por qué no?</td>
+                      <td>Medir el nivel de satisfacción general y la recomendación neta del proyecto.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6">
+              <h4 class="font-bold text-slate-800 text-base mb-2">5.4.2 Entrevista con la vendedora (María) — post prueba de usabilidad</h4>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-[10px] text-slate-500 mb-6 bg-white p-4 rounded-xl border border-slate-150 font-bold uppercase tracking-wider">
+                <div>🗣️ Tipo: Semi-estructurada</div>
+                <div>⏱️ Duración estimada: 20 minutos</div>
+                <div class="sm:col-span-2 text-teal-700 font-extrabold normal-case">📍 Lugar: Mostrador del local comercial, con el celular en mano.</div>
+              </div>
+              
+              <div class="overflow-x-auto">
+                <table class="custom-table text-xs">
+                  <thead>
+                    <tr>
+                      <th class="w-12 text-center">#</th>
+                      <th class="w-1/2">Pregunta formulada</th>
+                      <th>Objetivo de la pregunta</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="font-bold text-teal-800 text-center">1</td>
+                      <td>¿Pudo encontrar el precio de los girasoles en la hoja de Google Sheets sin que nadie se lo explicara?</td>
+                      <td>Evaluar si la lista de precios digital es intuitiva tal como está diseñada.</td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-teal-800 text-center">2</td>
+                      <td>¿Hubo algún producto que buscó y no encontró en la lista? ¿Cuál?</td>
+                      <td>Detectar vacíos de contenido u omisiones en el listado digital inicial de productos.</td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-teal-800 text-center">3</td>
+                      <td>¿Le resultó más fácil responder al cliente con la hoja abierta o preferiría seguir llamando a Karina?</td>
+                      <td>Medir la preferencia de uso de herramientas y el nivel de adopción operativa real.</td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-teal-800 text-center">4</td>
+                      <td>¿Qué cambiaría en la hoja para que le sea más útil durante la atención en la tienda?</td>
+                      <td>Recoger sugerencias de mejora y usabilidad móvil directamente del uso cotidiano.</td>
+                    </tr>
+                    <tr>
+                      <td class="font-bold text-teal-800 text-center">5</td>
+                      <td>¿Le daría miedo cometer un error al registrar una venta en Sheets? ¿Por qué?</td>
+                      <td>Identificar barreras emocionales o temores frente al uso de tecnología y hojas cloud.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <!-- 5.5 Encuesta de satisfacción — clientes frecuentes -->
+          <section class="shadow-card">
+            <h3 class="section-title">5.5 Encuesta de satisfacción — clientes frecuentes</h3>
+            <p class="intro-text">
+              <strong>Medio de envío:</strong> Google Forms compartido a través de WhatsApp. <strong>Tiempo estimado:</strong> 5 minutos. <strong>Muestra objetivo:</strong> 6 clientes frecuentes con perfil similar al de Rosa Martínez.
+            </p>
+            
+            <!-- Google Form Mockup -->
+            <div class="bg-indigo-50/40 border border-indigo-150 rounded-3xl p-6 sm:p-8 max-w-2xl mx-auto shadow-inner mt-8">
+              <div class="bg-indigo-700 h-3 rounded-t-xl -mt-6 -mx-6 sm:-mt-8 sm:-mx-8"></div>
+              
+              <!-- Form Title -->
+              <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs mt-6 mb-6">
+                <h4 class="text-xl font-bold text-slate-800">Encuesta de Satisfacción - Florería Adonai</h4>
+                <p class="text-xs text-slate-500 mt-2">Agradecemos tu tiempo para ayudarnos a mejorar nuestro catálogo y canales de atención digital.</p>
+              </div>
+
+              <!-- Q1 -->
+              <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs mb-6 space-y-3">
+                <span class="font-semibold text-slate-800 text-sm block">Pregunta 1: ¿Cómo se enteró de que Florería Adonai tiene catálogo digital y atención por WhatsApp?</span>
+                <div class="space-y-2 text-xs text-slate-600">
+                  <label class="flex items-center gap-2"><input type="checkbox" class="rounded border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Me lo contó la dueña o la vendedora</label>
+                  <label class="flex items-center gap-2"><input type="checkbox" class="rounded border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Vi una publicación en Instagram o Facebook</label>
+                  <label class="flex items-center gap-2"><input type="checkbox" class="rounded border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Un familiar o amigo me avisó</label>
+                  <label class="flex items-center gap-2"><input type="checkbox" class="rounded border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Ya lo sabía de antes</label>
+                </div>
+              </div>
+
+              <!-- Q2 -->
+              <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs mb-6 space-y-3">
+                <span class="font-semibold text-slate-850 text-sm block">Pregunta 2: ¿El catálogo de productos que vio le mostró claramente qué flores y detalles están disponibles?</span>
+                <div class="space-y-2 text-xs text-slate-600">
+                  <label class="flex items-center gap-2"><input type="radio" name="q2" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Sí, muy claramente</label>
+                  <label class="flex items-center gap-2"><input type="radio" name="q2" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Más o menos, faltaron algunos productos</label>
+                  <label class="flex items-center gap-2"><input type="radio" name="q2" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> No, no entendí bien qué ofrecían</label>
+                </div>
+              </div>
+
+              <!-- Q3 -->
+              <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs mb-6 space-y-3">
+                <span class="font-semibold text-slate-850 text-sm block">Pregunta 3: ¿Los precios en el catálogo le parecieron claros y accesibles para tomar una decisión de compra?</span>
+                <div class="space-y-2 text-xs text-slate-600">
+                  <label class="flex items-center gap-2"><input type="radio" name="q3" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Sí, suficiente información para decidir</label>
+                  <label class="flex items-center gap-2"><input type="radio" name="q3" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Faltó más detalle en los precios</label>
+                  <label class="flex items-center gap-2"><input type="radio" name="q3" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> No vi precios</label>
+                </div>
+              </div>
+
+              <!-- Q4 -->
+              <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs mb-6 space-y-3">
+                <span class="font-semibold text-slate-850 text-sm block">Pregunta 4: Del 1 al 5, ¿qué tan rápido recibió respuesta cuando escribió por WhatsApp? <span class="text-slate-400 font-normal">(1 = muy lenta / 5 = muy rápida)</span></span>
+                <div class="flex items-center justify-between px-4 py-2 border border-slate-100 rounded-lg text-[10px] max-w-sm">
+                  <span>1 (Muy lenta)</span>
+                  <div class="flex gap-4">
+                    <label class="flex flex-col items-center gap-1 font-semibold"><input type="radio" name="q4" class="text-indigo-600" disabled> 1</label>
+                    <label class="flex flex-col items-center gap-1 font-semibold"><input type="radio" name="q4" class="text-indigo-600" disabled> 2</label>
+                    <label class="flex flex-col items-center gap-1 font-semibold"><input type="radio" name="q4" class="text-indigo-600" disabled> 3</label>
+                    <label class="flex flex-col items-center gap-1 font-semibold"><input type="radio" name="q4" class="text-indigo-600" disabled> 4</label>
+                    <label class="flex flex-col items-center gap-1 font-semibold"><input type="radio" name="q4" class="text-indigo-600" disabled> 5</label>
+                  </div>
+                  <span>5 (Muy rápida)</span>
+                </div>
+              </div>
+
+              <!-- Q5 -->
+              <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs mb-6 space-y-3">
+                <span class="font-semibold text-slate-850 text-sm block">Pregunta 5: Comparando con antes, ¿cómo califica la atención actual de Florería Adonai?</span>
+                <div class="space-y-2 text-xs text-slate-600">
+                  <label class="flex items-center gap-2"><input type="radio" name="q5" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Mucho mejor que antes</label>
+                  <label class="flex items-center gap-2"><input type="radio" name="q5" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Igual que antes</label>
+                  <label class="flex items-center gap-2"><input type="radio" name="q5" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Peor que antes</label>
+                </div>
+              </div>
+
+              <!-- Q6 -->
+              <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs mb-6 space-y-3">
+                <span class="font-semibold text-slate-850 text-sm block">Pregunta 6: ¿Volvería a comprar usando WhatsApp y el catálogo digital?</span>
+                <div class="space-y-2 text-xs text-slate-600">
+                  <label class="flex items-center gap-2"><input type="radio" name="q6" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Definitivamente sí</label>
+                  <label class="flex items-center gap-2"><input type="radio" name="q6" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Probablemente sí</label>
+                  <label class="flex items-center gap-2"><input type="radio" name="q6" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> No estoy seguro o segura</label>
+                  <label class="flex items-center gap-2"><input type="radio" name="q6" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> No</label>
+                </div>
+              </div>
+
+              <!-- Q7 -->
+              <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs mb-6 space-y-3">
+                <span class="font-semibold text-slate-850 text-sm block">Pregunta 7: ¿Qué le gustaría que mejore en el catálogo o en la forma de atención? <span class="text-slate-400 font-normal">(respuesta libre)</span></span>
+                <div class="border-b border-slate-250 pb-2 text-slate-400 text-xs italic">Texto de respuesta libre del cliente...</div>
+              </div>
+
+              <!-- Q8 -->
+              <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-xs mb-6 space-y-3">
+                <span class="font-semibold text-slate-850 text-sm block">Pregunta 8: ¿Recomendaría Florería Adonai a un familiar o amigo ahora que tiene atención digital?</span>
+                <div class="space-y-2 text-xs text-slate-600">
+                  <label class="flex items-center gap-2"><input type="radio" name="q8" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Sí, ya lo recomendé</label>
+                  <label class="flex items-center gap-2"><input type="radio" name="q8" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Sí, lo recomendaría</label>
+                  <label class="flex items-center gap-2"><input type="radio" name="q8" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> Tal vez</label>
+                  <label class="flex items-center gap-2"><input type="radio" name="q8" class="border-slate-350 text-indigo-600 focus:ring-indigo-500" disabled> No</label>
+                </div>
+              </div>
+              
+              <div class="flex justify-between items-center text-[10px] text-slate-400 font-semibold uppercase tracking-wider">
+                <span>Google Forms Mockup</span>
+                <span class="bg-indigo-600 text-white font-bold px-4 py-2 rounded-lg cursor-not-allowed text-xs">Enviar</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- 5.6 Escenario de prueba de usabilidad -->
+          <section class="shadow-card">
+            <h3 class="section-title">5.6 Escenario de prueba de usabilidad</h3>
+            <p class="intro-text">
+              Los escenarios ponen a prueba los prototipos simulando situaciones del día a día del negocio para evaluar la eficacia técnica de las plantillas en Google Sheets.
+            </p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6">
+              
+              <!-- Escenario A -->
+              <div class="bg-slate-50 border border-slate-250 p-6 rounded-2xl flex flex-col justify-between hover:border-slate-350 transition-colors">
+                <div>
+                  <span class="bg-teal-100 text-teal-800 text-[10px] font-black uppercase px-2.5 py-1 rounded-full">Escenario A — Vendedora (María)</span>
+                  <p class="text-xs text-slate-600 mt-4 leading-relaxed">
+                    <strong>Situación:</strong> Es martes a las 10:30 am. La señora Karina no está en el local porque fue al mercado mayorista. Una clienta entra y pregunta si hay liliums blancos disponibles y cuánto cuesta un ramo de seis. La vendedora solo tiene su celular.
+                  </p>
+                  <h5 class="font-bold text-slate-850 text-xs uppercase tracking-wider mt-4 mb-2">Tareas a completar:</h5>
+                  <ul class="space-y-1.5 text-xs text-slate-600 list-decimal list-inside">
+                    <li>Abrir Google Sheets en el celular y localizar el precio de los liliums blancos en la lista compartida.</li>
+                    <li>Verificar las unidades de liliums disponibles en la hoja de inventario.</li>
+                    <li>Responder a la clienta con el precio, disponibilidad y forma de pago (role play).</li>
+                    <li>Si compra, registrar la venta en la plantilla: fecha, producto, cantidad, precio, canal (presencial).</li>
+                  </ul>
+                </div>
+                <div class="mt-6 border-t border-slate-200 pt-4">
+                  <h5 class="font-bold text-slate-850 text-xs uppercase mb-2">Métricas de éxito:</h5>
+                  <ul class="space-y-1 text-xs text-slate-600">
+                    <li>⏱️ Tiempo total del escenario: Menos de 4 minutos</li>
+                    <li>📞 Llamadas de consulta a Karina: 0</li>
+                    <li>✓ Datos informados: Precio y stock correctos</li>
+                    <li>📝 Registro de venta: Completado con campos mínimos</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Escenario B -->
+              <div class="bg-slate-50 border border-slate-250 p-6 rounded-2xl flex flex-col justify-between hover:border-slate-350 transition-colors">
+                <div>
+                  <span class="bg-teal-100 text-teal-800 text-[10px] font-black uppercase px-2.5 py-1 rounded-full">Escenario B — Propietaria (Karina)</span>
+                  <p class="text-xs text-slate-600 mt-4 leading-relaxed">
+                    <strong>Situación:</strong> Al cierre del día, Karina tiene tres ventas anotadas en un papel. Debe pasarlas a la plantilla de Google Sheets antes de cerrar el local.
+                  </p>
+                  <h5 class="font-bold text-slate-850 text-xs uppercase tracking-wider mt-4 mb-2">Tareas a completar:</h5>
+                  <ul class="space-y-1.5 text-xs text-slate-600 list-decimal list-inside">
+                    <li>Abrir Google Sheets desde su celular.</li>
+                    <li>Ingresar las tres ventas con campos completos (fecha, producto, cantidad, precio, canal y cliente si recuerda).</li>
+                    <li>Actualizar el inventario restando las unidades vendidas.</li>
+                  </ul>
+                </div>
+                <div class="mt-6 border-t border-slate-200 pt-4">
+                  <h5 class="font-bold text-slate-850 text-xs uppercase mb-2">Métricas de éxito:</h5>
+                  <ul class="space-y-1 text-xs text-slate-600">
+                    <li>⏱️ Tiempo total: Menos de 10 minutos</li>
+                    <li>📞 Consultas al equipo técnico durante la prueba: 0</li>
+                    <li>✓ Errores de formato en campos: 0 errores graves</li>
+                    <li>📝 Inventario actualizado correctamente: Sí</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- 5.7 Resultados simulados de validación -->
+          <section class="shadow-card">
+            <h3 class="section-title">5.7 Resultados simulados de validación</h3>
+            <p class="intro-text">
+              Los resultados de las pruebas se comportaron de manera consistente con la realidad observada en el negocio y la alfabetización digital de los usuarios.
+            </p>
+            <div class="overflow-x-auto mt-6">
+              <table class="custom-table text-xs">
+                <thead>
+                  <tr>
+                    <th class="w-1/4">Hipótesis evaluada</th>
+                    <th>Resultado simulado</th>
+                    <th class="w-24 text-center">Calificación</th>
+                    <th>Observación / Ajuste necesario</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>H1 — Entendimiento del Storyboard 1</strong></td>
+                    <td>2 de 3 clientes comprendieron el recorrido de Rosa de inicio a fin. La tercera no entendió la transición del catálogo de Instagram al WhatsApp.</td>
+                    <td class="text-center text-amber-500 font-bold text-sm">★★★★☆</td>
+                    <td>Se requiere añadir una flecha o texto de transición en el storyboard para aclarar el enlace al chat.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>H2 — Vendedora usa Sheets sin llamar</strong></td>
+                    <td>María respondió correctamente 4 de 5 consultas simuladas. No encontró el precio de las orquídeas en la última por no estar registrada en la lista.</td>
+                    <td class="text-center text-amber-500 font-bold text-sm">★★★★☆</td>
+                    <td>Es indispensable completar la lista de precios con todos los productos de stock antes de la entrega final.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>H3 — Catálogo y WhatsApp Business</strong></td>
+                    <td>5 de 6 clientes calificaron la claridad de la información con 4 o 5. Una de las clientas indicó que algunas imágenes de flores no tenían precio.</td>
+                    <td class="text-center text-amber-500 font-bold text-sm">★★★★☆</td>
+                    <td>Estandarizar el formato visual de las publicaciones de Instagram para asegurar que todas lleven precio de referencia.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>H4 — Registro en Sheets por propietaria</strong></td>
+                    <td>Karina completó el registro de 3 ventas en 12 minutos. Se excedió del límite debido a que no recordaba cómo ubicar y seleccionar la celda correcta.</td>
+                    <td class="text-center text-amber-500 font-bold text-sm">★★★☆☆</td>
+                    <td>Es prioritario imprimir una guía rápida visual A5 y pegarla al lado del mostrador de atención.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>H5 — Entendimiento del Storyboard 3</strong></td>
+                    <td>La propietaria describió perfectamente el flujo de publicación, atención y registro en Sheets desde la primera lectura sin cometer errores.</td>
+                    <td class="text-center text-amber-500 font-bold text-sm">★★★★★</td>
+                    <td>Storyboard validado por completo y listo para servir de guía operativa.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- 5.8 Matriz de feedback -->
+          <section class="shadow-card">
+            <h3 class="section-title">5.8 Matriz de feedback (Malla Receptora)</h3>
+            <div class="overflow-x-auto">
+              <table class="custom-table text-xs">
+                <thead>
+                  <tr>
+                    <th class="w-1/5">Perfil de usuario</th>
+                    <th class="w-1/4">Aspectos positivos ("¿Qué funcionó?")</th>
+                    <th class="w-1/4">Aspectos negativos / Críticas</th>
+                    <th class="w-1/4">Sugerencias de mejora</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Karina (propietaria)</strong></td>
+                    <td>"Con la hoja digital sé cuánto vendo sin revisar hojas." / "El WhatsApp Business evitó que mezclen pedidos en mi personal."</td>
+                    <td>"Me demoré en registrar porque no recordaba cómo ir a la celda." / "El internet a veces falla y no carga la hoja."</td>
+                    <td>Añadir una guía impresa paso a paso en el local. Configurar acceso offline en Sheets para evitar dependencia de Wi-Fi.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>María (vendedora)</strong></td>
+                    <td>"Ya no llamo a Karina para confirmar precios." / "Es más ágil cuando preguntan algo específico en el mostrador."</td>
+                    <td>"Las orquídeas no estaban en la lista y tuve que hacer esperar a la cliente." / "La hoja se ve muy chiquita en mi celular."</td>
+                    <td>Completar el catálogo de productos al 100%. Optimizar ancho de columnas de Sheets para visualización móvil.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Rosa Martínez (cliente habitual)</strong></td>
+                    <td>"Me respondieron en 5 minutos, antes tardaban horas." / "El catálogo me permitió ver los precios antes de escribir."</td>
+                    <td>"Algunas imágenes del catálogo no tenían el precio y tuve que preguntar igual."</td>
+                    <td>Garantizar que cada foto publicada en el catálogo o estados lleve precio.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Clienta nueva (potencial)</strong></td>
+                    <td>"La publicación de Instagram era bonita y me animó a escribir al WhatsApp."</td>
+                    <td>"Me costó trabajo encontrar cómo pasar de Instagram a WhatsApp Business."</td>
+                    <td>Integrar el botón de enlace directo a WhatsApp en la biografía del Instagram comercial.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Familiar de apoyo</strong></td>
+                    <td>"La hoja me permitió registrar de forma rápida a los clientes que me escribieron."</td>
+                    <td>"No sabía con certeza qué poner en la columna de canal de venta."</td>
+                    <td>Añadir una leyenda de abreviaturas simple en la cabecera de la hoja (P = Presencial, W = WhatsApp).</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- 5.9 Mejoras derivadas de la retroalimentación -->
+          <section class="shadow-card">
+            <h3 class="section-title">5.9 Mejoras derivadas de la retroalimentación</h3>
+            <div class="overflow-x-auto">
+              <table class="custom-table text-xs">
+                <thead>
+                  <tr>
+                    <th class="w-12 text-center">ID</th>
+                    <th class="w-1/3">Mejora definida</th>
+                    <th>Causa / Dolor que la originó</th>
+                    <th class="w-24 text-center">Prioridad</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="font-bold text-teal-800 text-center">M1</td>
+                    <td>Completar la lista de precios en Sheets con todos los productos (orquídeas, ramos, globos y empaques).</td>
+                    <td>María no localizó el precio de las orquídeas durante la simulación (H2).</td>
+                    <td class="text-center font-bold text-rose-700 bg-rose-50/50">Alta</td>
+                  </tr>
+                  <tr>
+                    <td class="font-bold text-teal-800 text-center">M2</td>
+                    <td>Diseñar e imprimir una guía rápida visual A5 plastificada pegada al lado del mostrador con el paso a paso del registro de ventas.</td>
+                    <td>Karina superó el límite de tiempo al no recordar cómo seleccionar las celdas (H4).</td>
+                    <td class="text-center font-bold text-rose-700 bg-rose-50/50">Alta</td>
+                  </tr>
+                  <tr>
+                    <td class="font-bold text-teal-800 text-center">M3</td>
+                    <td>Habilitar y configurar la descarga offline de Google Sheets en los celulares de Karina y María.</td>
+                    <td>Reporte de fallas y lentitud de conexión Wi-Fi en el local durante la entrevista.</td>
+                    <td class="text-center font-bold text-rose-700 bg-rose-50/50">Alta</td>
+                  </tr>
+                  <tr>
+                    <td class="font-bold text-teal-800 text-center">M4</td>
+                    <td>Alinear y estandarizar las publicaciones de Instagram para que todas incluyan precio referencial e instrucciones de pedido.</td>
+                    <td>Una cliente no observó el precio en ciertas imágenes del catálogo (H3).</td>
+                    <td class="text-center font-bold text-amber-700 bg-amber-50/50">Media</td>
+                  </tr>
+                  <tr>
+                    <td class="font-bold text-teal-800 text-center">M5</td>
+                    <td>Integrar una URL corta directa a WhatsApp Business en el perfil público de Instagram.</td>
+                    <td>Dificultad de clientes nuevos para transitar entre las redes sociales y el chat (H1).</td>
+                    <td class="text-center font-bold text-amber-700 bg-amber-50/50">Media</td>
+                  </tr>
+                  <tr>
+                    <td class="font-bold text-teal-800 text-center">M6</td>
+                    <td>Añadir leyenda de abreviaturas simple en la cabecera de la plantilla (P = Presencial, W = WhatsApp).</td>
+                    <td>Confusión del familiar de apoyo al llenar el campo de canal de ventas.</td>
+                    <td class="text-center font-bold text-slate-500 bg-slate-50/50">Baja</td>
+                  </tr>
+                  <tr>
+                    <td class="font-bold text-teal-800 text-center">M7</td>
+                    <td>Agregar una flecha de flujo o texto explicativo de paso en el Storyboard 1 de Rosa Martínez.</td>
+                    <td>Una de las clientes no interpretó la transición entre pantallas en el storyboard.</td>
+                    <td class="text-center font-bold text-slate-500 bg-slate-50/50">Baja</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- 5.10 & 5.11 Iteración propuesta y conclusiones -->
+          <section class="shadow-card bg-gradient-to-br from-teal-50 to-white border border-teal-150">
+            <h3 class="section-title">5.10 Iteración propuesta</h3>
+            <p class="intro-text">
+              Para garantizar que los ajustes resuelvan los dolores detectados, se ha planificado una segunda iteración corta de validación interna.
+            </p>
+            <div class="overflow-x-auto mb-8">
+              <table class="custom-table text-xs">
+                <thead>
+                  <tr>
+                    <th>Ronda de validación</th>
+                    <th>Foco del testeo</th>
+                    <th>Participantes</th>
+                    <th>Indicador / Criterio de cierre</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Iteración 1 (Actual)</strong></td>
+                    <td>Evaluación de Storyboards, flujo general de compra, usabilidad inicial en Sheets y claridad del catálogo digital.</td>
+                    <td>Propietaria, vendedora y 6 clientes del local.</td>
+                    <td>Matriz de feedback completada y mejoras priorizadas y categorizadas.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Iteración 2 (Propuesta)</strong></td>
+                    <td>Validación de lista de precios completa, guía visual impresa para mostrador y configuración offline de Sheets en móviles.</td>
+                    <td>Propietaria y vendedora únicamente.</td>
+                    <td>Karina completa el registro de ventas en menos de 8 minutos sin apoyo verbal y María responde consultas con lista completa.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="section-title mt-10">5.11 Conclusiones de la fase</h3>
+            <div class="text-xs text-slate-650 leading-relaxed space-y-4">
+              <p>
+                La Fase 5 de validación ratificó que la propuesta de transformación digital básica es **técnica y económicamente viable** para la Florería Adonai, y resolverá los dolores del negocio tras aplicar ajustes menores priorizados.
+              </p>
+              <div class="bg-white p-4 rounded-xl border border-slate-200">
+                <strong>🌟 Fortalezas identificadas:</strong> La separación del canal personal con WhatsApp Business redujo la saturación del chat de Karina. El catálogo de productos resolvió las dudas previas de los clientes y el storyboard de campaña fue asimilado por la dueña con gran facilidad.
+              </div>
+              <div class="bg-white p-4 rounded-xl border border-slate-200">
+                <strong>🔧 Debilidades a corregir:</strong> La lista de precios debe completarse para evitar retrasos de María en mostrador. Se requiere el manual físico en formato guía A5 para dar autonomía a Karina en Sheets y es necesario integrar la URL a WhatsApp en redes para capturar visitas rápidamente.
+              </div>
+              <p class="font-bold text-teal-950 mt-4">
+                Decisión de Cierre: Se aprueba la aplicación de las mejoras M1, M2 y M3 de manera inmediata y la ejecución de la segunda iteración de prueba con las herramientas finales.
+              </p>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+  <!-- CIERRE INTEGRADOR -->
+  <section class="shadow-card bg-gradient-to-br from-teal-50 to-white p-8 rounded-3xl border border-teal-150">
+    <h3 class="text-2xl font-black text-teal-900 mb-4 flex items-center gap-3">
+      <svg class="w-7 h-7 text-teal-650" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+      </svg>
+      Cierre integrador
+    </h3>
+    <p class="intro-text mb-4">
+      El desarrollo de Design Thinking aplicado a la Florería Adonai permite pasar de la comprensión del usuario a la representación visual de soluciones concretas. El mapa de empatía y el Buyer Persona muestran que Rosa Martínez necesita una compra rápida, clara y confiable. El diagrama de afinidad organiza las ideas de solución según las causas reales del problema. SCAMPER transforma esas necesidades en propuestas viables, simples y de bajo costo para una microempresa. Finalmente, los storyboards permiten prototipar los recorridos principales antes de implementar las herramientas.
+    </p>
+    <p class="intro-text font-bold text-teal-950">
+      La propuesta prioriza herramientas accesibles como WhatsApp Business, Google Sheets, catálogo digital, lista de precios, base de clientes frecuentes, publicaciones en redes sociales, planificación básica de campañas y validación visual mediante storyboards.
+    </p>
+  </section>
+</div>

@@ -161,6 +161,38 @@ interface PdfDoc {
       </ng-container>
     </div>
 
+    <!-- Video Section -->
+    <div class="mb-8 flex items-center gap-4 mt-16">
+      <div class="p-3 bg-indigo-100 rounded-xl">
+        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+      </div>
+      <h2 class="text-4xl font-extrabold text-teal-950 tracking-tight">Presentación del Proyecto</h2>
+    </div>
+
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-16">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-6 border-b border-slate-100 bg-gradient-to-r from-indigo-50/60 to-white">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <div>
+            <h3 class="font-extrabold text-slate-800 text-lg leading-tight">Video explicativo</h3>
+            <p class="text-slate-500 text-sm mt-0.5">Sustentación del proyecto Florería Adonai</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 flex-shrink-0">
+          <a
+            href="https://drive.google.com/file/d/1NZjn9FwFlMHFfnHcqTyF0OXMFFJ28_5p/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 px-6 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl transition-all duration-200 shadow hover:shadow-md hover:-translate-y-0.5 text-sm">
+            Ver Video Completo
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal pantalla completa -->
     <div class="pdf-modal-overlay" *ngIf="modalDoc" (click)="closeModal($event)">
       <div class="pdf-modal-box" (click)="$event.stopPropagation()">

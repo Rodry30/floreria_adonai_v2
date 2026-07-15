@@ -1,0 +1,895 @@
+import os
+
+html_path = "src/app/pages/linea-base-costos/linea-base-costos.html"
+
+html_content = """<div class="space-y-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  
+  <!-- ENCABEZADO DEL INFORME -->
+  <section class="shadow-card bg-gradient-to-br from-teal-50 to-white p-8 rounded-3xl border border-teal-150 relative overflow-hidden">
+    <!-- Adorno de fondo -->
+    <div class="absolute -right-20 -top-20 w-64 h-64 bg-teal-100/50 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -left-20 -bottom-20 w-64 h-64 bg-blue-100/50 rounded-full blur-3xl pointer-events-none"></div>
+    
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-6 relative z-10">
+      <div class="flex items-center gap-4">
+        <div class="p-4 bg-teal-100 rounded-2xl shadow-sm border border-teal-200">
+          <svg class="w-10 h-10 text-teal-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </div>
+        <div>
+          <h2 class="text-3xl font-black text-teal-950 tracking-tight">Línea Base de los Costos del Proyecto</h2>
+          <p class="text-teal-600 font-bold text-lg">Gestión de los Costos — PMBOK 6.ª edición</p>
+        </div>
+      </div>
+      <div class="bg-teal-900 text-white py-2 px-4 rounded-full text-xs font-bold uppercase tracking-wider self-start md:self-center shadow-md">
+        Fase 3 — Planificación
+      </div>
+    </div>
+    
+    <div class="bg-white/80 backdrop-blur-sm border border-teal-100 p-6 rounded-2xl text-slate-700 text-sm leading-relaxed shadow-sm relative z-10">
+      <p class="mb-3">
+        La <strong>línea base de los costos</strong> representa la versión aprobada del presupuesto distribuido en el tiempo. Permite comparar los costos planificados con los costos reales, controlar variaciones, gestionar reservas y determinar si el proyecto puede completarse dentro del presupuesto autorizado.
+      </p>
+      <div class="flex items-start gap-3 mt-4 bg-teal-50 p-4 rounded-xl border border-teal-100">
+        <div class="text-xl">🎯</div>
+        <p class="font-bold text-teal-900 text-xs leading-relaxed">
+          El presupuesto cubre los cinco pilares de la transformación digital: sistema web, presencia digital, procesos operativos, personas y gestión del cambio, y analítica y mejora continua.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FICHA TÉCNICA Y MÉTODO -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <section class="shadow-card">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 bg-slate-100 rounded-xl flex items-center justify-center text-xl">📋</div>
+        <h3 class="text-xl font-black text-slate-800 m-0">Ficha Técnica</h3>
+      </div>
+      <div class="overflow-x-auto custom-scrollbar">
+        <table class="custom-table text-sm">
+          <tbody>
+            <tr><td class="font-bold w-1/3 text-slate-700">Proyecto</td><td>Transformación Digital Integral — Florería Adonai</td></tr>
+            <tr><td class="font-bold text-slate-700">Fase</td><td>Fase 3 — Planificación</td></tr>
+            <tr><td class="font-bold text-slate-700">Periodo</td><td>1 septiembre — 15 diciembre 2026</td></tr>
+            <tr><td class="font-bold text-slate-700">Moneda</td><td>Sol peruano — S/</td></tr>
+            <tr><td class="font-bold text-slate-700">Método principal</td><td>Estimación ascendente o bottom-up</td></tr>
+            <tr><td class="font-bold text-slate-700">Técnicas compl.</td><td>Estimación paramétrica, PERT y análisis de reservas</td></tr>
+            <tr><td class="font-bold text-slate-700">Estructura</td><td>4 sprints y 5 pilares</td></tr>
+            <tr><td class="font-bold text-slate-700">Línea base costos</td><td class="text-teal-700 font-black text-base">S/ 24,190</td></tr>
+            <tr><td class="font-bold text-slate-700">Pto. autorizado</td><td class="text-indigo-700 font-black text-base">S/ 25,400</td></tr>
+            <tr><td class="font-bold text-slate-700">Docente</td><td>Mg. MBA Antonio Arqque Pantigozo</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="shadow-card bg-gradient-to-br from-slate-800 to-slate-900 text-white border-0">
+      <div class="flex items-center gap-3 mb-6 border-b border-slate-700 pb-4">
+        <div class="w-10 h-10 bg-slate-700 rounded-xl flex items-center justify-center text-xl">📈</div>
+        <h3 class="text-xl font-black text-slate-100 m-0">Método: Estimación Ascendente</h3>
+      </div>
+      <p class="text-sm text-slate-300 mb-6 leading-relaxed">
+        Se estima el costo de cada actividad y paquete de trabajo de la EDT. Luego, los costos se consolidan por entregable, pilar, sprint y proyecto completo.
+      </p>
+      
+      <div class="bg-slate-950/50 border border-slate-700 p-4 rounded-xl mb-6">
+        <div class="text-[10px] text-teal-400 font-bold uppercase tracking-widest mb-1">Fórmula Principal</div>
+        <code class="text-sm font-mono text-white block">Costo Actividad = (Horas × Tarifa) + Recursos directos</code>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-slate-800/80 p-3 rounded-lg border border-slate-700">
+          <div class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Paramétrica</div>
+          <code class="text-xs text-slate-200">Costo = Cant. × Tarifa</code>
+        </div>
+        <div class="bg-slate-800/80 p-3 rounded-lg border border-slate-700">
+          <div class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Tres Valores (PERT)</div>
+          <code class="text-xs text-slate-200">te = (O + 4M + P) / 6</code>
+        </div>
+        <div class="col-span-2 bg-slate-800/80 p-3 rounded-lg border border-slate-700">
+          <div class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Justificación del método</div>
+          <p class="text-xs text-slate-300">Existe EDT detallada, actividades por sprint, responsables y duraciones definidas, permitiendo trazabilidad perfecta.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- STEPPER METODOLÓGICO -->
+  <section class="mt-12 mb-12 hidden md:block">
+    <h4 class="text-center font-extrabold text-teal-950 mb-8 uppercase tracking-widest text-xs">Fases de la Gestión de los Costos (PMBOK)</h4>
+    <div class="grid grid-cols-7 gap-2 items-center relative">
+      <div class="bg-white p-5 rounded-2xl border-2 border-teal-100 text-center shadow-sm hover:shadow-md transition-shadow relative z-10">
+        <div class="w-8 h-8 rounded-full bg-teal-100 text-teal-700 font-black flex items-center justify-center absolute -top-4 left-1/2 transform -translate-x-1/2 border-2 border-white shadow-sm">1</div>
+        <span class="text-[10px] font-black text-teal-600 block mt-2 mb-1">PROCESO 1</span>
+        <h5 class="font-bold text-slate-800 text-xs uppercase">Planificar</h5>
+        <p class="text-[9px] text-slate-500 mt-1">Plan de Gestión de Costos.</p>
+      </div>
+      <div class="text-teal-300 text-center relative z-0"><div class="absolute h-0.5 w-full bg-teal-100 top-1/2 -z-10"></div><svg class="w-6 h-6 mx-auto bg-white rounded-full text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+
+      <div class="bg-white p-5 rounded-2xl border-2 border-teal-200 text-center shadow-sm hover:shadow-md transition-shadow relative z-10">
+        <div class="w-8 h-8 rounded-full bg-teal-200 text-teal-800 font-black flex items-center justify-center absolute -top-4 left-1/2 transform -translate-x-1/2 border-2 border-white shadow-sm">2</div>
+        <span class="text-[10px] font-black text-teal-600 block mt-2 mb-1">PROCESO 2</span>
+        <h5 class="font-bold text-slate-800 text-xs uppercase">Estimar</h5>
+        <p class="text-[9px] text-slate-500 mt-1">Estimaciones ascendentes.</p>
+      </div>
+      <div class="text-teal-400 text-center relative z-0"><div class="absolute h-0.5 w-full bg-teal-200 top-1/2 -z-10"></div><svg class="w-6 h-6 mx-auto bg-white rounded-full text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+
+      <div class="bg-teal-900 p-5 rounded-2xl border-2 border-teal-950 text-center shadow-lg relative z-10 transform scale-105">
+        <div class="w-8 h-8 rounded-full bg-teal-400 text-teal-950 font-black flex items-center justify-center absolute -top-4 left-1/2 transform -translate-x-1/2 border-2 border-teal-900 shadow-sm">3</div>
+        <span class="text-[10px] font-black text-teal-300 block mt-2 mb-1">PROCESO 3</span>
+        <h5 class="font-bold text-white text-xs uppercase">Presupuesto</h5>
+        <p class="text-[9px] text-teal-200 mt-1">Línea Base y Reservas.</p>
+      </div>
+      <div class="text-slate-300 text-center relative z-0"><div class="absolute h-0.5 w-full bg-slate-200 top-1/2 -z-10"></div><svg class="w-6 h-6 mx-auto bg-white rounded-full text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></div>
+
+      <div class="bg-slate-50 p-5 rounded-2xl border-2 border-slate-200 text-center shadow-sm relative z-10">
+        <div class="w-8 h-8 rounded-full bg-slate-200 text-slate-600 font-black flex items-center justify-center absolute -top-4 left-1/2 transform -translate-x-1/2 border-2 border-white shadow-sm">4</div>
+        <span class="text-[10px] font-black text-slate-500 block mt-2 mb-1">PROCESO 4</span>
+        <h5 class="font-bold text-slate-700 text-xs uppercase">Controlar</h5>
+        <p class="text-[9px] text-slate-500 mt-1">EVM y Variaciones.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS Y SUPUESTOS -->
+  <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-1 shadow-card flex flex-col justify-between">
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-xl">🏷️</div>
+          <h3 class="text-xl font-black text-slate-800 m-0">Categorías</h3>
+        </div>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3 p-2 hover:bg-slate-50 rounded-lg transition-colors border-b border-slate-100 last:border-0">
+            <span class="pill pill-id bg-slate-800 text-white text-[10px] shrink-0 w-12 text-center py-1">CP-01</span>
+            <span class="text-xs font-bold text-slate-700">Mano de obra equipo</span>
+          </div>
+          <div class="flex items-center gap-3 p-2 hover:bg-slate-50 rounded-lg transition-colors border-b border-slate-100 last:border-0">
+            <span class="pill pill-id bg-slate-700 text-white text-[10px] shrink-0 w-12 text-center py-1">CP-02</span>
+            <span class="text-xs font-bold text-slate-700">Participación usuarias</span>
+          </div>
+          <div class="flex items-center gap-3 p-2 hover:bg-slate-50 rounded-lg transition-colors border-b border-slate-100 last:border-0">
+            <span class="pill pill-id bg-slate-600 text-white text-[10px] shrink-0 w-12 text-center py-1">CP-03</span>
+            <span class="text-xs font-bold text-slate-700">Implementación y campo</span>
+          </div>
+          <div class="flex items-center gap-3 p-2 hover:bg-slate-50 rounded-lg transition-colors border-b border-slate-100 last:border-0">
+            <span class="pill pill-id bg-slate-500 text-white text-[10px] shrink-0 w-12 text-center py-1">CP-04</span>
+            <span class="text-xs font-bold text-slate-700">Documentos y materiales</span>
+          </div>
+          <div class="flex items-center gap-3 p-2 hover:bg-slate-50 rounded-lg transition-colors border-b border-slate-100 last:border-0">
+            <span class="pill pill-id bg-teal-600 text-white text-[10px] shrink-0 w-12 text-center py-1">CP-05</span>
+            <span class="text-xs font-bold text-slate-700">Asesorías</span>
+          </div>
+          <div class="flex items-center gap-3 p-2 hover:bg-slate-50 rounded-lg transition-colors border-b border-slate-100 last:border-0">
+            <span class="pill pill-id bg-teal-500 text-white text-[10px] shrink-0 w-12 text-center py-1">CP-06</span>
+            <span class="text-xs font-bold text-slate-700">Costos tecnológicos</span>
+          </div>
+          <div class="flex items-center gap-3 p-2 hover:bg-slate-50 rounded-lg transition-colors border-b border-slate-100 last:border-0">
+            <span class="pill pill-id bg-slate-400 text-white text-[10px] shrink-0 w-12 text-center py-1">CP-07</span>
+            <span class="text-xs font-bold text-slate-700">Costos indirectos</span>
+          </div>
+          <div class="flex items-center gap-3 p-2 hover:bg-amber-50 rounded-lg transition-colors border-b border-amber-100 last:border-0">
+            <span class="pill pill-id bg-amber-500 text-white text-[10px] shrink-0 w-12 text-center py-1">CP-08</span>
+            <span class="text-xs font-bold text-amber-900">Reserva contingencias</span>
+          </div>
+          <div class="flex items-center gap-3 p-2 hover:bg-indigo-50 rounded-lg transition-colors border-b border-indigo-100 last:border-0">
+            <span class="pill pill-id bg-indigo-500 text-white text-[10px] shrink-0 w-12 text-center py-1">CP-09</span>
+            <span class="text-xs font-bold text-indigo-900">Reserva de gestión</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="lg:col-span-2 shadow-card">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl">💡</div>
+        <h3 class="text-xl font-black text-slate-800 m-0">Supuestos y Exclusiones Presupuestarias</h3>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200">
+          <h4 class="font-bold text-sm text-slate-800 mb-3 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-teal-500"></span> Incluidos / Supuestos
+          </h4>
+          <ul class="text-xs text-slate-600 space-y-3">
+            <li class="flex items-start gap-2">
+              <span class="text-teal-500 font-bold">✓</span>
+              <span><strong>Proyecto académico</strong> con valorización económica. El trabajo del equipo se registra aunque no exista pago efectivo.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-teal-500 font-bold">✓</span>
+              <span><strong>Tarifas referenciales</strong> basadas en horas de trabajo.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-teal-500 font-bold">✓</span>
+              <span><strong>Google Business Profile y Canva Free</strong> como herramientas sin costo de licenciamiento.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-teal-500 font-bold">✓</span>
+              <span><strong>Hosting (1 año) y dominio</strong> para paso a producción.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-teal-500 font-bold">✓</span>
+              <span>Internet y bolsa de datos móviles.</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="bg-red-50/50 p-5 rounded-2xl border border-red-100">
+          <h4 class="font-bold text-sm text-red-900 mb-3 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-red-500"></span> Exclusiones Expresas
+          </h4>
+          <ul class="text-xs text-red-800 space-y-3">
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">✕</span>
+              <span>Publicidad pagada (Meta Ads, Google Ads).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">✕</span>
+              <span>Sistemas ERP complejos u otras plataformas de pago.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">✕</span>
+              <span>Desarrollo de aplicación móvil nativa.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">✕</span>
+              <span>Pasarela de pagos real (se usa comprobante WhatsApp/Yape).</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-red-500 font-bold">✕</span>
+              <span>Facturación electrónica SUNAT directa.</span>
+            </li>
+          </ul>
+          <div class="mt-4 bg-red-100 text-red-900 p-3 rounded-xl text-[10px] font-medium border border-red-200">
+            <strong>Nota:</strong> Los precios tecnológicos deben recotizarse antes de la compra definitiva en producción.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESUPUESTO MANO DE OBRA -->
+  <section class="shadow-card">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-2xl flex items-center justify-center text-2xl shadow-sm border border-teal-100">👨‍💻</div>
+        <div>
+          <h3 class="text-2xl font-black text-slate-800 m-0">Presupuesto de Mano de Obra</h3>
+          <p class="text-sm text-slate-500 font-medium">Tarifas y horas planificadas del equipo y usuarias</p>
+        </div>
+      </div>
+      <div class="bg-teal-900 text-white px-6 py-3 rounded-2xl text-right shadow-md">
+        <div class="text-[10px] text-teal-300 font-bold uppercase tracking-widest mb-1">Costo Total M.O.</div>
+        <div class="text-2xl font-black">{{ 16848 | currency:'PEN':'symbol':'1.0-0' }}</div>
+      </div>
+    </div>
+    
+    <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm mb-8">
+      <div class="bg-slate-50 px-5 py-3 border-b border-slate-200">
+        <h4 class="font-bold text-sm text-slate-800">Equipo del Proyecto</h4>
+      </div>
+      <div class="overflow-x-auto custom-scrollbar">
+        <table class="w-full text-sm text-left">
+          <thead class="bg-white border-b border-slate-200 text-xs text-slate-500 uppercase tracking-wider">
+            <tr>
+              <th class="px-5 py-3 font-bold">Integrante & Rol</th>
+              <th class="px-5 py-3 text-right font-bold w-24">Tarifa</th>
+              <th class="px-2 py-3 text-center font-bold w-16">Sp 1</th>
+              <th class="px-2 py-3 text-center font-bold w-16">Sp 2</th>
+              <th class="px-2 py-3 text-center font-bold w-16">Sp 3</th>
+              <th class="px-2 py-3 text-center font-bold w-16">Sp 4</th>
+              <th class="px-5 py-3 text-right font-bold w-24">Total hrs</th>
+              <th class="px-5 py-3 text-right font-bold text-teal-700 w-32 bg-slate-50">Costo Total</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr *ngFor="let l of laborCosts" class="hover:bg-slate-50/50 transition-colors">
+              <td class="px-5 py-3">
+                <div class="font-bold text-slate-800">{{ l.member }}</div>
+                <div class="text-[11px] text-slate-500 line-clamp-1">{{ l.role }}</div>
+              </td>
+              <td class="px-5 py-3 text-right font-mono text-slate-600">{{ l.hourlyRate | currency:'PEN':'symbol':'1.0-0' }}/h</td>
+              <td class="px-2 py-3 text-center font-mono">{{ l.sprint1Hours }}</td>
+              <td class="px-2 py-3 text-center font-mono">{{ l.sprint2Hours }}</td>
+              <td class="px-2 py-3 text-center font-mono">{{ l.sprint3Hours }}</td>
+              <td class="px-2 py-3 text-center font-mono">{{ l.sprint4Hours }}</td>
+              <td class="px-5 py-3 text-right font-bold font-mono">{{ l.totalHours }} h</td>
+              <td class="px-5 py-3 text-right font-bold text-teal-700 bg-teal-50/30 font-mono">{{ l.totalCost | currency:'PEN':'symbol':'1.0-0' }}</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="bg-slate-800 text-white font-bold">
+              <td colspan="2" class="px-5 py-3 text-right uppercase tracking-wider text-xs">Total Equipo:</td>
+              <td class="px-2 py-3 text-center font-mono text-slate-300">240</td>
+              <td class="px-2 py-3 text-center font-mono text-slate-300">240</td>
+              <td class="px-2 py-3 text-center font-mono text-slate-300">160</td>
+              <td class="px-2 py-3 text-center font-mono text-slate-300">88</td>
+              <td class="px-5 py-3 text-right font-mono text-teal-300">728 h</td>
+              <td class="px-5 py-3 text-right font-mono text-teal-400 text-lg">{{ 16188 | currency:'PEN':'symbol':'1.0-0' }}</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+      <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm">
+        <div class="bg-slate-50 px-5 py-3 border-b border-slate-200">
+          <h4 class="font-bold text-sm text-slate-800">Participación de Usuarias</h4>
+        </div>
+        <table class="w-full text-sm text-left">
+          <thead class="bg-white border-b border-slate-200 text-xs text-slate-500 uppercase tracking-wider">
+            <tr>
+              <th class="px-5 py-3 font-bold">Participante</th>
+              <th class="px-5 py-3 text-right font-bold">Horas</th>
+              <th class="px-5 py-3 text-right font-bold">Tarifa</th>
+              <th class="px-5 py-3 text-right font-bold text-indigo-700 bg-slate-50">Costo</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr>
+              <td class="px-5 py-3 font-medium text-slate-700">Propietaria</td>
+              <td class="px-5 py-3 text-right font-mono text-slate-600">24 h</td>
+              <td class="px-5 py-3 text-right font-mono text-slate-600">S/ 20/h</td>
+              <td class="px-5 py-3 text-right font-bold text-indigo-700 bg-indigo-50/30 font-mono">S/ 480</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-3 font-medium text-slate-700">Vendedora</td>
+              <td class="px-5 py-3 text-right font-mono text-slate-600">12 h</td>
+              <td class="px-5 py-3 text-right font-mono text-slate-600">S/ 15/h</td>
+              <td class="px-5 py-3 text-right font-bold text-indigo-700 bg-indigo-50/30 font-mono">S/ 180</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="bg-slate-100 text-slate-800 font-bold">
+              <td class="px-5 py-3 text-right uppercase tracking-wider text-xs">Total Usuarias:</td>
+              <td class="px-5 py-3 text-right font-mono">36 h</td>
+              <td class="px-5 py-3"></td>
+              <td class="px-5 py-3 text-right font-mono text-indigo-700 text-lg">S/ 660</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      
+      <div class="bg-gradient-to-br from-teal-50 to-white p-6 rounded-2xl border border-teal-150 h-full flex flex-col justify-center shadow-sm">
+        <h4 class="font-bold text-sm text-teal-900 mb-2 flex items-center gap-2">
+          <span class="text-xl">⚖️</span> Justificación
+        </h4>
+        <p class="text-xs text-teal-800 leading-relaxed mb-4">
+          La estimación de horas se deriva de la duración de las actividades del cronograma y el análisis de la red CPM. La participación del equipo se centra en arquitectura, desarrollo, pruebas, campo y capacitación.
+        </p>
+        <p class="text-xs text-teal-800 leading-relaxed">
+          La participación de la propietaria y vendedora incluye las sesiones de validación de entregables, toma de decisiones, pruebas piloto y las capacitaciones formales de cierre.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OTROS COSTOS DIRECTOS (Implem, Docs, Ases, Tec) -->
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    
+    <!-- Implementación -->
+    <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
+      <div class="bg-slate-50 p-5 border-b border-slate-200 flex justify-between items-center">
+        <h4 class="font-black text-slate-800 flex items-center gap-2"><span class="text-lg">🏗️</span> Implementación y Campo</h4>
+        <span class="bg-white border border-slate-200 px-3 py-1 rounded-full text-xs font-bold text-slate-700 shadow-sm">{{ getTotal(implementationCosts) | currency:'PEN':'symbol':'1.0-0' }}</span>
+      </div>
+      <div class="p-0 flex-grow">
+        <table class="w-full text-xs text-left">
+          <tbody class="divide-y divide-slate-100">
+            <tr *ngFor="let item of implementationCosts" class="hover:bg-slate-50/50">
+              <td class="px-5 py-3">
+                <div class="font-bold text-slate-700">{{ item.category }}</div>
+                <div class="text-[10px] text-slate-500 mt-0.5">{{ item.basis }}</div>
+              </td>
+              <td class="px-5 py-3 text-right font-bold text-slate-800 font-mono w-28">{{ item.amount | currency:'PEN':'symbol':'1.0-0' }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Documentos -->
+    <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
+      <div class="bg-slate-50 p-5 border-b border-slate-200 flex justify-between items-center">
+        <h4 class="font-black text-slate-800 flex items-center gap-2"><span class="text-lg">📄</span> Documentos y Materiales</h4>
+        <span class="bg-white border border-slate-200 px-3 py-1 rounded-full text-xs font-bold text-slate-700 shadow-sm">{{ getTotal(documentCosts) | currency:'PEN':'symbol':'1.0-0' }}</span>
+      </div>
+      <div class="p-0 flex-grow">
+        <table class="w-full text-xs text-left">
+          <tbody class="divide-y divide-slate-100">
+            <tr *ngFor="let item of documentCosts" class="hover:bg-slate-50/50">
+              <td class="px-5 py-3 font-bold text-slate-700">{{ item.category }}</td>
+              <td class="px-5 py-3 text-right font-bold text-slate-800 font-mono w-28">{{ item.amount | currency:'PEN':'symbol':'1.0-0' }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="p-5 bg-slate-50/50 border-t border-slate-100 mt-auto">
+          <div class="text-[10px] font-bold text-slate-700 mb-2 uppercase tracking-wider">Documentos entregables (Alcance):</div>
+          <div class="flex flex-wrap gap-1">
+            <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[9px] text-slate-600">EDT / WBS</span>
+            <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[9px] text-slate-600">Cronograma</span>
+            <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[9px] text-slate-600">Líneas Base</span>
+            <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[9px] text-slate-600">Manuales de usuario</span>
+            <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[9px] text-slate-600">Protocolos</span>
+            <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[9px] text-slate-600">Plan Sostenibilidad</span>
+            <span class="px-2 py-1 bg-white border border-slate-200 rounded text-[9px] text-slate-600">Informe Final</span>
+            <span class="px-2 py-1 bg-transparent text-[9px] text-slate-500 italic">+ otros menores</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Asesorías -->
+    <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
+      <div class="bg-slate-50 p-5 border-b border-slate-200 flex justify-between items-center">
+        <h4 class="font-black text-slate-800 flex items-center gap-2"><span class="text-lg">🧑‍🏫</span> Asesorías</h4>
+        <span class="bg-white border border-slate-200 px-3 py-1 rounded-full text-xs font-bold text-slate-700 shadow-sm">{{ getTotal(consultingCosts) | currency:'PEN':'symbol':'1.0-0' }}</span>
+      </div>
+      <div class="p-0 flex-grow">
+        <table class="w-full text-xs text-left">
+          <tbody class="divide-y divide-slate-100">
+            <tr *ngFor="let item of consultingCosts" class="hover:bg-slate-50/50">
+              <td class="px-5 py-3">
+                <div class="font-bold text-slate-700">{{ item.category }}</div>
+                <div class="text-[10px] text-slate-500 mt-0.5">{{ item.basis }}</div>
+              </td>
+              <td class="px-5 py-3 text-right font-bold text-slate-800 font-mono w-28">{{ item.amount | currency:'PEN':'symbol':'1.0-0' }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="p-5 bg-amber-50/50 border-t border-amber-100 mt-auto">
+          <p class="text-[10px] text-amber-800 italic leading-relaxed">
+            * Las asesorías son referenciales (apoyo docente, revisión externa, tiempo experto valorizado o validación técnica).
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tecnología -->
+    <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden flex flex-col relative">
+      <div class="bg-slate-50 p-5 border-b border-slate-200 flex justify-between items-center">
+        <h4 class="font-black text-slate-800 flex items-center gap-2"><span class="text-lg">💻</span> Costos Tecnológicos</h4>
+        <span class="bg-white border border-slate-200 px-3 py-1 rounded-full text-xs font-bold text-slate-700 shadow-sm">{{ getTotal(technologyCosts) | currency:'PEN':'symbol':'1.0-0' }}</span>
+      </div>
+      <div class="p-0 flex-grow">
+        <table class="w-full text-xs text-left">
+          <tbody class="divide-y divide-slate-100">
+            <tr *ngFor="let item of technologyCosts" class="hover:bg-slate-50/50">
+              <td class="px-5 py-3">
+                <div class="font-bold text-slate-700">{{ item.category }}</div>
+                <div class="text-[10px] text-slate-500 mt-0.5">{{ item.basis }}</div>
+              </td>
+              <td class="px-5 py-3 text-right font-bold text-slate-800 font-mono w-28">{{ item.amount | currency:'PEN':'symbol':'1.0-0' }}</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="px-5 py-4 bg-slate-50 border-t border-slate-200 mt-auto">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+            <span class="text-[10px] font-bold text-slate-700 uppercase tracking-widest">Herramientas Sin Costo (S/ 0)</span>
+          </div>
+          <p class="text-[10px] text-slate-600 leading-relaxed mb-3">
+            Google Business Profile, Canva Free, GitHub, Gmail, Google Drive, WhatsApp. <br>
+            <span class="italic text-slate-500">El esfuerzo de configuración se incluye en la mano de obra.</span>
+          </p>
+          
+          <div class="flex items-center gap-2 mb-2">
+            <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+            <span class="text-[10px] font-bold text-indigo-800 uppercase tracking-widest">Recurrencia Anual Posterior</span>
+          </div>
+          <div class="bg-white p-2 rounded border border-slate-200 text-[10px] font-mono text-slate-700 flex justify-between">
+            <span>Hosting + Dominio + Internet + Mantenimiento</span>
+            <span class="font-bold text-indigo-700">S/ 2,086/año</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISTRIBUCIÓN POR SPRINT Y PILAR -->
+  <section class="shadow-card">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 bg-slate-100 text-slate-600 rounded-2xl flex items-center justify-center text-2xl shadow-sm border border-slate-200">📊</div>
+        <div>
+          <h3 class="text-2xl font-black text-slate-800 m-0">Distribución del Presupuesto Directo</h3>
+          <p class="text-sm text-slate-500 font-medium">Asignación estructurada por Sprints y Pilares Estratégicos</p>
+        </div>
+      </div>
+      <div class="bg-slate-800 text-white px-6 py-3 rounded-2xl text-right shadow-md">
+        <div class="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Total Costos Directos</div>
+        <div class="text-2xl font-black">{{ 20944 | currency:'PEN':'symbol':'1.0-0' }}</div>
+      </div>
+    </div>
+
+    <!-- Tabla por Sprint -->
+    <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm mb-10">
+      <div class="bg-slate-50 px-5 py-3 border-b border-slate-200">
+        <h4 class="font-bold text-sm text-slate-800">Desglose de Costos Directos por Sprint</h4>
+      </div>
+      <div class="overflow-x-auto custom-scrollbar">
+        <table class="w-full text-sm text-left">
+          <thead class="bg-white border-b border-slate-200 text-[11px] text-slate-500 uppercase tracking-wider">
+            <tr>
+              <th class="px-5 py-3 font-bold">Iteración</th>
+              <th class="px-3 py-3 text-right font-bold">Mano Obra</th>
+              <th class="px-3 py-3 text-right font-bold">Usuarias</th>
+              <th class="px-3 py-3 text-right font-bold">Implem.</th>
+              <th class="px-3 py-3 text-right font-bold">Docs.</th>
+              <th class="px-3 py-3 text-right font-bold">Asesorías</th>
+              <th class="px-3 py-3 text-right font-bold">Tecnol.</th>
+              <th class="px-5 py-3 text-right font-bold text-teal-700 bg-teal-50/50">TOTAL</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr *ngFor="let s of sprintBudgets" class="hover:bg-slate-50/50 transition-colors">
+              <td class="px-5 py-3 font-bold text-slate-700">{{ s.sprint }}</td>
+              <td class="px-3 py-3 text-right font-mono text-slate-600">{{ s.labor | currency:'PEN':'symbol':'1.0-0' }}</td>
+              <td class="px-3 py-3 text-right font-mono text-slate-600">{{ s.users | currency:'PEN':'symbol':'1.0-0' }}</td>
+              <td class="px-3 py-3 text-right font-mono text-slate-600">{{ s.implementation | currency:'PEN':'symbol':'1.0-0' }}</td>
+              <td class="px-3 py-3 text-right font-mono text-slate-600">{{ s.documents | currency:'PEN':'symbol':'1.0-0' }}</td>
+              <td class="px-3 py-3 text-right font-mono text-slate-600">{{ s.consulting | currency:'PEN':'symbol':'1.0-0' }}</td>
+              <td class="px-3 py-3 text-right font-mono text-slate-600">{{ s.technology | currency:'PEN':'symbol':'1.0-0' }}</td>
+              <td class="px-5 py-3 text-right font-bold font-mono text-teal-700 bg-teal-50/30">{{ s.total | currency:'PEN':'symbol':'1.0-0' }}</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="bg-slate-800 text-white font-bold">
+              <td class="px-5 py-3 text-left uppercase tracking-wider text-xs">Total Directo</td>
+              <td class="px-3 py-3 text-right font-mono text-slate-300">{{ 16188 | currency:'PEN':'symbol':'1.0-0' }}</td>
+              <td class="px-3 py-3 text-right font-mono text-slate-300">{{ 660 | currency:'PEN':'symbol':'1.0-0' }}</td>
+              <td class="px-3 py-3 text-right font-mono text-slate-300">{{ 1160 | currency:'PEN':'symbol':'1.0-0' }}</td>
+              <td class="px-3 py-3 text-right font-mono text-slate-300">{{ 390 | currency:'PEN':'symbol':'1.0-0' }}</td>
+              <td class="px-3 py-3 text-right font-mono text-slate-300">{{ 1620 | currency:'PEN':'symbol':'1.0-0' }}</td>
+              <td class="px-3 py-3 text-right font-mono text-slate-300">{{ 926 | currency:'PEN':'symbol':'1.0-0' }}</td>
+              <td class="px-5 py-3 text-right font-mono text-teal-400 text-lg">{{ 20944 | currency:'PEN':'symbol':'1.0-0' }}</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <!-- Barras de Pilares -->
+      <div>
+        <h4 class="font-black text-lg text-slate-800 mb-6">Inversión por Pilar Estratégico</h4>
+        <div class="space-y-5">
+          <div *ngFor="let p of pilarDistribution" class="w-full relative">
+            <div class="flex justify-between text-xs mb-2">
+              <span class="font-bold text-slate-700">{{ p.name }}</span>
+              <span class="text-teal-700 font-black font-mono">{{ p.amount | currency:'PEN':'symbol':'1.0-0' }} <span class="text-slate-400 font-normal ml-1">({{ p.percentage }}%)</span></span>
+            </div>
+            <div class="w-full bg-slate-100 rounded-full h-3 overflow-hidden shadow-inner">
+              <div class="bg-gradient-to-r from-teal-500 to-teal-400 h-full rounded-full" [style.width]="p.percentage + '%'"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Tabla Acumulada Mensual -->
+      <div class="bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 p-6 rounded-3xl shadow-sm">
+        <div class="flex justify-between items-center mb-4">
+          <h4 class="font-bold text-sm text-indigo-900">Línea Base Acumulada Mensual</h4>
+          <span class="text-2xl">📅</span>
+        </div>
+        <div class="overflow-x-auto custom-scrollbar">
+          <table class="w-full text-xs text-left">
+            <thead class="border-b border-indigo-200 text-[10px] text-indigo-800 uppercase tracking-wider">
+              <tr>
+                <th class="py-2 pr-2 font-bold">Mes (2026)</th>
+                <th class="py-2 px-2 text-right">Directo</th>
+                <th class="py-2 px-2 text-right">Indir. (5%)</th>
+                <th class="py-2 px-2 text-right">Conting.</th>
+                <th class="py-2 pl-2 text-right font-bold text-indigo-900">Acumulado</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-indigo-100/50">
+              <tr>
+                <td class="py-2 pr-2 font-bold text-slate-700">Septiembre</td>
+                <td class="py-2 px-2 text-right font-mono text-slate-600">S/ 6,352</td>
+                <td class="py-2 px-2 text-right font-mono text-slate-600">S/ 318</td>
+                <td class="py-2 px-2 text-right font-mono text-slate-600">S/ 667</td>
+                <td class="py-2 pl-2 text-right font-bold font-mono text-indigo-700">S/ 7,337</td>
+              </tr>
+              <tr>
+                <td class="py-2 pr-2 font-bold text-slate-700">Octubre</td>
+                <td class="py-2 px-2 text-right font-mono text-slate-600">S/ 6,804</td>
+                <td class="py-2 px-2 text-right font-mono text-slate-600">S/ 340</td>
+                <td class="py-2 px-2 text-right font-mono text-slate-600">S/ 714</td>
+                <td class="py-2 pl-2 text-right font-bold font-mono text-indigo-700">S/ 15,195</td>
+              </tr>
+              <tr>
+                <td class="py-2 pr-2 font-bold text-slate-700">Noviembre</td>
+                <td class="py-2 px-2 text-right font-mono text-slate-600">S/ 5,050</td>
+                <td class="py-2 px-2 text-right font-mono text-slate-600">S/ 253</td>
+                <td class="py-2 px-2 text-right font-mono text-slate-600">S/ 530</td>
+                <td class="py-2 pl-2 text-right font-bold font-mono text-indigo-700">S/ 21,028</td>
+              </tr>
+              <tr>
+                <td class="py-2 pr-2 font-bold text-slate-700">Diciembre</td>
+                <td class="py-2 px-2 text-right font-mono text-slate-600">S/ 2,738</td>
+                <td class="py-2 px-2 text-right font-mono text-slate-600">S/ 136</td>
+                <td class="py-2 px-2 text-right font-mono text-slate-600">S/ 288</td>
+                <td class="py-2 pl-2 text-right font-black font-mono text-teal-700 bg-teal-50/50 rounded-r">S/ 24,190</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURVA S -->
+  <section class="shadow-card overflow-hidden">
+    <div class="flex items-center justify-between border-b border-slate-200 pb-4 mb-6">
+      <h3 class="text-xl font-black text-slate-800 m-0 flex items-center gap-2"><span class="text-2xl text-teal-600">📈</span> Curva S — Línea Base Acumulada</h3>
+      <div class="bg-teal-50 text-teal-800 px-3 py-1 rounded-full text-xs font-bold border border-teal-200">
+        Total: S/ 24,190
+      </div>
+    </div>
+    <div class="custom-scrollbar overflow-x-auto flex justify-center bg-slate-50 p-6 rounded-2xl border border-slate-200">
+      <div class="min-w-[600px] w-full max-w-4xl bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+        <pre class="mermaid mermaid-scrollable">{{ diagramCurvaS }}</pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESUPUESTO TOTAL (Construcción) -->
+  <section class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 bg-slate-900 rounded-3xl p-8 shadow-xl text-white relative overflow-hidden flex flex-col justify-center">
+      <!-- Decoraciones de fondo oscuras -->
+      <div class="absolute -right-32 -top-32 w-96 h-96 bg-teal-900/30 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -left-10 -bottom-10 w-48 h-48 bg-indigo-900/30 rounded-full blur-2xl pointer-events-none"></div>
+      
+      <h3 class="text-2xl font-black text-white mb-8 relative z-10">Construcción del Presupuesto Autorizado</h3>
+      
+      <div class="relative z-10">
+        <div class="flex justify-between items-center py-3 border-b border-slate-800">
+          <div class="font-medium text-slate-300">Costos directos</div>
+          <div class="font-mono font-bold text-lg text-slate-200">{{ budgetSummary.directCosts | currency:'PEN':'symbol':'1.0-0' }}</div>
+        </div>
+        
+        <div class="flex justify-between items-start py-3 border-b border-slate-800 group">
+          <div class="text-sm text-slate-400">
+            <span class="font-medium text-slate-300">Costos indirectos (5%)</span>
+            <div class="text-[10px] text-slate-500 mt-1 max-w-xs group-hover:text-slate-400 transition-colors">Energía, equipos, comunicaciones, adm, almacenamiento.</div>
+          </div>
+          <div class="font-mono text-slate-300 mt-0.5">+ {{ budgetSummary.indirectCosts | currency:'PEN':'symbol':'1.0-0' }}</div>
+        </div>
+        
+        <div class="flex justify-between items-center py-4 border-b-2 border-slate-700 mt-2">
+          <div class="font-bold text-slate-200 text-lg">Estimación Base</div>
+          <div class="font-mono font-bold text-xl text-white">{{ budgetSummary.baseEstimate | currency:'PEN':'symbol':'1.0-0' }}</div>
+        </div>
+        
+        <div class="flex justify-between items-start py-4 border-b border-slate-800 group">
+          <div class="text-sm text-slate-400">
+            <span class="font-medium text-slate-300">Reserva para contingencias (10%)</span>
+            <div class="text-[10px] text-slate-500 mt-1 max-w-xs group-hover:text-slate-400 transition-colors">Riesgos conocidos. Retrabajos, correcciones, variaciones menores. <span class="text-teal-400 font-bold">Forma parte de la línea base.</span></div>
+          </div>
+          <div class="font-mono text-slate-300 mt-0.5">+ {{ budgetSummary.contingency | currency:'PEN':'symbol':'1.0-0' }}</div>
+        </div>
+        
+        <div class="flex justify-between items-center py-6 border-b border-slate-800 bg-teal-900/40 -mx-4 px-4 rounded-lg my-2 border-l-4 border-l-teal-500 shadow-inner">
+          <div class="font-black text-teal-300 text-xl tracking-wide uppercase">Línea Base de Costos</div>
+          <div class="font-mono font-black text-3xl text-teal-400">{{ budgetSummary.costBaseline | currency:'PEN':'symbol':'1.0-0' }}</div>
+        </div>
+        
+        <div class="flex justify-between items-start py-4 border-b border-slate-800 group">
+          <div class="text-sm text-slate-400">
+            <span class="font-medium text-slate-300">Reserva de gestión (5%)</span>
+            <div class="text-[10px] text-slate-500 mt-1 max-w-xs group-hover:text-slate-400 transition-colors">Riesgos desconocidos. Su uso requiere aprobación formal. <span class="text-indigo-400 font-bold">No forma parte de la línea base.</span></div>
+          </div>
+          <div class="font-mono text-slate-300 mt-0.5">+ {{ budgetSummary.managementReserve | currency:'PEN':'symbol':'1.0-0' }}</div>
+        </div>
+        
+        <div class="flex justify-between items-center pt-6 mt-4 relative">
+          <div class="absolute -top-4 left-0 w-full flex justify-center"><div class="bg-indigo-500 w-12 h-1 rounded-full"></div></div>
+          <div class="font-black text-indigo-300 text-2xl tracking-wide uppercase">Presupuesto Total Autorizado</div>
+          <div class="font-mono font-black text-4xl text-white drop-shadow-md">{{ budgetSummary.authorizedBudget | currency:'PEN':'symbol':'1.0-0' }}</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Valor vs Desembolso -->
+    <div class="flex flex-col gap-6">
+      <div class="bg-indigo-50 rounded-3xl p-6 border border-indigo-100 shadow-sm flex flex-col justify-center text-center h-full">
+        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl mx-auto mb-4 shadow-sm">💰</div>
+        <div class="text-xs font-black text-indigo-800 uppercase tracking-widest mb-2">Valor Económico Total</div>
+        <div class="text-4xl font-black text-indigo-950 mb-3">{{ 25400 | currency:'PEN':'symbol':'1.0-0' }}</div>
+        <div class="text-xs text-indigo-700/80 leading-relaxed font-medium">Incluye el trabajo valorizado del equipo, usuarias, asesorías y la totalidad de reservas.</div>
+      </div>
+      
+      <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm flex flex-col justify-center h-full">
+        <h4 class="font-black text-sm text-slate-800 mb-4 flex items-center justify-between">
+          <span>Financiamiento Real</span>
+          <span class="bg-teal-100 text-teal-800 text-[10px] px-2 py-1 rounded-full">Desembolso monetario</span>
+        </h4>
+        <table class="w-full text-xs text-slate-600 border-collapse">
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="py-2">Implementación</td><td class="text-right font-mono">S/ 1,160</td></tr>
+            <tr><td class="py-2">Documentos</td><td class="text-right font-mono">S/ 390</td></tr>
+            <tr><td class="py-2">Asesorías (real)</td><td class="text-right font-mono">S/ 1,620</td></tr>
+            <tr><td class="py-2">Tecnología</td><td class="text-right font-mono">S/ 926</td></tr>
+            <tr class="font-bold text-slate-800 bg-slate-50"><td class="py-2 px-2 rounded-l">Desembolso directo</td><td class="text-right px-2 rounded-r font-mono">S/ 4,096</td></tr>
+            <tr><td class="py-2 text-slate-500 text-[10px]">Administración (5%)</td><td class="text-right text-slate-500 font-mono text-[10px]">S/ 205</td></tr>
+            <tr><td class="py-2 text-amber-600 text-[10px]">Contingencia efec.</td><td class="text-right text-amber-600 font-mono text-[10px]">S/ 430</td></tr>
+            <tr><td class="py-2 text-indigo-600 text-[10px]">Reserva gestión efec.</td><td class="text-right text-indigo-600 font-mono text-[10px]">S/ 237</td></tr>
+            <tr class="font-black text-teal-900 border-t-2 border-teal-200"><td class="py-3 mt-2 text-sm">Total Recomendado</td><td class="text-right py-3 text-lg font-mono">S/ 4,968</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTROL DE COSTOS Y RIESGOS -->
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    
+    <div class="shadow-card flex flex-col gap-6">
+      <div class="flex items-center gap-3 border-b border-slate-200 pb-4">
+        <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl">⚙️</div>
+        <h3 class="text-xl font-black text-slate-800 m-0">Control Presupuestario</h3>
+      </div>
+      
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+          <h4 class="font-bold text-[11px] text-slate-800 mb-2 uppercase tracking-wider">Frecuencia</h4>
+          <ul class="text-[11px] text-slate-600 space-y-1.5 list-disc pl-4">
+            <li>Semanal.</li>
+            <li>Al cierre de cada sprint.</li>
+            <li>Antes de utilizar reservas.</li>
+            <li>En solicitud de cambios.</li>
+          </ul>
+        </div>
+        <div class="bg-teal-50 p-4 rounded-xl border border-teal-200 flex flex-col justify-center">
+          <h4 class="font-bold text-[11px] text-teal-900 mb-2 uppercase tracking-wider">Regla 0/100</h4>
+          <p class="text-[10px] text-teal-800 leading-relaxed">
+            Una actividad gana valor (EV) únicamente cuando cumple su criterio de aceptación (código, pruebas, actas, despliegue).
+          </p>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="font-bold text-[11px] text-slate-800 mb-2 uppercase tracking-wider">Umbrales de Variación</h4>
+        <table class="w-full text-xs text-left border border-slate-200 rounded-lg overflow-hidden">
+          <thead class="bg-slate-100 text-slate-600">
+            <tr><th class="py-2 px-3">Variación</th><th class="py-2 px-3">Acción Requerida</th></tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr><td class="py-2 px-3 font-bold text-green-600">Hasta 5 %</td><td class="py-2 px-3">Seguimiento normal</td></tr>
+            <tr><td class="py-2 px-3 font-bold text-amber-600">De 5 % a 10 %</td><td class="py-2 px-3">Acción correctiva obligatoria</td></tr>
+            <tr><td class="py-2 px-3 font-bold text-red-600">&gt; 10 %</td><td class="py-2 px-3 font-bold">Control formal de cambios</td></tr>
+            <tr class="bg-slate-50"><td class="py-2 px-3 text-slate-700">Uso Contingencia</td><td class="py-2 px-3 text-slate-600">Autorización del Responsable</td></tr>
+            <tr class="bg-slate-50"><td class="py-2 px-3 text-slate-700">Uso R. Gestión</td><td class="py-2 px-3 font-bold text-indigo-700">Aprobación Formal Superior</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <div class="shadow-card flex flex-col gap-6">
+      <div class="flex items-center gap-3 border-b border-slate-200 pb-4">
+        <div class="w-10 h-10 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl">⚠️</div>
+        <h3 class="text-xl font-black text-slate-800 m-0">Riesgos Presupuestarios</h3>
+      </div>
+      
+      <div class="overflow-x-auto custom-scrollbar flex-grow">
+        <table class="custom-table text-[11px] w-full">
+          <thead>
+            <tr>
+              <th>Riesgo</th>
+              <th class="w-20 text-center">Prob.</th>
+              <th class="w-20 text-center">Impacto</th>
+              <th>Respuesta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="font-bold text-slate-700">Más horas de desarrollo</td>
+              <td class="text-center"><span class="pill pill-low bg-amber-100 text-amber-800">Media</span></td>
+              <td class="text-center"><span class="pill pill-high bg-red-100 text-red-800">Alto</span></td>
+              <td>Uso de contingencia</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-slate-700">Retrabajo de integración</td>
+              <td class="text-center"><span class="pill pill-low bg-amber-100 text-amber-800">Media</span></td>
+              <td class="text-center"><span class="pill pill-high bg-red-100 text-red-800">Alto</span></td>
+              <td>Pruebas progresivas</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-slate-700">Observaciones tardías</td>
+              <td class="text-center"><span class="pill pill-low bg-amber-100 text-amber-800">Media</span></td>
+              <td class="text-center"><span class="pill pill-high bg-red-100 text-red-800">Alto</span></td>
+              <td>Validación por sprint</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-slate-700">Variación tipo de cambio</td>
+              <td class="text-center"><span class="pill pill-low bg-amber-100 text-amber-800">Media</span></td>
+              <td class="text-center"><span class="pill bg-amber-100 text-amber-800 border-0">Medio</span></td>
+              <td>Margen tecnológico</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-slate-700">Cambio de proveedor</td>
+              <td class="text-center"><span class="pill pill-low bg-slate-100 text-slate-600">Baja</span></td>
+              <td class="text-center"><span class="pill bg-amber-100 text-amber-800 border-0">Medio</span></td>
+              <td>Reserva de gestión</td>
+            </tr>
+            <tr>
+              <td class="font-bold text-slate-700">Transporte adicional</td>
+              <td class="text-center"><span class="pill pill-low bg-amber-100 text-amber-800">Media</span></td>
+              <td class="text-center"><span class="pill bg-slate-100 text-slate-600 border-0">Bajo</span></td>
+              <td>Agrupar visitas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVM Y DIAGRAMA DE FLUJO -->
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div class="shadow-card">
+      <div class="flex items-center justify-between border-b border-slate-200 pb-4 mb-6">
+        <h3 class="text-xl font-black text-slate-800 m-0 flex items-center gap-2"><span class="text-xl">📊</span> Valor Ganado (EVM)</h3>
+        <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-[10px] font-bold border border-indigo-200 uppercase tracking-wide">Métricas</span>
+      </div>
+      
+      <div class="grid grid-cols-3 gap-3 mb-6">
+        <div class="bg-slate-50 border border-slate-200 py-3 rounded-xl text-center shadow-sm">
+          <div class="text-[10px] font-bold text-slate-500 mb-1 uppercase tracking-wider">Planificado</div>
+          <div class="font-black text-slate-800 text-xl">PV</div>
+        </div>
+        <div class="bg-teal-50 border border-teal-200 py-3 rounded-xl text-center shadow-sm transform scale-105">
+          <div class="text-[10px] font-bold text-teal-600 mb-1 uppercase tracking-wider">Ganado</div>
+          <div class="font-black text-teal-900 text-xl">EV</div>
+        </div>
+        <div class="bg-slate-50 border border-slate-200 py-3 rounded-xl text-center shadow-sm">
+          <div class="text-[10px] font-bold text-slate-500 mb-1 uppercase tracking-wider">Real</div>
+          <div class="font-black text-slate-800 text-xl">AC</div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+        <div class="bg-white border-2 border-slate-100 p-4 rounded-xl flex flex-col justify-center items-center hover:border-teal-200 transition-colors">
+          <div class="text-xs font-bold text-slate-700 mb-2 uppercase tracking-wider">Variación (CV)</div>
+          <code class="text-lg text-teal-700 bg-teal-50 px-3 py-1 rounded-lg font-black w-full text-center">CV = EV - AC</code>
+          <p class="text-[10px] text-slate-500 mt-2 text-center font-medium">CV &gt; 0 = <span class="text-green-600">Ahorro</span> <br> CV &lt; 0 = <span class="text-red-600">Sobrecosto</span></p>
+        </div>
+        <div class="bg-white border-2 border-slate-100 p-4 rounded-xl flex flex-col justify-center items-center hover:border-teal-200 transition-colors">
+          <div class="text-xs font-bold text-slate-700 mb-2 uppercase tracking-wider">Desempeño (CPI)</div>
+          <code class="text-lg text-teal-700 bg-teal-50 px-3 py-1 rounded-lg font-black w-full text-center">CPI = EV / AC</code>
+          <p class="text-[10px] text-slate-500 mt-2 text-center font-medium">CPI &gt; 1 = <span class="text-green-600">Favorable</span> <br> CPI &lt; 1 = <span class="text-red-600">Desfavorable</span></p>
+        </div>
+      </div>
+
+      <div class="bg-slate-800 text-white p-5 rounded-xl border border-slate-700 text-center relative overflow-hidden shadow-md">
+        <div class="absolute right-0 top-0 w-16 h-16 bg-white/5 rounded-bl-full"></div>
+        <div class="text-xs font-bold text-slate-400 mb-2 uppercase tracking-wider relative z-10">Estimación a la Conclusión (EAC)</div>
+        <code class="text-xl text-white bg-slate-900/80 px-4 py-2 rounded-lg font-black border border-slate-700 relative z-10 block w-max mx-auto mb-3 shadow-inner">EAC = BAC / CPI</code>
+        <div class="text-[11px] text-teal-400 font-bold relative z-10 bg-slate-900/50 inline-block px-3 py-1 rounded-full">BAC (Línea Base) = S/ 24,190</div>
+      </div>
+    </div>
+
+    <div class="shadow-card">
+      <div class="flex items-center gap-3 border-b border-slate-200 pb-4 mb-6">
+        <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-xl">🔄</div>
+        <h3 class="text-xl font-black text-slate-800 m-0">Flujo de Control de Cambios</h3>
+      </div>
+      <p class="text-[11px] text-slate-600 mb-6 bg-slate-50 p-3 border-l-4 border-slate-300 rounded-r font-medium">
+        La línea base <strong>no se modifica para ocultar desviaciones de rendimiento</strong>. Solo se actualiza cuando existe una solicitud de cambio formalmente aprobada por el patrocinador/docente.
+      </p>
+      <div class="custom-scrollbar overflow-x-auto bg-white border border-slate-200 rounded-xl p-4 flex justify-center shadow-inner">
+        <pre class="mermaid mermaid-scrollable">{{ diagramControlCambios }}</pre>
+      </div>
+    </div>
+  </section>
+
+</div>
+"""
+
+with open(html_path, "w", encoding="utf-8") as f:
+    f.write(html_content)

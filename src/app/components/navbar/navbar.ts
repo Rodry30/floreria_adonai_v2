@@ -78,9 +78,9 @@ import { CommonModule } from '@angular/common';
                 <svg class="w-4 h-4 transition-transform duration-200" [class.rotate-180]="openMenu === 'fase3'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
               </button>
               <div *ngIf="openMenu === 'fase3'" class="absolute right-0 top-full w-64 bg-white border border-teal-100 shadow-lg rounded-b-xl overflow-hidden">
-                <a routerLink="/matriz-marco-logico" routerLinkActive="text-teal-700 border-l-4 border-teal-600 bg-teal-50" (click)="closeMenu()" class="block px-4 py-3 hover:text-teal-600 hover:bg-teal-50/50 transition-colors">Matriz de Marco Lógico</a>
                 <a routerLink="/fase3/gestion-alcance" routerLinkActive="text-teal-700 border-l-4 border-teal-600 bg-teal-50" (click)="closeMenu()" class="block px-4 py-3 hover:text-teal-600 hover:bg-teal-50/50 transition-colors">Gestión del Alcance del Proyecto</a>
                 <a routerLink="/fase3/linea-base-cronograma" routerLinkActive="text-teal-700 border-l-4 border-teal-600 bg-teal-50" (click)="closeMenu()" class="block px-4 py-3 hover:text-teal-600 hover:bg-teal-50/50 transition-colors">Línea Base del Cronograma</a>
+                <a routerLink="/fase3/linea-base-costos" routerLinkActive="text-teal-700 border-l-4 border-teal-600 bg-teal-50" (click)="closeMenu()" class="block px-4 py-3 hover:text-teal-600 hover:bg-teal-50/50 transition-colors">Línea Base de los Costos del Proyecto</a>
               </div>
             </div>
 
@@ -130,7 +130,6 @@ import { CommonModule } from '@angular/common';
             <svg class="w-3.5 h-3.5 transition-transform duration-200" [class.rotate-180]="openMobileSection === 'fase3'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
           </button>
           <div *ngIf="openMobileSection === 'fase3'">
-            <a (click)="closeMobileMenu()" routerLink="/matriz-marco-logico" routerLinkActive="text-teal-700 bg-teal-50" class="block pl-6 pr-4 py-2 text-sm text-slate-600 hover:bg-teal-50 rounded-md">Matriz de Marco Lógico</a>
             <a (click)="closeMobileMenu()" routerLink="/fase3/gestion-alcance" routerLinkActive="text-teal-700 bg-teal-50" class="block pl-6 pr-4 py-2 text-sm text-slate-600 hover:bg-teal-50 rounded-md">Gestión del Alcance del Proyecto</a>
             <a (click)="closeMobileMenu()" routerLink="/fase3/linea-base-cronograma" routerLinkActive="text-teal-700 bg-teal-50" class="block pl-6 pr-4 py-2 text-sm text-slate-600 hover:bg-teal-50 rounded-md">Línea Base del Cronograma</a>
           </div>

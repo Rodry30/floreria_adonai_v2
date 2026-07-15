@@ -15,6 +15,7 @@ import { DesignThinkingComponent } from './pages/design-thinking/design-thinking
 import { IteracionDosComponent } from './pages/iteracion-dos/iteracion-dos.component';
 import { GestionAlcanceComponent } from './pages/gestion-alcance/gestion-alcance.component';
 import { LineaBaseCronogramaComponent } from './pages/linea-base-cronograma/linea-base-cronograma.component';
+import { LineaBaseCostosComponent } from './pages/linea-base-costos/linea-base-costos';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'resumen', pathMatch: 'full' },
@@ -39,5 +40,6 @@ export const routes: Routes = [
   { path: 'matriz-marco-logico', component: MatrizMarcoLogicoComponent },
   { path: 'fase3/gestion-alcance', component: GestionAlcanceComponent },
   { path: 'fase3/linea-base-cronograma', component: LineaBaseCronogramaComponent },
+  { path: 'fase3/linea-base-costos', component: LineaBaseCostosComponent },
   { path: '**', redirectTo: 'resumen' }
 ];

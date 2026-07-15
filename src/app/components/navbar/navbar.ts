@@ -132,6 +132,7 @@ import { CommonModule } from '@angular/common';
           <div *ngIf="openMobileSection === 'fase3'">
             <a (click)="closeMobileMenu()" routerLink="/fase3/gestion-alcance" routerLinkActive="text-teal-700 bg-teal-50" class="block pl-6 pr-4 py-2 text-sm text-slate-600 hover:bg-teal-50 rounded-md">Gestión del Alcance del Proyecto</a>
             <a (click)="closeMobileMenu()" routerLink="/fase3/linea-base-cronograma" routerLinkActive="text-teal-700 bg-teal-50" class="block pl-6 pr-4 py-2 text-sm text-slate-600 hover:bg-teal-50 rounded-md">Línea Base del Cronograma</a>
+            <a (click)="closeMobileMenu()" routerLink="/fase3/linea-base-costos" routerLinkActive="text-teal-700 bg-teal-50" class="block pl-6 pr-4 py-2 text-sm text-slate-600 hover:bg-teal-50 rounded-md">Línea Base de los Costos del Proyecto</a>
           </div>
 
         </div>
